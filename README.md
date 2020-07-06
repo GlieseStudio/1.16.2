@@ -8,7 +8,7 @@ Minecraft整合包(Fabric版本)，HMCL启动器(https://hmcl.huangyuhui.net/dow
 ♥PC版服务器(2021/9/17到期看玩家情况)  ip:  mcss.vip
 
 插件链接地址
-# # [【自动钓鱼】Autofish](https://www.curseforge.com/minecraft/mc-mods/autofish)
+# [【自动钓鱼】Autofish](https://www.curseforge.com/minecraft/mc-mods/autofish)
 # [【耐久显示】durabilityviewer](https://www.curseforge.com/minecraft/mc-mods/giselbaers-durability-viewer)
 # [【连锁挖矿】diggusmaximus](https://www.curseforge.com/minecraft/mc-mods/diggus-maximus)（默认按~）
 # [【光照范围显示】light-overlay](https://www.curseforge.com/minecraft/mc-mods/light-overlay)（默认按F7）
