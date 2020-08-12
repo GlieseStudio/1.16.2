@@ -3,9 +3,10 @@ Minecraft整合包(Fabric版本)，HMCL启动器(https://hmcl.huangyuhui.net/dow
 
 ♥网站 https://www.mcss.vip
 
-♥PE版服务器(2020/12/27到期不续费)  ip:  pe.mcss.vip:40074
 
-♥PC版服务器(2021/9/17到期看玩家情况)  ip:  mcss.vip
+♥PC版服务器  ip:  mcss.vip
+
+# [Oftifine](https://www.optifine.net)
 
 插件链接地址
 # [【自动钓鱼】Autofish](https://www.curseforge.com/minecraft/mc-mods/autofish)
@@ -18,20 +19,14 @@ Minecraft整合包(Fabric版本)，HMCL启动器(https://hmcl.huangyuhui.net/dow
 # [【创世神】worldedit](https://www.curseforge.com/minecraft/mc-mods/worldedit)
 # [【API】fabric-api](https://www.curseforge.com/minecraft/mc-mods/fabric-api)
 # [【MOD菜单】modmenu](https://www.curseforge.com/minecraft/mc-mods/modmenu)
-# [【物品管理】Just Enough Items (JEI)](https://www.curseforge.com/minecraft/mc-mods/jei)
 # [【苹果皮】appleskin](https://www.curseforge.com/minecraft/mc-mods/appleskin)
 # [【小地图】VoxelMap](https://www.curseforge.com/minecraft/mc-mods/voxelmap)
 # [【精美图书制作】Patchouli](https://www.curseforge.com/minecraft/mc-mods/patchouli-fabric)
 # [【MOD前置】Reborn Core](https://www.curseforge.com/minecraft/mc-mods/reborncore)
-# [【使世界的基石层变得平坦】Better Bedrock Generator](https://www.curseforge.com/minecraft/mc-mods/better-bedrock-generator-fabric)
 # [【使加载屏幕变暗】Dark Loading Screen](https://www.curseforge.com/minecraft/mc-mods/dark-loading-screen)
-# [【小地图】Just Map](https://www.curseforge.com/minecraft/mc-mods/just-map)
-# [【更好的下届】BetterNether](https://www.curseforge.com/minecraft/mc-mods/betternether)
-# [【更多附魔】More Enchantments](https://www.curseforge.com/minecraft/mc-mods/fabric-more-enchantments)
 # [【死亡箱子】VanillaDeathChest](https://www.curseforge.com/minecraft/mc-mods/vanilladeathchest-fabric)
 # [【自动选择工具】Fabric AutoSwitch](https://www.curseforge.com/minecraft/mc-mods/fabric-autoswitch)
 # [【多功能滚轮】](https://www.curseforge.com/minecraft/mc-mods/mouse-wheelie)
-# [【REI物品管理】RoughlyEnoughItems](https://www.curseforge.com/minecraft/mc-mods/roughly-enough-items)
 # [【优化mod】Lithium](https://www.curseforge.com/minecraft/mc-mods/lithium)
 # [【随身工作台】Portable Workbench](https://www.curseforge.com/minecraft/mc-mods/portable-workbench)
 # [【REI物品管理】RoughlyEnoughItems](https://www.curseforge.com/minecraft/mc-mods/roughly-enough-items)
