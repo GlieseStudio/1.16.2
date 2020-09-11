@@ -36,7 +36,12 @@ Minecraft整合包(Fabric版本)，HMCL启动器(https://hmcl.huangyuhui.net/dow
 # [【一键砍树】Fabric Tree Chopper](https://www.curseforge.com/minecraft/mc-mods/CustomSkinLoader)
 # [【我的指令】MyCommands](https://www.curseforge.com/minecraft/mc-mods/mycommands)
 # [【鼠标调整】Mouse Tweaks](https://www.curseforge.com/minecraft/mc-mods/mouse-tweaks)
-
-整合包下载地址
-天翼云盘(不限速)
-阿里云盘(不限速)
+# [【JEI】Just Enough Items](https://www.curseforge.com/minecraft/mc-mods/jei)
+# [【主题修改】](https://www.curseforge.com/minecraft/mc-mods/resource-loader)
+# [【优化】](https://www.curseforge.com/minecraft/mc-mods/foamfix-optimization-mod)
+# [【1.7合成表】craftguide](https://www.curseforge.com/minecraft/mc-mods/craftguide)
+# [【优化】BetterFps](https://www.curseforge.com/minecraft/mc-mods/betterfps)
+# [【R键整理】InventoryTweaks](https://www.curseforge.com/minecraft/mc-mods/inventory-tweaks)
+# [【帧数优化】fastcraft](https://www.curseforge.com/minecraft/mc-mods/fastcraft)
+# [【头顶血量](https://www.curseforge.com/minecraft/mc-mods/neat))
+# [【客户端登录](https://www.curseforge.com/minecraft/mc-mods/reauth/files)
