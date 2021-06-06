@@ -1,0 +1,71 @@
+
+
+#         Powered by TabooLib 5.0         #
+
+
+theme-chat:
+  format:
+    - ' {title}:'
+    - ''
+    - '  &f" &7{npcSide}&r &f"'
+    - ''
+    - '  {select} [ &7{playerSide}&r ]'
+    - ''
+  select:
+    char: '>'
+    other: ' '
+    color: '&b&n'
+    sound:
+      name: ENTITY_EXPERIENCE_ORB_PICKUP
+      p: 2
+      v: 0
+  talking: '    &8...'
+  animation: true
+  sound:
+    name: ENTITY_ITEM_PICKUP
+    p: 1
+    v: 0
+  space-line: 30
+
+theme-chest:
+  ui:
+    title: 'Talking with {title}...'
+    rows: 'Math.max(Math.ceil($size / 5.0) + 2, 3)'
+  npc-side:
+    item:
+      material: book
+      name: '&f {title}'
+      lore:
+        - ' '
+        - ' &7{npcSide} '
+        - ' '
+    slot: 10
+  player-side:
+    item:
+      material: paper
+      name: '&7{index}. &f{playerSide}'
+    slot:
+      - 12
+      - 13
+      - 14
+      - 15
+      - 16
+      - 21
+      - 22
+      - 23
+      - 24
+      - 25
+      - 30
+      - 31
+      - 32
+      - 33
+      - 34
+      - 39
+      - 40
+      - 41
+      - 42
+      - 43
+  sound:
+    name: ENTITY_ITEM_PICKUP
+    p: 1
+    v: 0

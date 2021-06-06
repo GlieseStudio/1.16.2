@@ -1,0 +1,9 @@
+
+
+#         Powered by TabooLib 5.0         #
+
+
+default:
+  # BaiTeam, CustomGo, DungeonPlus, DungeonsXL, FriendsPremium, iTeamPro
+  # mcMMO, MMOCore, NyTeam, PxTeam, Parties, PartyAndFriends, QuantumRPG
+  plugin: none

@@ -1,0 +1,38 @@
+
+
+#         Powered by TabooLib 5.0         #
+
+
+default_0:
+  min: 0
+  max: 100
+  experience:
+    type: kether
+    math: |-
+      if check &level <= *15 then {
+          math add [ math mul [ *2 &level ] *7 ]
+      } else if check &level <= *30 then {
+          math sub [ math mul [ *5 &level ] *38 ]
+      } else {
+          math sub [ math mul [ *9 &level ] *158 ]
+      }
+  reward:
+    5: tell colored inline *"&aLevel up! &f{{ &level }}!"
+    10-20: tell colored inline *"&eLevel up! &f{{ &level }}!"
+
+default_1:
+  min: 0
+  max: 100
+  experience:
+    type: javascript
+    math: |-
+      if (level <= 15) {
+          2 * level + 7;
+      } else if (level <= 30) {
+          5 * level - 38;
+      } else {
+          9 * level - 158;
+      }
+  reward:
+    5: tell colored inline *"&aLevel up! &f{{ &level }}!"
+    10-20: tell colored inline *"&eLevel up! &f{{ &level }}!"

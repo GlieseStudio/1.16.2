@@ -1,0 +1,34 @@
+help:
+  detailed: |-
+    /oraxen help {<page>} - List all commands with their short description
+    /oraxen help <command> {<page>} - Show a command's detailed description
+  usage: '{<command> / <page>}'
+  simple: Oraxen help command
+give:
+  detailed: ''
+  usage: ''
+  simple: Give an Oraxen item to a player
+repair:
+  detailed: ''
+  usage: ''
+  simple: Repair an Oraxen or a Vanilla item
+debug:
+  detailed: ''
+  usage: ''
+  simple: Just a debug command
+reload:
+  detailed: ''
+  usage: ''
+  simple: Reload Oraxen components
+recipe:
+  detailed: ''
+  usage: ''
+  simple: Recipes related commands
+inventory:
+  detailed: ''
+  usage: ''
+  simple: Show oraxen items in an inventory
+pack:
+  detailed: ''
+  usage: ''
+  simple: ResourcePack related commands
