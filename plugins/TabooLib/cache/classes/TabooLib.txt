@@ -1,5 +1,5 @@
 --- SHA-1 ---
-d5a5bd53d3bb961724a69fb3b62b3b1b113df1cf
+df054b7d4e70ff4ab989abca2565ed0b4bb40d37
 --- SHA-1 ---
 
 io.izzel.taboolib.metrics.BStats$SimplePie
@@ -378,6 +378,7 @@ io.izzel.taboolib.module.i18n.I18nBase
 io.izzel.taboolib.module.i18n.version.I18n20w14a
 io.izzel.taboolib.module.i18n.version.I18nOrigin
 io.izzel.taboolib.module.i18n.version.I18n11604
+io.izzel.taboolib.module.i18n.version.I18n11700
 io.izzel.taboolib.module.i18n.I18n
 io.izzel.taboolib.module.event.EventNormal
 io.izzel.taboolib.module.event.EventCancellable
