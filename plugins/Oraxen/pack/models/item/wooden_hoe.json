@@ -1,1 +1,0 @@
-{"parent":"item/handheld","textures":{"layer0":"item/wooden_hoe"},"overrides":[{"predicate":{"custom_model_data":1},"model":"goblin_beetle"},{"predicate":{"custom_model_data":2},"model":"magical_wand"},{"predicate":{"custom_model_data":3},"model":"ice_staff"},{"predicate":{"custom_model_data":4},"model":"withooker"},{"predicate":{"custom_model_data":5},"model":"iron_serpe"}]}

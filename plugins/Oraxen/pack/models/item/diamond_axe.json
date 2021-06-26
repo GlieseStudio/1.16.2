@@ -1,1 +1,0 @@
-{"parent":"item/handheld","textures":{"layer0":"item/diamond_axe"},"overrides":[{"predicate":{"custom_model_data":1},"model":"magical_axe"},{"predicate":{"custom_model_data":2},"model":"cristal_axe"},{"predicate":{"custom_model_data":3},"model":"battle_axe"}]}

@@ -1,8 +1,0 @@
-# This File Saves All User Data
-# Please Don't Change Anything in This File To Avoid Any Errors
-players:
-  c4a0eb7a-0e58-49db-90d4-5cf23447d26b:
-    newbie_timeleft: 62593
-    newbie: true
-    pvpstatus: true
-    toggletime: 0

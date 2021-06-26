@@ -1,4 +1,0 @@
-net/minecraft/server/v1_12_R1/PacketPlayOutScoreboardScore$EnumScoreboardAction -> net/minecraft/server/v1_16_R3/PacketPlayOutScoreboardScore$EnumScoreboardAction
-net/minecraft/server/v1_12_R1/PacketPlayOutScoreboardScore$EnumScoreboardAction -> net/minecraft/server/v1_16_R3/PacketPlayOutScoreboardScore$EnumScoreboardAction
-net/minecraft/server/v1_12_R1/PacketPlayOutScoreboardScore$EnumScoreboardAction -> net/minecraft/server/v1_16_R3/PacketPlayOutScoreboardScore$EnumScoreboardAction
-net/minecraft/server/v1_12_R1/PacketPlayOutScoreboardScore$EnumScoreboardAction -> net/minecraft/server/v1_16_R3/PacketPlayOutScoreboardScore$EnumScoreboardAction
