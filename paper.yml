@@ -92,6 +92,9 @@ messages:
     connection-throttle: Connection throttled! Please wait before reconnecting.
 world-settings:
   default:
+    seed-based-feature-search-loads-chunks: true
+    fix-items-merging-through-walls: false
+    map-item-frame-cursor-limit: 128
     non-player-arrow-despawn-rate: -1
     creative-arrow-despawn-rate: -1
     entities-target-with-follow-range: false
@@ -179,6 +182,7 @@ world-settings:
     viewdistances:
       no-tick-view-distance: -1
     anti-xray:
+      max-block-height: 64
       enabled: false
       engine-mode: 1
       max-chunk-section-index: 3
@@ -260,3 +264,11 @@ world-settings:
       spawn-chance-failure-increment: 25
       spawn-chance-min: 25
       spawn-chance-max: 75
+    unsupported-settings:
+      fix-invulnerable-end-crystal-exploit: true
+    spawn-limits:
+      monsters: -1
+      animals: -1
+      water-animals: -1
+      water-ambient: -1
+      ambient: -1

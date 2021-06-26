@@ -26,7 +26,7 @@ General:
   Ignore No Damage Hits: false
   Auto Soup Health: 0
   World Exclusions:
-    - 'example'
+  - 'example'
     
 # Here you can choose which methods to use to stop 'border hopping' while players are tagged
 # Border hopping is when a player gets in PvP and tries to run into a safe zone to escape
@@ -75,7 +75,7 @@ Tagged In Combat:
   Glowing: true
   Action Bar:
     Message: '&b&lCombat &a<barsLeft>&c<barsPassed> &e&l<time> &b[sec]'
-    Symbol: '▊'
+    Symbol: ▊
     Total Bars: 20
   Untag Enemy: false
   Block:
@@ -83,13 +83,14 @@ Tagged In Combat:
     Teleport: true
     Place Blocks: false
     Interact: false
+    Elytra: false
     Eat: false
     Commands:
       Enabled: true
       Whitelist: true
       Command List:
-        - 'tell'
-        - 'tag'
+      - 'tell'
+      - 'tag'
   Punishments:
     Punish On Kick: true
     Money Penalty: 0
@@ -101,7 +102,7 @@ Tagged In Combat:
         Experience: true
         Armor: true
     Commands On PvPLog:
-      - 'announce &6[&8PvPManager&6]&c %p tried to escape combat and died!'
+    - 'announce &6[&8PvPManager&6]&c %p tried to escape combat and died!'
 
 # Should new players on your server be protected from PvP (If they want to PvP anyway they can use /newbie disable)
 # Time - How many minutes should newbie protection last, persists through restarts
@@ -113,7 +114,7 @@ Newbie Protection:
   Block Pick Items: false
   Protect From Everything: false
   Command Blacklist:
-    - 'examplecommand'
+  - 'examplecommand'
 
 # Prevent player abuse by killing the same player several times to rise in rank or even just grief
 # Example - If a player X kills player Y more than 5 times, it executes the commands defined(kick, jail, etc)
@@ -124,7 +125,7 @@ Kill Abuse:
   Max Kills: 5
   Time Limit: 60
   Commands on Abuse:
-    - 'kick <player> Kill Abuse Is Not Allowed!'
+  - 'kick <player> Kill Abuse Is Not Allowed!'
   Respawn Protection: 3
 
 # Section with settings triggered when a player kills another player
@@ -138,9 +139,9 @@ Player Kills:
   Money Penalty: 0
   Money Steal: false
   Commands On Kill:
-    - 'examplecommand <player> killed <victim>'
+  - 'examplecommand <player> killed <victim>'
   WorldGuard Exclusions:
-    - 'exampleregion'
+  - 'exampleregion'
 
 # Section for PvP Toggle command - /pvp
 # Players can't use the command unless they have permission
@@ -158,9 +159,9 @@ PvP Toggle:
     Prefix On: '&1'
     Prefix Off: '&2'
   Commands PvP On:
-    - 'examplecommand %p turned pvp on'
+  - 'examplecommand %p turned pvp on'
   Commands PvP Off:
-    - 'examplecommand %p turned pvp off'
+  - 'examplecommand %p turned pvp off'
   Force On Change World: false
   WorldGuard Overrides: true
 
@@ -174,4 +175,4 @@ Metrics:
   Opt-out: false
 
 # Informs PvPManager if the config is updated, do not touch it unless you want to reset the config
-Config Version: 52
+Config Version: 54

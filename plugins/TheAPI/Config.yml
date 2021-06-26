@@ -1,0 +1,112 @@
+Options:
+  
+  # If you enable this option, errors from TheAPI will dissapear
+  # defaulty: false
+  HideErrors: false
+  ConsoleLogEvent: false
+  ItemUnbreakable: true
+  ServerListPingEvent: true
+  # This function can solve problems with "ghost blocks", but make anti-xray no longer working
+  # defaulty: false
+  AntiFakeBlocks: false
+  
+  Cache:
+    User:
+      # Cache Users to memory for faster loading
+      # defaulty: true
+      Use: true
+      # Remove cache of User from memory
+      # defaulty: true
+      RemoveOnQuit: true
+      OfflineNames:
+        Use: true
+        AutoSave: "15min"
+        AutoClear:
+          Use: false
+          OfflineTime: "1mon"
+          Period: 0
+  
+  # Saving type of User data
+  # Types: YAML, JSON, BYTE
+  # defaulty: YAML
+  User-SavingType: "YAML"
+  
+  AntiBot:
+    # If you enable this, TheAPI will set time between player can't connect to the server
+    # defaulty: false
+    Use: false
+    # Time between player can't connect to the server
+    # defaulty: 10
+    TimeBetweenPlayer: 10
+  EntityMoveEvent:
+    # Enable EntityMoveEvent event
+    # defaulty: true
+    Enabled: true
+    # Ticks to look for entity move action
+    # defaulty: 3
+    Reflesh: 3
+  
+  FakeEconomyAPI:
+    # Economy symbol of FakeEconomyAPI
+    # defaulty: $
+    Symbol: "$"
+    # Economy format of FakeEconomyAPI
+    # defaulty: $%money%
+    Format: "$%money%"
+  TimeConvertor:
+    Seconds:
+      Convertor: "s"
+      Lookup:
+      - "s"
+      - "sec"
+      - "second"
+      - "seconds"
+    Minutes:
+      Convertor: "m"
+      Lookup:
+      - "m"
+      - "mi"
+      - "min"
+      - "minu"
+      - "minut"
+      - "minute"
+      - "minutes"
+    Hours:
+      Convertor: "h"
+      Lookup:
+      - "h"
+      - "ho"
+      - "hou"
+      - "hour"
+      - "hours"
+    Days:
+      Convertor: "d"
+      Lookup:
+      - "d"
+      - "da"
+      - "day"
+      - "days"
+    Weeks:
+      Convertor: "w"
+      Lookup:
+      - "w"
+      - "we"
+      - "wee"
+      - "week"
+      - "weeks"
+    Months:
+      Convertor: "mo"
+      Lookup:
+      - "mo"
+      - "mon"
+      - "mont"
+      - "month"
+      - "months"
+    Years:
+      Convertor: "y"
+      Lookup:
+      - "y"
+      - "ye"
+      - "yea"
+      - "year"
+      - "years"

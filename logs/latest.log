@@ -1,0 +1,1281 @@
+[15:06:34] [main/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[15:06:35] [main/INFO]: Reloading ResourceManager: Default, bukkit
+[15:06:37] [Worker-Main-1/INFO]: Loaded 7 recipes
+[15:06:39] [Server thread/INFO]: Starting minecraft server version 1.17
+[15:06:39] [Server thread/INFO]: Loading properties
+[15:06:40] [Server thread/INFO]: This server is running Paper version git-Paper-46 (MC: 1.17) (Implementing API version 1.17-R0.1-SNAPSHOT) (Git: 9e07703)
+[15:06:40] [Server thread/INFO]: Debug logging is disabled
+[15:06:40] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[15:06:40] [Server thread/INFO]: Using 4 threads for Netty based IO
+[15:06:41] [Server thread/INFO]: Default game type: SURVIVAL
+[15:06:41] [Server thread/INFO]: Generating keypair
+[15:06:41] [Server thread/INFO]: Starting Minecraft server on *:25565
+[15:06:42] [Server thread/INFO]: Using default channel type
+[15:06:51] [Server thread/WARN]: java.lang.NoClassDefFoundError: net/minecraft/server/v1_17_R1/IChatBaseComponent
+[15:06:51] [Server thread/WARN]: 	at java.base/java.lang.Class.getDeclaredConstructors0(Native Method)
+[15:06:51] [Server thread/WARN]: 	at java.base/java.lang.Class.privateGetDeclaredConstructors(Class.java:3305)
+[15:06:51] [Server thread/WARN]: 	at java.base/java.lang.Class.getConstructor0(Class.java:3510)
+[15:06:51] [Server thread/WARN]: 	at java.base/java.lang.Class.newInstance(Class.java:623)
+[15:06:51] [Server thread/WARN]: 	at io.izzel.taboolib.module.inject.TInjectAsm.postLoad(TInjectAsm.java:25)
+[15:06:51] [Server thread/WARN]: 	at io.izzel.taboolib.TabooLibLoader.lambda$postLoadClass$8(TabooLibLoader.java:267)
+[15:06:51] [Server thread/WARN]: 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+[15:06:51] [Server thread/WARN]: 	at io.izzel.taboolib.TabooLibLoader.postLoadClass(TabooLibLoader.java:264)
+[15:06:51] [Server thread/WARN]: 	at io.izzel.taboolib.PluginLoader$1.onStarting(PluginLoader.java:65)
+[15:06:51] [Server thread/WARN]: 	at io.izzel.taboolib.PluginLoader.lambda$start$2(PluginLoader.java:195)
+[15:06:51] [Server thread/WARN]: 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+[15:06:51] [Server thread/WARN]: 	at io.izzel.taboolib.PluginLoader.start(PluginLoader.java:195)
+[15:06:51] [Server thread/WARN]: 	at io.izzel.taboolib.TabooLibLoader.init(TabooLibLoader.java:88)
+[15:06:51] [Server thread/WARN]: 	at io.izzel.taboolib.TabooLib.<clinit>(TabooLib.java:88)
+[15:06:51] [Server thread/WARN]: 	at java.base/java.lang.Class.forName0(Native Method)
+[15:06:51] [Server thread/WARN]: 	at java.base/java.lang.Class.forName(Class.java:466)
+[15:06:51] [Server thread/WARN]: 	at ink.ptms.fenestra.boot.util.ILoader.forName(ILoader.java:89)
+[15:06:51] [Server thread/WARN]: 	at ink.ptms.fenestra.boot.PluginBoot.initialize(PluginBoot.java:288)
+[15:06:51] [Server thread/WARN]: 	at ink.ptms.fenestra.boot.PluginBoot.<clinit>(PluginBoot.java:75)
+[15:06:51] [Server thread/WARN]: 	at java.base/java.lang.Class.forName0(Native Method)
+[15:06:51] [Server thread/WARN]: 	at java.base/java.lang.Class.forName(Class.java:466)
+[15:06:51] [Server thread/WARN]: 	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:71)
+[15:06:51] [Server thread/WARN]: 	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:153)
+[15:06:51] [Server thread/WARN]: 	at org.bukkit.plugin.SimplePluginManager.loadPlugin(SimplePluginManager.java:414)
+[15:06:51] [Server thread/WARN]: 	at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:322)
+[15:06:51] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_17_R1.CraftServer.loadPlugins(CraftServer.java:393)
+[15:06:51] [Server thread/WARN]: 	at net.minecraft.server.dedicated.DedicatedServer.init(DedicatedServer.java:275)
+[15:06:51] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.x(MinecraftServer.java:1118)
+[15:06:51] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:320)
+[15:06:51] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:831)
+[15:06:51] [Server thread/WARN]: Caused by: java.lang.ClassNotFoundException: net.minecraft.server.v1_17_R1.IChatBaseComponent
+[15:06:51] [Server thread/WARN]: 	at java.base/java.lang.ClassLoader.findClass(ClassLoader.java:716)
+[15:06:51] [Server thread/WARN]: 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:586)
+[15:06:51] [Server thread/WARN]: 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:519)
+[15:06:51] [Server thread/WARN]: 	... 30 more
+[15:06:51] [Server thread/WARN]: java.lang.NoClassDefFoundError: net/minecraft/server/v1_17_R1/PathfinderGoal
+[15:06:51] [Server thread/WARN]: 	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+[15:06:51] [Server thread/WARN]: 	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1010)
+[15:06:51] [Server thread/WARN]: 	at io.izzel.taboolib.util.asm.AsmClassLoader.createNewClass(AsmClassLoader.java:19)
+[15:06:51] [Server thread/WARN]: 	at io.izzel.taboolib.util.asm.AsmVersionControl.translate(AsmVersionControl.java:177)
+[15:06:51] [Server thread/WARN]: 	at io.izzel.taboolib.module.inject.TInjectAsm.postLoad(TInjectAsm.java:25)
+[15:06:51] [Server thread/WARN]: 	at io.izzel.taboolib.TabooLibLoader.lambda$postLoadClass$8(TabooLibLoader.java:267)
+[15:06:51] [Server thread/WARN]: 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+[15:06:51] [Server thread/WARN]: 	at io.izzel.taboolib.TabooLibLoader.postLoadClass(TabooLibLoader.java:264)
+[15:06:51] [Server thread/WARN]: 	at io.izzel.taboolib.PluginLoader$1.onStarting(PluginLoader.java:65)
+[15:06:51] [Server thread/WARN]: 	at io.izzel.taboolib.PluginLoader.lambda$start$2(PluginLoader.java:195)
+[15:06:51] [Server thread/WARN]: 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+[15:06:51] [Server thread/WARN]: 	at io.izzel.taboolib.PluginLoader.start(PluginLoader.java:195)
+[15:06:51] [Server thread/WARN]: 	at io.izzel.taboolib.TabooLibLoader.init(TabooLibLoader.java:88)
+[15:06:51] [Server thread/WARN]: 	at io.izzel.taboolib.TabooLib.<clinit>(TabooLib.java:88)
+[15:06:51] [Server thread/WARN]: 	at java.base/java.lang.Class.forName0(Native Method)
+[15:06:51] [Server thread/WARN]: 	at java.base/java.lang.Class.forName(Class.java:466)
+[15:06:51] [Server thread/WARN]: 	at ink.ptms.fenestra.boot.util.ILoader.forName(ILoader.java:89)
+[15:06:51] [Server thread/WARN]: 	at ink.ptms.fenestra.boot.PluginBoot.initialize(PluginBoot.java:288)
+[15:06:51] [Server thread/WARN]: 	at ink.ptms.fenestra.boot.PluginBoot.<clinit>(PluginBoot.java:75)
+[15:06:51] [Server thread/WARN]: 	at java.base/java.lang.Class.forName0(Native Method)
+[15:06:51] [Server thread/WARN]: 	at java.base/java.lang.Class.forName(Class.java:466)
+[15:06:51] [Server thread/WARN]: 	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:71)
+[15:06:51] [Server thread/WARN]: 	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:153)
+[15:06:51] [Server thread/WARN]: 	at org.bukkit.plugin.SimplePluginManager.loadPlugin(SimplePluginManager.java:414)
+[15:06:51] [Server thread/WARN]: 	at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:322)
+[15:06:51] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_17_R1.CraftServer.loadPlugins(CraftServer.java:393)
+[15:06:51] [Server thread/WARN]: 	at net.minecraft.server.dedicated.DedicatedServer.init(DedicatedServer.java:275)
+[15:06:51] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.x(MinecraftServer.java:1118)
+[15:06:51] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:320)
+[15:06:51] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:831)
+[15:06:51] [Server thread/WARN]: Caused by: java.lang.ClassNotFoundException: net.minecraft.server.v1_17_R1.PathfinderGoal
+[15:06:51] [Server thread/WARN]: 	at java.base/java.lang.ClassLoader.findClass(ClassLoader.java:716)
+[15:06:51] [Server thread/WARN]: 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:586)
+[15:06:51] [Server thread/WARN]: 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:519)
+[15:06:51] [Server thread/WARN]: 	... 30 more
+[15:06:51] [Server thread/WARN]: java.lang.NoClassDefFoundError: net/minecraft/server/v1_17_R1/PathfinderGoalSelector
+[15:06:51] [Server thread/WARN]: 	at io.izzel.taboolib.module.ai.internal.InternalPathfinderExecutor.<init>(InternalPathfinderExecutor.java:35)
+[15:06:51] [Server thread/WARN]: 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+[15:06:51] [Server thread/WARN]: 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+[15:06:51] [Server thread/WARN]: 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+[15:06:51] [Server thread/WARN]: 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+[15:06:51] [Server thread/WARN]: 	at java.base/java.lang.reflect.ReflectAccess.newInstance(ReflectAccess.java:128)
+[15:06:51] [Server thread/WARN]: 	at java.base/jdk.internal.reflect.ReflectionFactory.newInstance(ReflectionFactory.java:350)
+[15:06:51] [Server thread/WARN]: 	at java.base/java.lang.Class.newInstance(Class.java:642)
+[15:06:51] [Server thread/WARN]: 	at io.izzel.taboolib.module.inject.TInjectAsm.postLoad(TInjectAsm.java:25)
+[15:06:51] [Server thread/WARN]: 	at io.izzel.taboolib.TabooLibLoader.lambda$postLoadClass$8(TabooLibLoader.java:267)
+[15:06:51] [Server thread/WARN]: 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+[15:06:51] [Server thread/WARN]: 	at io.izzel.taboolib.TabooLibLoader.postLoadClass(TabooLibLoader.java:264)
+[15:06:51] [Server thread/WARN]: 	at io.izzel.taboolib.PluginLoader$1.onStarting(PluginLoader.java:65)
+[15:06:51] [Server thread/WARN]: 	at io.izzel.taboolib.PluginLoader.lambda$start$2(PluginLoader.java:195)
+[15:06:51] [Server thread/WARN]: 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+[15:06:51] [Server thread/WARN]: 	at io.izzel.taboolib.PluginLoader.start(PluginLoader.java:195)
+[15:06:51] [Server thread/WARN]: 	at io.izzel.taboolib.TabooLibLoader.init(TabooLibLoader.java:88)
+[15:06:51] [Server thread/WARN]: 	at io.izzel.taboolib.TabooLib.<clinit>(TabooLib.java:88)
+[15:06:51] [Server thread/WARN]: 	at java.base/java.lang.Class.forName0(Native Method)
+[15:06:51] [Server thread/WARN]: 	at java.base/java.lang.Class.forName(Class.java:466)
+[15:06:51] [Server thread/WARN]: 	at ink.ptms.fenestra.boot.util.ILoader.forName(ILoader.java:89)
+[15:06:51] [Server thread/WARN]: 	at ink.ptms.fenestra.boot.PluginBoot.initialize(PluginBoot.java:288)
+[15:06:51] [Server thread/WARN]: 	at ink.ptms.fenestra.boot.PluginBoot.<clinit>(PluginBoot.java:75)
+[15:06:51] [Server thread/WARN]: 	at java.base/java.lang.Class.forName0(Native Method)
+[15:06:51] [Server thread/WARN]: 	at java.base/java.lang.Class.forName(Class.java:466)
+[15:06:51] [Server thread/WARN]: 	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:71)
+[15:06:51] [Server thread/WARN]: 	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:153)
+[15:06:51] [Server thread/WARN]: 	at org.bukkit.plugin.SimplePluginManager.loadPlugin(SimplePluginManager.java:414)
+[15:06:51] [Server thread/WARN]: 	at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:322)
+[15:06:51] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_17_R1.CraftServer.loadPlugins(CraftServer.java:393)
+[15:06:51] [Server thread/WARN]: 	at net.minecraft.server.dedicated.DedicatedServer.init(DedicatedServer.java:275)
+[15:06:51] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.x(MinecraftServer.java:1118)
+[15:06:51] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:320)
+[15:06:51] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:831)
+[15:06:51] [Server thread/WARN]: Caused by: java.lang.ClassNotFoundException: net.minecraft.server.v1_17_R1.PathfinderGoalSelector
+[15:06:51] [Server thread/WARN]: 	at java.base/java.lang.ClassLoader.findClass(ClassLoader.java:716)
+[15:06:51] [Server thread/WARN]: 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:586)
+[15:06:51] [Server thread/WARN]: 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:519)
+[15:06:51] [Server thread/WARN]: 	... 34 more
+[15:06:52] [Server thread/WARN]: java.lang.NoClassDefFoundError: net/minecraft/server/v1_17_R1/IChatBaseComponent
+[15:06:52] [Server thread/WARN]: 	at java.base/java.lang.Class.getDeclaredConstructors0(Native Method)
+[15:06:52] [Server thread/WARN]: 	at java.base/java.lang.Class.privateGetDeclaredConstructors(Class.java:3305)
+[15:06:52] [Server thread/WARN]: 	at java.base/java.lang.Class.getConstructor0(Class.java:3510)
+[15:06:52] [Server thread/WARN]: 	at java.base/java.lang.Class.newInstance(Class.java:623)
+[15:06:52] [Server thread/WARN]: 	at io.izzel.taboolib.module.inject.TInjectAsm.postLoad(TInjectAsm.java:25)
+[15:06:52] [Server thread/WARN]: 	at io.izzel.taboolib.TabooLibLoader.lambda$postLoadClass$8(TabooLibLoader.java:267)
+[15:06:52] [Server thread/WARN]: 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+[15:06:52] [Server thread/WARN]: 	at io.izzel.taboolib.TabooLibLoader.postLoadClass(TabooLibLoader.java:264)
+[15:06:52] [Server thread/WARN]: 	at io.izzel.taboolib.PluginLoader$1.onStarting(PluginLoader.java:65)
+[15:06:52] [Server thread/WARN]: 	at io.izzel.taboolib.PluginLoader.lambda$start$2(PluginLoader.java:195)
+[15:06:52] [Server thread/WARN]: 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+[15:06:52] [Server thread/WARN]: 	at io.izzel.taboolib.PluginLoader.start(PluginLoader.java:195)
+[15:06:52] [Server thread/WARN]: 	at io.izzel.taboolib.TabooLibLoader.init(TabooLibLoader.java:88)
+[15:06:52] [Server thread/WARN]: 	at io.izzel.taboolib.TabooLib.<clinit>(TabooLib.java:88)
+[15:06:52] [Server thread/WARN]: 	at java.base/java.lang.Class.forName0(Native Method)
+[15:06:52] [Server thread/WARN]: 	at java.base/java.lang.Class.forName(Class.java:466)
+[15:06:52] [Server thread/WARN]: 	at ink.ptms.fenestra.boot.util.ILoader.forName(ILoader.java:89)
+[15:06:52] [Server thread/WARN]: 	at ink.ptms.fenestra.boot.PluginBoot.initialize(PluginBoot.java:288)
+[15:06:52] [Server thread/WARN]: 	at ink.ptms.fenestra.boot.PluginBoot.<clinit>(PluginBoot.java:75)
+[15:06:52] [Server thread/WARN]: 	at java.base/java.lang.Class.forName0(Native Method)
+[15:06:52] [Server thread/WARN]: 	at java.base/java.lang.Class.forName(Class.java:466)
+[15:06:52] [Server thread/WARN]: 	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:71)
+[15:06:52] [Server thread/WARN]: 	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:153)
+[15:06:52] [Server thread/WARN]: 	at org.bukkit.plugin.SimplePluginManager.loadPlugin(SimplePluginManager.java:414)
+[15:06:52] [Server thread/WARN]: 	at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:322)
+[15:06:52] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_17_R1.CraftServer.loadPlugins(CraftServer.java:393)
+[15:06:52] [Server thread/WARN]: 	at net.minecraft.server.dedicated.DedicatedServer.init(DedicatedServer.java:275)
+[15:06:52] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.x(MinecraftServer.java:1118)
+[15:06:52] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:320)
+[15:06:52] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:831)
+[15:06:52] [Server thread/WARN]: Caused by: java.lang.ClassNotFoundException: net.minecraft.server.v1_17_R1.IChatBaseComponent
+[15:06:52] [Server thread/WARN]: 	at java.base/java.lang.ClassLoader.findClass(ClassLoader.java:716)
+[15:06:52] [Server thread/WARN]: 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:586)
+[15:06:52] [Server thread/WARN]: 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:519)
+[15:06:52] [Server thread/WARN]: 	... 30 more
+[15:06:52] [Server thread/INFO]: The server is running TabooLib 5.7.2, booting by Fenestra.
+[15:06:52] [pool-25-thread-1/WARN]: java.lang.NullPointerException: Cannot invoke "io.izzel.taboolib.module.nms.NMS.isRunning()" because the return value of "io.izzel.taboolib.module.nms.NMS.handle()" is null
+[15:06:52] [pool-25-thread-1/WARN]: 	at io.izzel.taboolib.TabooLib.lambda$static$0(TabooLib.java:92)
+[15:06:52] [pool-25-thread-1/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+[15:06:52] [pool-25-thread-1/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+[15:06:52] [pool-25-thread-1/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:831)
+[15:06:53] [Server thread/WARN]: Initializing Legacy Material Support. Unless you have legacy plugins and/or data this is a bug!
+[15:07:03] [Server thread/WARN]: Legacy plugin LoginSecurity v3.0.2 does not specify an api-version.
+[15:07:04] [Server thread/WARN]: Legacy plugin MCCore v1.67 does not specify an api-version.
+[15:07:13] [Server thread/INFO]: [AsyncWorldEdit] Injector platform set to: InjectorBukkit
+[15:07:13] [Server thread/INFO]: [AsyncWorldEdit] Injecting NMS classes...
+[15:07:13] [Server thread/INFO]: [AsyncWorldEdit] Injecting WorldEdit classes...
+[15:07:15] [Server thread/INFO]: [AsyncWorldEdit] Injector Enabled
+[15:07:15] [Server thread/INFO]: [AsyncWorldEdit] New class factory set to: org.primesoft.asyncworldedit.asyncinjector.async.AsyncClassFactory
+[15:07:42] [Server thread/INFO]: [LuckPerms] Loading LuckPerms v5.3.48
+[15:07:45] [Server thread/INFO]: [Fenestra] Loading Fenestra v1.0.3
+[15:07:45] [Server thread/ERROR]: [org.bukkit.craftbukkit.v1_17_R1.CraftServer] Cannot invoke "io.izzel.taboolib.module.nms.NMS.getTPS()" because the return value of "io.izzel.taboolib.module.nms.NMS.handle()" is null initializing Fenestra v1.0.3 (Is it up to date?)
+java.lang.NullPointerException: Cannot invoke "io.izzel.taboolib.module.nms.NMS.getTPS()" because the return value of "io.izzel.taboolib.module.nms.NMS.handle()" is null
+	at io.izzel.taboolib.TabooLibAPI.getTPS(TabooLibAPI.java:90) ~[TabooLib.jar:?]
+	at ink.ptms.fenestra.boot.PluginBoot.onLoad(PluginBoot.java:99) ~[?:?]
+	at org.bukkit.craftbukkit.v1_17_R1.CraftServer.loadPlugins(CraftServer.java:399) ~[patched_1.17.jar:git-Paper-46]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:275) ~[patched_1.17.jar:git-Paper-46]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1118) ~[patched_1.17.jar:git-Paper-46]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:320) ~[patched_1.17.jar:git-Paper-46]
+	at java.lang.Thread.run(Thread.java:831) [?:?]
+[15:07:45] [Server thread/INFO]: [Chemdah] Loading Chemdah v0.0.20
+[15:07:45] [Server thread/ERROR]: [org.bukkit.craftbukkit.v1_17_R1.CraftServer] Cannot invoke "io.izzel.taboolib.module.nms.NMS.getTPS()" because the return value of "io.izzel.taboolib.module.nms.NMS.handle()" is null initializing Chemdah v0.0.20 (Is it up to date?)
+java.lang.NullPointerException: Cannot invoke "io.izzel.taboolib.module.nms.NMS.getTPS()" because the return value of "io.izzel.taboolib.module.nms.NMS.handle()" is null
+	at io.izzel.taboolib.TabooLibAPI.getTPS(TabooLibAPI.java:90) ~[TabooLib.jar:?]
+	at ink.ptms.chemdah.boot.PluginBoot.onLoad(PluginBoot.java:101) ~[?:?]
+	at org.bukkit.craftbukkit.v1_17_R1.CraftServer.loadPlugins(CraftServer.java:399) ~[patched_1.17.jar:git-Paper-46]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:275) ~[patched_1.17.jar:git-Paper-46]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1118) ~[patched_1.17.jar:git-Paper-46]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:320) ~[patched_1.17.jar:git-Paper-46]
+	at java.lang.Thread.run(Thread.java:831) [?:?]
+[15:07:45] [Server thread/INFO]: [LoginSecurity] Loading LoginSecurity v3.0.2
+[15:07:45] [Server thread/INFO]: [PlaceholderAPI] Loading PlaceholderAPI v2.10.9
+[15:07:45] [Server thread/INFO]: [PlugMan] Loading PlugMan v2.2.2
+[15:07:45] [Server thread/INFO]: [HoloDropsX] Loading HoloDropsX v3.0.0
+[15:07:45] [Server thread/INFO]: [ProtocolLib] Loading ProtocolLib v4.7.0-SNAPSHOT-b522
+[15:07:47] [Server thread/INFO]: [MCCore] Loading MCCore v1.67
+[15:07:47] [Server thread/INFO]: [Adyeshach] Loading Adyeshach v1.2.20
+[15:07:47] [Server thread/ERROR]: [org.bukkit.craftbukkit.v1_17_R1.CraftServer] Cannot invoke "io.izzel.taboolib.module.nms.NMS.getTPS()" because the return value of "io.izzel.taboolib.module.nms.NMS.handle()" is null initializing Adyeshach v1.2.20 (Is it up to date?)
+java.lang.NullPointerException: Cannot invoke "io.izzel.taboolib.module.nms.NMS.getTPS()" because the return value of "io.izzel.taboolib.module.nms.NMS.handle()" is null
+	at io.izzel.taboolib.TabooLibAPI.getTPS(TabooLibAPI.java:90) ~[TabooLib.jar:?]
+	at ink.ptms.adyeshach.boot.PluginBoot.onLoad(PluginBoot.java:101) ~[?:?]
+	at org.bukkit.craftbukkit.v1_17_R1.CraftServer.loadPlugins(CraftServer.java:399) ~[patched_1.17.jar:git-Paper-46]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:275) ~[patched_1.17.jar:git-Paper-46]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1118) ~[patched_1.17.jar:git-Paper-46]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:320) ~[patched_1.17.jar:git-Paper-46]
+	at java.lang.Thread.run(Thread.java:831) [?:?]
+[15:07:47] [Server thread/INFO]: [Effect Library] Loading EffectLib v9.0
+[15:07:47] [Server thread/INFO]: [LangUtils] Loading LangUtils v2.5.3
+[15:07:47] [Server thread/INFO]: [NBTAPI] Loading NBTAPI v2.8.0
+[15:07:47] [Server thread/INFO]: [NBTAPI] [NBTAPI] Found Spigot: v1_17_R1! Trying to find NMS support
+[15:07:47] [Server thread/INFO]: [NBTAPI] [NBTAPI] NMS support 'MC1_17_R1' loaded!
+[15:07:47] [Server thread/INFO]: [NBTAPI] [NBTAPI] Found Gson: class com.google.gson.Gson
+[15:07:47] [Server thread/INFO]: [Vault] Loading Vault v1.7.3-b${env.TRAVIS_BUILD_NUMBER}
+[15:07:47] [Server thread/INFO]: [PvPManager] Loading PvPManager v3.8.1
+[15:07:47] [Server thread/INFO]: [WorldEdit] Loading WorldEdit v7.2.5+57d5ac9
+[15:07:49] [Thread-4/INFO]: [NBTAPI] [NBTAPI] The NBT-API seems to be up-to-date!
+[15:07:50] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@4204cd5]
+[15:07:50] [Server thread/INFO]: [TrHologram] Loading TrHologram v2.3
+[15:07:50] [Server thread/ERROR]: [org.bukkit.craftbukkit.v1_17_R1.CraftServer] Cannot invoke "io.izzel.taboolib.module.nms.NMS.getTPS()" because the return value of "io.izzel.taboolib.module.nms.NMS.handle()" is null initializing TrHologram v2.3 (Is it up to date?)
+java.lang.NullPointerException: Cannot invoke "io.izzel.taboolib.module.nms.NMS.getTPS()" because the return value of "io.izzel.taboolib.module.nms.NMS.handle()" is null
+	at io.izzel.taboolib.TabooLibAPI.getTPS(TabooLibAPI.java:90) ~[TabooLib.jar:?]
+	at me.arasple.mc.trhologram.module.internal.boot.PluginBoot.onLoad(PluginBoot.java:101) ~[?:?]
+	at org.bukkit.craftbukkit.v1_17_R1.CraftServer.loadPlugins(CraftServer.java:399) ~[patched_1.17.jar:git-Paper-46]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:275) ~[patched_1.17.jar:git-Paper-46]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1118) ~[patched_1.17.jar:git-Paper-46]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:320) ~[patched_1.17.jar:git-Paper-46]
+	at java.lang.Thread.run(Thread.java:831) [?:?]
+[15:07:50] [Server thread/INFO]: [PlayerPoints] Loading PlayerPoints v3.0.3
+[15:07:50] [Server thread/INFO]: [Multiverse-Core] Loading Multiverse-Core v4.2.2-b812
+[15:07:50] [Server thread/INFO]: [Citizens] Loading Citizens v2.0.28-SNAPSHOT (build 2328)
+[15:07:50] [Server thread/INFO]: [AsyncWorldEdit] Loading AsyncWorldEdit v3.9.0
+[15:07:50] [Server thread/INFO]: [AsyncWorldEdit] Plugin installed
+[15:07:50] [Server thread/INFO]: [AdvancedAchievements] Loading AdvancedAchievements v7.1.0
+[15:07:50] [Server thread/INFO]: [TAB] Loading TAB v2.9.1
+[15:07:50] [Server thread/INFO]: [TheAPI] Loading TheAPI v6.3
+[15:07:51] [Server thread/INFO]: TheAPI: ********************
+[15:07:51] [Server thread/INFO]: TheAPI: Action: Loading plugin..
+[15:07:51] [Server thread/INFO]: TheAPI: ********************
+[15:07:51] [Server thread/INFO]: [CoreProtect] Loading CoreProtect v19.5
+[15:07:51] [Server thread/INFO]: [AmazingFishing] Loading AmazingFishing v4.1
+[15:07:51] [Server thread/INFO]: [SmoothTimber] Loading SmoothTimber v1.17.1
+[15:07:51] [Server thread/INFO]: [MythicLib] Loading MythicLib v1.0.19
+[15:07:51] [Server thread/INFO]: [MythicLib] Your server version is not compatible.
+[15:07:51] [Server thread/INFO]: [CMILib] Loading CMILib v1.0.2.3
+[15:07:51] [Server thread/INFO]: [CMI] Loading CMI v8.8.4.2
+[15:07:51] [Server thread/INFO]: [MythicMobs] Loading MythicMobs v4.12.0-SNAPSHOT-4f32a456
+[15:07:51] [Server thread/INFO]: [SkillAPI] Loading SkillAPI vs1.98
+[15:07:51] [Server thread/INFO]: [MythicArtifacts] Loading MythicArtifacts v0.1.30-SNAPSHOT
+[15:07:51] [Server thread/INFO]: [TrMenu] Loading TrMenu v3.0-PRE-6
+[15:07:51] [Server thread/ERROR]: [org.bukkit.craftbukkit.v1_17_R1.CraftServer] Cannot invoke "io.izzel.taboolib.module.nms.NMS.getTPS()" because the return value of "io.izzel.taboolib.module.nms.NMS.handle()" is null initializing TrMenu v3.0-PRE-6 (Is it up to date?)
+java.lang.NullPointerException: Cannot invoke "io.izzel.taboolib.module.nms.NMS.getTPS()" because the return value of "io.izzel.taboolib.module.nms.NMS.handle()" is null
+	at io.izzel.taboolib.TabooLibAPI.getTPS(TabooLibAPI.java:90) ~[TabooLib.jar:?]
+	at me.arasple.mc.trmenu.module.internal.boot.PluginBoot.onLoad(PluginBoot.java:101) ~[?:?]
+	at org.bukkit.craftbukkit.v1_17_R1.CraftServer.loadPlugins(CraftServer.java:399) ~[patched_1.17.jar:git-Paper-46]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:275) ~[patched_1.17.jar:git-Paper-46]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1118) ~[patched_1.17.jar:git-Paper-46]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:320) ~[patched_1.17.jar:git-Paper-46]
+	at java.lang.Thread.run(Thread.java:831) [?:?]
+[15:07:51] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[15:07:51] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.3.48
+[15:07:52] [Server thread/INFO]:         __    
+[15:07:52] [Server thread/INFO]:   |    |__)   LuckPerms v5.3.48
+[15:07:52] [Server thread/INFO]:   |___ |      Running on Bukkit - Paper
+[15:07:52] [Server thread/INFO]: 
+[15:07:52] [Server thread/INFO]: [LuckPerms] Loading configuration...
+[15:07:53] [Server thread/INFO]: [LuckPerms] Loading storage provider... [H2]
+[15:07:55] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
+[15:07:55] [Server thread/WARN]: java.lang.RuntimeException: LuckPerms is unable to access the URLClassLoader#addURL method using reflection. 
+[15:07:55] [Server thread/WARN]: You may be able to fix this problem by adding the following command-line argument directly after the 'java' command in your start script: 
+[15:07:55] [Server thread/WARN]: '--add-opens java.base/java.lang=ALL-UNNAMED'
+[15:07:55] [Server thread/WARN]: 	at me.lucko.luckperms.common.plugin.classpath.ReflectionClassPathAppender.<clinit>(ReflectionClassPathAppender.java:58)
+[15:07:55] [Server thread/WARN]: 	at me.lucko.luckperms.common.extension.SimpleExtensionManager.addJarToParentClasspath(SimpleExtensionManager.java:209)
+[15:07:55] [Server thread/WARN]: 	at me.lucko.luckperms.common.extension.SimpleExtensionManager.loadExtension(SimpleExtensionManager.java:147)
+[15:07:55] [Server thread/WARN]: 	at me.lucko.luckperms.common.extension.SimpleExtensionManager.lambda$loadExtensions$1(SimpleExtensionManager.java:99)
+[15:07:55] [Server thread/WARN]: 	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+[15:07:55] [Server thread/WARN]: 	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
+[15:07:55] [Server thread/WARN]: 	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+[15:07:55] [Server thread/WARN]: 	at me.lucko.luckperms.common.extension.SimpleExtensionManager.loadExtensions(SimpleExtensionManager.java:96)
+[15:07:55] [Server thread/WARN]: 	at me.lucko.luckperms.common.plugin.AbstractLuckPermsPlugin.enable(AbstractLuckPermsPlugin.java:197)
+[15:07:55] [Server thread/WARN]: 	at me.lucko.luckperms.bukkit.LPBukkitBootstrap.onEnable(LPBukkitBootstrap.java:175)
+[15:07:55] [Server thread/WARN]: 	at me.lucko.luckperms.bukkit.loader.BukkitLoaderPlugin.onEnable(BukkitLoaderPlugin.java:51)
+[15:07:55] [Server thread/WARN]: 	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:263)
+[15:07:55] [Server thread/WARN]: 	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:370)
+[15:07:55] [Server thread/WARN]: 	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:500)
+[15:07:55] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_17_R1.CraftServer.enablePlugin(CraftServer.java:518)
+[15:07:55] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_17_R1.CraftServer.enablePlugins(CraftServer.java:432)
+[15:07:55] [Server thread/WARN]: 	at net.minecraft.server.dedicated.DedicatedServer.init(DedicatedServer.java:276)
+[15:07:55] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.x(MinecraftServer.java:1118)
+[15:07:55] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:320)
+[15:07:55] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:831)
+[15:07:55] [Server thread/WARN]: Caused by: java.lang.reflect.InaccessibleObjectException: Unable to make protected void java.net.URLClassLoader.addURL(java.net.URL) accessible: module java.base does not "opens java.net" to unnamed module @59e86762
+[15:07:55] [Server thread/WARN]: 	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:357)
+[15:07:55] [Server thread/WARN]: 	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:297)
+[15:07:55] [Server thread/WARN]: 	at java.base/java.lang.reflect.Method.checkCanSetAccessible(Method.java:199)
+[15:07:55] [Server thread/WARN]: 	at java.base/java.lang.reflect.Method.setAccessible(Method.java:193)
+[15:07:55] [Server thread/WARN]: 	at me.lucko.luckperms.common.plugin.classpath.ReflectionClassPathAppender.<clinit>(ReflectionClassPathAppender.java:56)
+[15:07:55] [Server thread/WARN]: 	... 19 more
+[15:07:55] [Server thread/WARN]: [LuckPerms] Exception loading extension from F:\GIT\Minecraft\plugins\LuckPerms\extensions\extension-legacy-api-1.0.0.jar
+java.lang.RuntimeException: Exception whilst classloading extension
+	at me.lucko.luckperms.common.extension.SimpleExtensionManager.loadExtension(SimpleExtensionManager.java:149) ~[?:?]
+	at me.lucko.luckperms.common.extension.SimpleExtensionManager.lambda$loadExtensions$1(SimpleExtensionManager.java:99) ~[?:?]
+	at java.util.Iterator.forEachRemaining(Iterator.java:133) ~[?:?]
+	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801) ~[?:?]
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762) ~[?:?]
+	at me.lucko.luckperms.common.extension.SimpleExtensionManager.loadExtensions(SimpleExtensionManager.java:96) ~[?:?]
+	at me.lucko.luckperms.common.plugin.AbstractLuckPermsPlugin.enable(AbstractLuckPermsPlugin.java:197) ~[?:?]
+	at me.lucko.luckperms.bukkit.LPBukkitBootstrap.onEnable(LPBukkitBootstrap.java:175) ~[?:?]
+	at me.lucko.luckperms.bukkit.loader.BukkitLoaderPlugin.onEnable(BukkitLoaderPlugin.java:51) ~[?:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:263) ~[patched_1.17.jar:git-Paper-46]
+	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:370) ~[patched_1.17.jar:git-Paper-46]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:500) ~[patched_1.17.jar:git-Paper-46]
+	at org.bukkit.craftbukkit.v1_17_R1.CraftServer.enablePlugin(CraftServer.java:518) ~[patched_1.17.jar:git-Paper-46]
+	at org.bukkit.craftbukkit.v1_17_R1.CraftServer.enablePlugins(CraftServer.java:432) ~[patched_1.17.jar:git-Paper-46]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:276) ~[patched_1.17.jar:git-Paper-46]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1118) ~[patched_1.17.jar:git-Paper-46]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:320) ~[patched_1.17.jar:git-Paper-46]
+	at java.lang.Thread.run(Thread.java:831) [?:?]
+Caused by: java.lang.IllegalAccessException: class me.lucko.luckperms.common.plugin.classpath.ReflectionClassPathAppender cannot access a member of class java.net.URLClassLoader (in module java.base) with modifiers "protected"
+	at jdk.internal.reflect.Reflection.newIllegalAccessException(Reflection.java:385) ~[?:?]
+	at java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:687) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:559) ~[?:?]
+	at me.lucko.luckperms.common.plugin.classpath.ReflectionClassPathAppender.addUrl(ReflectionClassPathAppender.java:71) ~[?:?]
+	at me.lucko.luckperms.common.extension.SimpleExtensionManager.addJarToParentClasspath(SimpleExtensionManager.java:209) ~[?:?]
+	at me.lucko.luckperms.common.extension.SimpleExtensionManager.loadExtension(SimpleExtensionManager.java:147) ~[?:?]
+	... 17 more
+[15:07:55] [Server thread/INFO]: [LuckPerms] Performing initial data load...
+[15:07:56] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 5002ms)
+[15:07:56] [Server thread/INFO]: [ProtocolLib] Enabling ProtocolLib v4.7.0-SNAPSHOT-b522
+[15:07:56] [Server thread/INFO]: [ProtocolLib] Started structure compiler thread.
+[15:07:56] [Server thread/INFO]: [Vault] Enabling Vault v1.7.3-b${env.TRAVIS_BUILD_NUMBER}
+[15:07:56] [Server thread/INFO]: [Vault] [Economy] CMI Economy found: Waiting
+[15:07:56] [Server thread/INFO]: [Vault] [Permission] SuperPermissions loaded as backup permission system.
+[15:07:56] [Server thread/INFO]: [Vault] Enabled Version 1.7.3-b${env.TRAVIS_BUILD_NUMBER}
+[15:07:56] [Server thread/INFO]: [LuckPerms] Registered Vault permission & chat hook.
+[15:07:56] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v7.2.5+57d5ac9
+[15:07:56] [Server thread/INFO]: WEPIF: Vault detected! Using Vault for permissions
+[15:07:57] [Server thread/WARN]: 
+**********************************************
+** This WorldEdit version does not fully support your version of Bukkit.
+**
+** When working with blocks or undoing, chests will be empty, signs
+** will be blank, and so on. There will be no support for entity
+** and block property-related functions.
+**
+** Please see https://worldedit.enginehub.org/en/latest/faq/#bukkit-adapters
+**********************************************
+
+[15:07:58] [Server thread/INFO]: [AsyncWorldEdit] Enabling AsyncWorldEdit v3.9.0
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Platform set to Bukkit API
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] ===================================================================================
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] =     ___                         _       __           __    ________    ___ __   =
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] =    /   |  _______  ______  ____| |     / /___  _____/ /___/ / ____/___/ (_) /_  =
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] =   / /| | / ___/ / / / __ \/ ___/ | /| / / __ \/ ___/ / __  / __/ / __  / / __/  =
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] =  / ___ |(__  ) /_/ / / / / /__ | |/ |/ / /_/ / /  / / /_/ / /___/ /_/ / / /_    =
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] = /_/  |_/____/\__, /_/ /_/\___/ |__/|__/\____/_/  /_/\__,_/_____/\__,_/_/\__/    =
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] =             /____/                                                              =
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] = Author: SBPrime                                                                 =
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] =                                ________________                                 =
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] =                            ___/  free version  \___                             =
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] ===================================================================================
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'AIR'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'STONE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'GRANITE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'POLISHED_GRANITE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'DIORITE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'POLISHED_DIORITE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'ANDESITE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'POLISHED_ANDESITE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'DEEPSLATE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'COBBLED_DEEPSLATE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'POLISHED_DEEPSLATE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'CALCITE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'TUFF'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'DRIPSTONE_BLOCK'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'GRASS_BLOCK'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'DIRT'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'COARSE_DIRT'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'PODZOL'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'ROOTED_DIRT'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'CRIMSON_NYLIUM'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'WARPED_NYLIUM'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'COBBLESTONE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'OAK_PLANKS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'SPRUCE_PLANKS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BIRCH_PLANKS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'JUNGLE_PLANKS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'ACACIA_PLANKS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'DARK_OAK_PLANKS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'CRIMSON_PLANKS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'WARPED_PLANKS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'OAK_SAPLING'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'SPRUCE_SAPLING'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BIRCH_SAPLING'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'JUNGLE_SAPLING'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'ACACIA_SAPLING'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'DARK_OAK_SAPLING'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BEDROCK'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'SAND'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'RED_SAND'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'GRAVEL'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'COAL_ORE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'DEEPSLATE_COAL_ORE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'IRON_ORE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'DEEPSLATE_IRON_ORE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'COPPER_ORE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'DEEPSLATE_COPPER_ORE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'GOLD_ORE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'DEEPSLATE_GOLD_ORE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'REDSTONE_ORE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'DEEPSLATE_REDSTONE_ORE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'EMERALD_ORE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'DEEPSLATE_EMERALD_ORE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'LAPIS_ORE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'DEEPSLATE_LAPIS_ORE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'DIAMOND_ORE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'DEEPSLATE_DIAMOND_ORE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'NETHER_GOLD_ORE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'NETHER_QUARTZ_ORE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'ANCIENT_DEBRIS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'COAL_BLOCK'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'RAW_IRON_BLOCK'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'RAW_COPPER_BLOCK'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'RAW_GOLD_BLOCK'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'AMETHYST_BLOCK'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BUDDING_AMETHYST'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'IRON_BLOCK'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'COPPER_BLOCK'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'GOLD_BLOCK'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'DIAMOND_BLOCK'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'NETHERITE_BLOCK'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'EXPOSED_COPPER'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'WEATHERED_COPPER'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'OXIDIZED_COPPER'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'CUT_COPPER'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'EXPOSED_CUT_COPPER'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'WEATHERED_CUT_COPPER'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'OXIDIZED_CUT_COPPER'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'CUT_COPPER_STAIRS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'EXPOSED_CUT_COPPER_STAIRS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'WEATHERED_CUT_COPPER_STAIRS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'OXIDIZED_CUT_COPPER_STAIRS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'CUT_COPPER_SLAB'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'EXPOSED_CUT_COPPER_SLAB'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'WEATHERED_CUT_COPPER_SLAB'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'OXIDIZED_CUT_COPPER_SLAB'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'WAXED_COPPER_BLOCK'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'WAXED_EXPOSED_COPPER'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'WAXED_WEATHERED_COPPER'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'WAXED_OXIDIZED_COPPER'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'WAXED_CUT_COPPER'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'WAXED_EXPOSED_CUT_COPPER'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'WAXED_WEATHERED_CUT_COPPER'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'WAXED_OXIDIZED_CUT_COPPER'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'WAXED_CUT_COPPER_STAIRS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'WAXED_EXPOSED_CUT_COPPER_STAIRS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'WAXED_WEATHERED_CUT_COPPER_STAIRS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'WAXED_OXIDIZED_CUT_COPPER_STAIRS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'WAXED_CUT_COPPER_SLAB'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'WAXED_EXPOSED_CUT_COPPER_SLAB'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'WAXED_WEATHERED_CUT_COPPER_SLAB'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'WAXED_OXIDIZED_CUT_COPPER_SLAB'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'OAK_LOG'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'SPRUCE_LOG'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BIRCH_LOG'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'JUNGLE_LOG'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'ACACIA_LOG'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'DARK_OAK_LOG'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'CRIMSON_STEM'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'WARPED_STEM'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'STRIPPED_OAK_LOG'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'STRIPPED_SPRUCE_LOG'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'STRIPPED_BIRCH_LOG'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'STRIPPED_JUNGLE_LOG'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'STRIPPED_ACACIA_LOG'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'STRIPPED_DARK_OAK_LOG'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'STRIPPED_CRIMSON_STEM'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'STRIPPED_WARPED_STEM'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'STRIPPED_OAK_WOOD'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'STRIPPED_SPRUCE_WOOD'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'STRIPPED_BIRCH_WOOD'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'STRIPPED_JUNGLE_WOOD'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'STRIPPED_ACACIA_WOOD'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'STRIPPED_DARK_OAK_WOOD'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'STRIPPED_CRIMSON_HYPHAE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'STRIPPED_WARPED_HYPHAE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'OAK_WOOD'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'SPRUCE_WOOD'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BIRCH_WOOD'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'JUNGLE_WOOD'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'ACACIA_WOOD'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'DARK_OAK_WOOD'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'CRIMSON_HYPHAE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'WARPED_HYPHAE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'OAK_LEAVES'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'SPRUCE_LEAVES'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BIRCH_LEAVES'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'JUNGLE_LEAVES'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'ACACIA_LEAVES'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'DARK_OAK_LEAVES'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'AZALEA_LEAVES'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'FLOWERING_AZALEA_LEAVES'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'SPONGE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'WET_SPONGE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'GLASS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'TINTED_GLASS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'LAPIS_BLOCK'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'SANDSTONE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'CHISELED_SANDSTONE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'CUT_SANDSTONE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'COBWEB'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'GRASS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'FERN'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'AZALEA'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'FLOWERING_AZALEA'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'DEAD_BUSH'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'SEAGRASS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'SEA_PICKLE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'WHITE_WOOL'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'ORANGE_WOOL'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'MAGENTA_WOOL'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'LIGHT_BLUE_WOOL'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'YELLOW_WOOL'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'LIME_WOOL'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'PINK_WOOL'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'GRAY_WOOL'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'LIGHT_GRAY_WOOL'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'CYAN_WOOL'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'PURPLE_WOOL'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BLUE_WOOL'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BROWN_WOOL'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'GREEN_WOOL'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'RED_WOOL'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BLACK_WOOL'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'DANDELION'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'POPPY'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BLUE_ORCHID'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'ALLIUM'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'AZURE_BLUET'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'RED_TULIP'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'ORANGE_TULIP'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'WHITE_TULIP'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'PINK_TULIP'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'OXEYE_DAISY'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'CORNFLOWER'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'LILY_OF_THE_VALLEY'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'WITHER_ROSE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'SPORE_BLOSSOM'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BROWN_MUSHROOM'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'RED_MUSHROOM'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'CRIMSON_FUNGUS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'WARPED_FUNGUS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'CRIMSON_ROOTS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'WARPED_ROOTS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'NETHER_SPROUTS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'WEEPING_VINES'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'TWISTING_VINES'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'SUGAR_CANE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'KELP'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'MOSS_CARPET'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'MOSS_BLOCK'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'HANGING_ROOTS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BIG_DRIPLEAF'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'SMALL_DRIPLEAF'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BAMBOO'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'OAK_SLAB'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'SPRUCE_SLAB'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BIRCH_SLAB'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'JUNGLE_SLAB'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'ACACIA_SLAB'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'DARK_OAK_SLAB'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'CRIMSON_SLAB'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'WARPED_SLAB'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'STONE_SLAB'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'SMOOTH_STONE_SLAB'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'SANDSTONE_SLAB'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'CUT_SANDSTONE_SLAB'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'PETRIFIED_OAK_SLAB'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'COBBLESTONE_SLAB'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BRICK_SLAB'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'STONE_BRICK_SLAB'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'NETHER_BRICK_SLAB'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'QUARTZ_SLAB'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'RED_SANDSTONE_SLAB'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'CUT_RED_SANDSTONE_SLAB'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'PURPUR_SLAB'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'PRISMARINE_SLAB'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'PRISMARINE_BRICK_SLAB'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'DARK_PRISMARINE_SLAB'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'SMOOTH_QUARTZ'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'SMOOTH_RED_SANDSTONE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'SMOOTH_SANDSTONE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'SMOOTH_STONE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BRICKS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BOOKSHELF'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'MOSSY_COBBLESTONE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'OBSIDIAN'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'TORCH'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'END_ROD'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'CHORUS_PLANT'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'CHORUS_FLOWER'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'PURPUR_BLOCK'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'PURPUR_PILLAR'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'PURPUR_STAIRS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'SPAWNER'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'OAK_STAIRS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'CHEST'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'CRAFTING_TABLE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'FARMLAND'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'FURNACE'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'LADDER'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'COBBLESTONE_STAIRS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'SNOW'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'ICE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'SNOW_BLOCK'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'CACTUS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'CLAY'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'JUKEBOX'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'OAK_FENCE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'SPRUCE_FENCE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BIRCH_FENCE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'JUNGLE_FENCE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'ACACIA_FENCE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'DARK_OAK_FENCE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'CRIMSON_FENCE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'WARPED_FENCE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'PUMPKIN'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'CARVED_PUMPKIN'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'JACK_O_LANTERN'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'NETHERRACK'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'SOUL_SAND'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'SOUL_SOIL'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BASALT'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'POLISHED_BASALT'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'SMOOTH_BASALT'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'SOUL_TORCH'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'GLOWSTONE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'INFESTED_STONE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'INFESTED_COBBLESTONE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'INFESTED_STONE_BRICKS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'INFESTED_MOSSY_STONE_BRICKS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'INFESTED_CRACKED_STONE_BRICKS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'INFESTED_CHISELED_STONE_BRICKS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'INFESTED_DEEPSLATE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'STONE_BRICKS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'MOSSY_STONE_BRICKS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'CRACKED_STONE_BRICKS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'CHISELED_STONE_BRICKS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'DEEPSLATE_BRICKS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'CRACKED_DEEPSLATE_BRICKS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'DEEPSLATE_TILES'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'CRACKED_DEEPSLATE_TILES'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'CHISELED_DEEPSLATE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BROWN_MUSHROOM_BLOCK'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'RED_MUSHROOM_BLOCK'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'MUSHROOM_STEM'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'IRON_BARS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'CHAIN'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'GLASS_PANE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'MELON'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'VINE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'GLOW_LICHEN'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BRICK_STAIRS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'STONE_BRICK_STAIRS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'MYCELIUM'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'LILY_PAD'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'NETHER_BRICKS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'CRACKED_NETHER_BRICKS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'CHISELED_NETHER_BRICKS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'NETHER_BRICK_FENCE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'NETHER_BRICK_STAIRS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'ENCHANTING_TABLE'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'END_PORTAL_FRAME'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'END_STONE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'END_STONE_BRICKS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'DRAGON_EGG'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'SANDSTONE_STAIRS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'ENDER_CHEST'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'EMERALD_BLOCK'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'SPRUCE_STAIRS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BIRCH_STAIRS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'JUNGLE_STAIRS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'CRIMSON_STAIRS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'WARPED_STAIRS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'COMMAND_BLOCK'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BEACON'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'COBBLESTONE_WALL'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'MOSSY_COBBLESTONE_WALL'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BRICK_WALL'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'PRISMARINE_WALL'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'RED_SANDSTONE_WALL'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'MOSSY_STONE_BRICK_WALL'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'GRANITE_WALL'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'STONE_BRICK_WALL'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'NETHER_BRICK_WALL'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'ANDESITE_WALL'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'RED_NETHER_BRICK_WALL'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'SANDSTONE_WALL'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'END_STONE_BRICK_WALL'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'DIORITE_WALL'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BLACKSTONE_WALL'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'POLISHED_BLACKSTONE_WALL'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'POLISHED_BLACKSTONE_BRICK_WALL'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'COBBLED_DEEPSLATE_WALL'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'POLISHED_DEEPSLATE_WALL'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'DEEPSLATE_BRICK_WALL'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'DEEPSLATE_TILE_WALL'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'ANVIL'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'CHIPPED_ANVIL'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'DAMAGED_ANVIL'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'CHISELED_QUARTZ_BLOCK'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'QUARTZ_BLOCK'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'QUARTZ_BRICKS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'QUARTZ_PILLAR'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'QUARTZ_STAIRS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'WHITE_TERRACOTTA'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'ORANGE_TERRACOTTA'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'MAGENTA_TERRACOTTA'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'LIGHT_BLUE_TERRACOTTA'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'YELLOW_TERRACOTTA'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'LIME_TERRACOTTA'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'PINK_TERRACOTTA'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'GRAY_TERRACOTTA'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'LIGHT_GRAY_TERRACOTTA'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'CYAN_TERRACOTTA'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'PURPLE_TERRACOTTA'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BLUE_TERRACOTTA'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BROWN_TERRACOTTA'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'GREEN_TERRACOTTA'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'RED_TERRACOTTA'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BLACK_TERRACOTTA'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BARRIER'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'LIGHT'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'HAY_BLOCK'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'WHITE_CARPET'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'ORANGE_CARPET'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'MAGENTA_CARPET'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'LIGHT_BLUE_CARPET'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'YELLOW_CARPET'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'LIME_CARPET'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'PINK_CARPET'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'GRAY_CARPET'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'LIGHT_GRAY_CARPET'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'CYAN_CARPET'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'PURPLE_CARPET'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BLUE_CARPET'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BROWN_CARPET'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'GREEN_CARPET'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'RED_CARPET'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BLACK_CARPET'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'TERRACOTTA'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'PACKED_ICE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'ACACIA_STAIRS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'DARK_OAK_STAIRS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'DIRT_PATH'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'SUNFLOWER'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'LILAC'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'ROSE_BUSH'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'PEONY'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'TALL_GRASS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'LARGE_FERN'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'WHITE_STAINED_GLASS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'ORANGE_STAINED_GLASS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'MAGENTA_STAINED_GLASS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'LIGHT_BLUE_STAINED_GLASS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'YELLOW_STAINED_GLASS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'LIME_STAINED_GLASS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'PINK_STAINED_GLASS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'GRAY_STAINED_GLASS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'LIGHT_GRAY_STAINED_GLASS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'CYAN_STAINED_GLASS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'PURPLE_STAINED_GLASS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BLUE_STAINED_GLASS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BROWN_STAINED_GLASS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'GREEN_STAINED_GLASS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'RED_STAINED_GLASS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BLACK_STAINED_GLASS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'WHITE_STAINED_GLASS_PANE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'ORANGE_STAINED_GLASS_PANE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'MAGENTA_STAINED_GLASS_PANE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'LIGHT_BLUE_STAINED_GLASS_PANE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'YELLOW_STAINED_GLASS_PANE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'LIME_STAINED_GLASS_PANE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'PINK_STAINED_GLASS_PANE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'GRAY_STAINED_GLASS_PANE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'LIGHT_GRAY_STAINED_GLASS_PANE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'CYAN_STAINED_GLASS_PANE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'PURPLE_STAINED_GLASS_PANE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BLUE_STAINED_GLASS_PANE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BROWN_STAINED_GLASS_PANE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'GREEN_STAINED_GLASS_PANE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'RED_STAINED_GLASS_PANE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BLACK_STAINED_GLASS_PANE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'PRISMARINE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'PRISMARINE_BRICKS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'DARK_PRISMARINE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'PRISMARINE_STAIRS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'PRISMARINE_BRICK_STAIRS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'DARK_PRISMARINE_STAIRS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'SEA_LANTERN'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'RED_SANDSTONE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'CHISELED_RED_SANDSTONE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'CUT_RED_SANDSTONE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'RED_SANDSTONE_STAIRS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'REPEATING_COMMAND_BLOCK'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'CHAIN_COMMAND_BLOCK'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'MAGMA_BLOCK'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'NETHER_WART_BLOCK'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'WARPED_WART_BLOCK'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'RED_NETHER_BRICKS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BONE_BLOCK'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'STRUCTURE_VOID'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'SHULKER_BOX'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'WHITE_SHULKER_BOX'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'ORANGE_SHULKER_BOX'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'MAGENTA_SHULKER_BOX'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'LIGHT_BLUE_SHULKER_BOX'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'YELLOW_SHULKER_BOX'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'LIME_SHULKER_BOX'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'PINK_SHULKER_BOX'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'GRAY_SHULKER_BOX'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'LIGHT_GRAY_SHULKER_BOX'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'CYAN_SHULKER_BOX'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'PURPLE_SHULKER_BOX'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BLUE_SHULKER_BOX'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BROWN_SHULKER_BOX'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'GREEN_SHULKER_BOX'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'RED_SHULKER_BOX'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BLACK_SHULKER_BOX'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'WHITE_GLAZED_TERRACOTTA'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'ORANGE_GLAZED_TERRACOTTA'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'MAGENTA_GLAZED_TERRACOTTA'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'LIGHT_BLUE_GLAZED_TERRACOTTA'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'YELLOW_GLAZED_TERRACOTTA'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'LIME_GLAZED_TERRACOTTA'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'PINK_GLAZED_TERRACOTTA'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'GRAY_GLAZED_TERRACOTTA'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'LIGHT_GRAY_GLAZED_TERRACOTTA'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'CYAN_GLAZED_TERRACOTTA'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'PURPLE_GLAZED_TERRACOTTA'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BLUE_GLAZED_TERRACOTTA'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BROWN_GLAZED_TERRACOTTA'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'GREEN_GLAZED_TERRACOTTA'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'RED_GLAZED_TERRACOTTA'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BLACK_GLAZED_TERRACOTTA'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'WHITE_CONCRETE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'ORANGE_CONCRETE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'MAGENTA_CONCRETE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'LIGHT_BLUE_CONCRETE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'YELLOW_CONCRETE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'LIME_CONCRETE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'PINK_CONCRETE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'GRAY_CONCRETE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'LIGHT_GRAY_CONCRETE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'CYAN_CONCRETE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'PURPLE_CONCRETE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BLUE_CONCRETE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BROWN_CONCRETE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'GREEN_CONCRETE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'RED_CONCRETE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BLACK_CONCRETE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'WHITE_CONCRETE_POWDER'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'ORANGE_CONCRETE_POWDER'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'MAGENTA_CONCRETE_POWDER'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'LIGHT_BLUE_CONCRETE_POWDER'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'YELLOW_CONCRETE_POWDER'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'LIME_CONCRETE_POWDER'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'PINK_CONCRETE_POWDER'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'GRAY_CONCRETE_POWDER'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'LIGHT_GRAY_CONCRETE_POWDER'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'CYAN_CONCRETE_POWDER'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'PURPLE_CONCRETE_POWDER'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BLUE_CONCRETE_POWDER'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BROWN_CONCRETE_POWDER'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'GREEN_CONCRETE_POWDER'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'RED_CONCRETE_POWDER'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BLACK_CONCRETE_POWDER'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'TURTLE_EGG'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'DEAD_TUBE_CORAL_BLOCK'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'DEAD_BRAIN_CORAL_BLOCK'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'DEAD_BUBBLE_CORAL_BLOCK'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'DEAD_FIRE_CORAL_BLOCK'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'DEAD_HORN_CORAL_BLOCK'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'TUBE_CORAL_BLOCK'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BRAIN_CORAL_BLOCK'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BUBBLE_CORAL_BLOCK'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'FIRE_CORAL_BLOCK'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'HORN_CORAL_BLOCK'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'TUBE_CORAL'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BRAIN_CORAL'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BUBBLE_CORAL'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'FIRE_CORAL'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'HORN_CORAL'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'DEAD_BRAIN_CORAL'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'DEAD_BUBBLE_CORAL'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'DEAD_FIRE_CORAL'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'DEAD_HORN_CORAL'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'DEAD_TUBE_CORAL'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'TUBE_CORAL_FAN'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BRAIN_CORAL_FAN'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BUBBLE_CORAL_FAN'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'FIRE_CORAL_FAN'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'HORN_CORAL_FAN'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'DEAD_TUBE_CORAL_FAN'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'DEAD_BRAIN_CORAL_FAN'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'DEAD_BUBBLE_CORAL_FAN'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'DEAD_FIRE_CORAL_FAN'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'DEAD_HORN_CORAL_FAN'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BLUE_ICE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'CONDUIT'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'POLISHED_GRANITE_STAIRS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'SMOOTH_RED_SANDSTONE_STAIRS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'MOSSY_STONE_BRICK_STAIRS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'POLISHED_DIORITE_STAIRS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'MOSSY_COBBLESTONE_STAIRS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'END_STONE_BRICK_STAIRS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'STONE_STAIRS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'SMOOTH_SANDSTONE_STAIRS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'SMOOTH_QUARTZ_STAIRS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'GRANITE_STAIRS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'ANDESITE_STAIRS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'RED_NETHER_BRICK_STAIRS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'POLISHED_ANDESITE_STAIRS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'DIORITE_STAIRS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'COBBLED_DEEPSLATE_STAIRS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'POLISHED_DEEPSLATE_STAIRS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'DEEPSLATE_BRICK_STAIRS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'DEEPSLATE_TILE_STAIRS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'POLISHED_GRANITE_SLAB'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'SMOOTH_RED_SANDSTONE_SLAB'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'MOSSY_STONE_BRICK_SLAB'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'POLISHED_DIORITE_SLAB'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'MOSSY_COBBLESTONE_SLAB'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'END_STONE_BRICK_SLAB'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'SMOOTH_SANDSTONE_SLAB'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'SMOOTH_QUARTZ_SLAB'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'GRANITE_SLAB'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'ANDESITE_SLAB'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'RED_NETHER_BRICK_SLAB'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'POLISHED_ANDESITE_SLAB'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'DIORITE_SLAB'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'COBBLED_DEEPSLATE_SLAB'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'POLISHED_DEEPSLATE_SLAB'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'DEEPSLATE_BRICK_SLAB'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'DEEPSLATE_TILE_SLAB'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'SCAFFOLDING'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'REDSTONE_TORCH'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'REDSTONE_BLOCK'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'REPEATER'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'COMPARATOR'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'PISTON'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'STICKY_PISTON'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'SLIME_BLOCK'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'HONEY_BLOCK'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'OBSERVER'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'HOPPER'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'DISPENSER'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'DROPPER'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'LECTERN'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'TARGET'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'LEVER'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'LIGHTNING_ROD'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'DAYLIGHT_DETECTOR'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'SCULK_SENSOR'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'TRIPWIRE_HOOK'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'TRAPPED_CHEST'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'TNT'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'REDSTONE_LAMP'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'NOTE_BLOCK'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'STONE_BUTTON'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'POLISHED_BLACKSTONE_BUTTON'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'OAK_BUTTON'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'SPRUCE_BUTTON'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BIRCH_BUTTON'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'JUNGLE_BUTTON'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'ACACIA_BUTTON'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'DARK_OAK_BUTTON'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'CRIMSON_BUTTON'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'WARPED_BUTTON'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'STONE_PRESSURE_PLATE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'POLISHED_BLACKSTONE_PRESSURE_PLATE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'LIGHT_WEIGHTED_PRESSURE_PLATE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'HEAVY_WEIGHTED_PRESSURE_PLATE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'OAK_PRESSURE_PLATE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'SPRUCE_PRESSURE_PLATE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BIRCH_PRESSURE_PLATE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'JUNGLE_PRESSURE_PLATE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'ACACIA_PRESSURE_PLATE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'DARK_OAK_PRESSURE_PLATE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'CRIMSON_PRESSURE_PLATE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'WARPED_PRESSURE_PLATE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'IRON_DOOR'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'OAK_DOOR'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'SPRUCE_DOOR'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BIRCH_DOOR'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'JUNGLE_DOOR'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'ACACIA_DOOR'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'DARK_OAK_DOOR'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'CRIMSON_DOOR'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'WARPED_DOOR'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'IRON_TRAPDOOR'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'OAK_TRAPDOOR'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'SPRUCE_TRAPDOOR'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BIRCH_TRAPDOOR'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'JUNGLE_TRAPDOOR'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'ACACIA_TRAPDOOR'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'DARK_OAK_TRAPDOOR'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'CRIMSON_TRAPDOOR'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'WARPED_TRAPDOOR'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'OAK_FENCE_GATE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'SPRUCE_FENCE_GATE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BIRCH_FENCE_GATE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'JUNGLE_FENCE_GATE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'ACACIA_FENCE_GATE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'DARK_OAK_FENCE_GATE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'CRIMSON_FENCE_GATE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'WARPED_FENCE_GATE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'POWERED_RAIL'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'DETECTOR_RAIL'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'RAIL'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'ACTIVATOR_RAIL'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'STRUCTURE_BLOCK'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'JIGSAW'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'WHEAT'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'OAK_SIGN'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'SPRUCE_SIGN'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BIRCH_SIGN'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'JUNGLE_SIGN'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'ACACIA_SIGN'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'DARK_OAK_SIGN'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'CRIMSON_SIGN'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'WARPED_SIGN'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'DRIED_KELP_BLOCK'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'CAKE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'WHITE_BED'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'ORANGE_BED'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'MAGENTA_BED'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'LIGHT_BLUE_BED'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'YELLOW_BED'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'LIME_BED'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'PINK_BED'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'GRAY_BED'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'LIGHT_GRAY_BED'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'CYAN_BED'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'PURPLE_BED'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BLUE_BED'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BROWN_BED'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'GREEN_BED'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'RED_BED'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BLACK_BED'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'NETHER_WART'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BREWING_STAND'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'CAULDRON'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'FLOWER_POT'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'SKELETON_SKULL'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'WITHER_SKELETON_SKULL'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'PLAYER_HEAD'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'ZOMBIE_HEAD'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'CREEPER_HEAD'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'DRAGON_HEAD'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'WHITE_BANNER'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'ORANGE_BANNER'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'MAGENTA_BANNER'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'LIGHT_BLUE_BANNER'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'YELLOW_BANNER'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'LIME_BANNER'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'PINK_BANNER'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'GRAY_BANNER'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'LIGHT_GRAY_BANNER'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'CYAN_BANNER'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'PURPLE_BANNER'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BLUE_BANNER'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BROWN_BANNER'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'GREEN_BANNER'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'RED_BANNER'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BLACK_BANNER'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'LOOM'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'COMPOSTER'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BARREL'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'SMOKER'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BLAST_FURNACE'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'CARTOGRAPHY_TABLE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'FLETCHING_TABLE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'GRINDSTONE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'SMITHING_TABLE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'STONECUTTER'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BELL'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'LANTERN'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'SOUL_LANTERN'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'CAMPFIRE'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'SOUL_CAMPFIRE'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'SHROOMLIGHT'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BEE_NEST'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BEEHIVE'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'HONEYCOMB_BLOCK'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'LODESTONE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'CRYING_OBSIDIAN'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BLACKSTONE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BLACKSTONE_SLAB'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BLACKSTONE_STAIRS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'GILDED_BLACKSTONE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'POLISHED_BLACKSTONE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'POLISHED_BLACKSTONE_SLAB'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'POLISHED_BLACKSTONE_STAIRS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'CHISELED_POLISHED_BLACKSTONE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'POLISHED_BLACKSTONE_BRICKS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'POLISHED_BLACKSTONE_BRICK_SLAB'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'POLISHED_BLACKSTONE_BRICK_STAIRS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'CRACKED_POLISHED_BLACKSTONE_BRICKS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'RESPAWN_ANCHOR'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'CANDLE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'WHITE_CANDLE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'ORANGE_CANDLE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'MAGENTA_CANDLE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'LIGHT_BLUE_CANDLE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'YELLOW_CANDLE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'LIME_CANDLE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'PINK_CANDLE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'GRAY_CANDLE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'LIGHT_GRAY_CANDLE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'CYAN_CANDLE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'PURPLE_CANDLE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BLUE_CANDLE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BROWN_CANDLE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'GREEN_CANDLE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'RED_CANDLE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BLACK_CANDLE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'SMALL_AMETHYST_BUD'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'MEDIUM_AMETHYST_BUD'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'LARGE_AMETHYST_BUD'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'AMETHYST_CLUSTER'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'POINTED_DRIPSTONE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'WATER'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'LAVA'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'TALL_SEAGRASS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'PISTON_HEAD'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'MOVING_PISTON'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'WALL_TORCH'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'FIRE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'SOUL_FIRE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'REDSTONE_WIRE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'OAK_WALL_SIGN'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'SPRUCE_WALL_SIGN'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BIRCH_WALL_SIGN'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'ACACIA_WALL_SIGN'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'JUNGLE_WALL_SIGN'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'DARK_OAK_WALL_SIGN'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'REDSTONE_WALL_TORCH'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'SOUL_WALL_TORCH'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'NETHER_PORTAL'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'ATTACHED_PUMPKIN_STEM'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'ATTACHED_MELON_STEM'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'PUMPKIN_STEM'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'MELON_STEM'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'WATER_CAULDRON'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'LAVA_CAULDRON'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'POWDER_SNOW_CAULDRON'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'END_PORTAL'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'COCOA'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'TRIPWIRE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'POTTED_OAK_SAPLING'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'POTTED_SPRUCE_SAPLING'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'POTTED_BIRCH_SAPLING'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'POTTED_JUNGLE_SAPLING'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'POTTED_ACACIA_SAPLING'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'POTTED_DARK_OAK_SAPLING'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'POTTED_FERN'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'POTTED_DANDELION'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'POTTED_POPPY'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'POTTED_BLUE_ORCHID'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'POTTED_ALLIUM'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'POTTED_AZURE_BLUET'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'POTTED_RED_TULIP'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'POTTED_ORANGE_TULIP'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'POTTED_WHITE_TULIP'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'POTTED_PINK_TULIP'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'POTTED_OXEYE_DAISY'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'POTTED_CORNFLOWER'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'POTTED_LILY_OF_THE_VALLEY'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'POTTED_WITHER_ROSE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'POTTED_RED_MUSHROOM'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'POTTED_BROWN_MUSHROOM'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'POTTED_DEAD_BUSH'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'POTTED_CACTUS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'CARROTS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'POTATOES'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'SKELETON_WALL_SKULL'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'WITHER_SKELETON_WALL_SKULL'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'ZOMBIE_WALL_HEAD'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'PLAYER_WALL_HEAD'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'CREEPER_WALL_HEAD'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'DRAGON_WALL_HEAD'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'WHITE_WALL_BANNER'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'ORANGE_WALL_BANNER'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'MAGENTA_WALL_BANNER'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'LIGHT_BLUE_WALL_BANNER'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'YELLOW_WALL_BANNER'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'LIME_WALL_BANNER'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'PINK_WALL_BANNER'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'GRAY_WALL_BANNER'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'LIGHT_GRAY_WALL_BANNER'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'CYAN_WALL_BANNER'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'PURPLE_WALL_BANNER'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BLUE_WALL_BANNER'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BROWN_WALL_BANNER'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'GREEN_WALL_BANNER'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'RED_WALL_BANNER'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BLACK_WALL_BANNER'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BEETROOTS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'END_GATEWAY'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'FROSTED_ICE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'KELP_PLANT'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'DEAD_TUBE_CORAL_WALL_FAN'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'DEAD_BRAIN_CORAL_WALL_FAN'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'DEAD_BUBBLE_CORAL_WALL_FAN'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'DEAD_FIRE_CORAL_WALL_FAN'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'DEAD_HORN_CORAL_WALL_FAN'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'TUBE_CORAL_WALL_FAN'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BRAIN_CORAL_WALL_FAN'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BUBBLE_CORAL_WALL_FAN'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'FIRE_CORAL_WALL_FAN'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'HORN_CORAL_WALL_FAN'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BAMBOO_SAPLING'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'POTTED_BAMBOO'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'VOID_AIR'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'CAVE_AIR'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BUBBLE_COLUMN'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'SWEET_BERRY_BUSH'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'WEEPING_VINES_PLANT'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'TWISTING_VINES_PLANT'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'CRIMSON_WALL_SIGN'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'WARPED_WALL_SIGN'. Result: true
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'POTTED_CRIMSON_FUNGUS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'POTTED_WARPED_FUNGUS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'POTTED_CRIMSON_ROOTS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'POTTED_WARPED_ROOTS'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'CANDLE_CAKE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'WHITE_CANDLE_CAKE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'ORANGE_CANDLE_CAKE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'MAGENTA_CANDLE_CAKE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'LIGHT_BLUE_CANDLE_CAKE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'YELLOW_CANDLE_CAKE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'LIME_CANDLE_CAKE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'PINK_CANDLE_CAKE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'GRAY_CANDLE_CAKE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'LIGHT_GRAY_CANDLE_CAKE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'CYAN_CANDLE_CAKE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'PURPLE_CANDLE_CAKE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BLUE_CANDLE_CAKE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BROWN_CANDLE_CAKE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'GREEN_CANDLE_CAKE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'RED_CANDLE_CAKE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BLACK_CANDLE_CAKE'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'POWDER_SNOW'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'CAVE_VINES'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'CAVE_VINES_PLANT'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'BIG_DRIPLEAF_STEM'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'POTTED_AZALEA_BUSH'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Using class check for 'POTTED_FLOWERING_AZALEA_BUSH'. Result: false
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Initializing WorldEdit.
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] No matching adapter found for Bukkit.v1_17_R1, DirectChunkAPI disabled
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] PlotMeFix set to class org.primesoft.asyncworldedit.plotme.NullFix.
+[15:07:59] [Server thread/INFO]: [AsyncWorldEdit] Enabled
+[15:07:59] [Server thread/INFO]: Preparing level "world"
+[15:07:59] [AWE:Cron:undoCleanup/INFO]: [AsyncWorldEdit] Undo cleanup started...
+[15:07:59] [AWE:Cron:undoCleanup/INFO]: [AsyncWorldEdit] ...undo cleanup done.
+[15:08:01] [Thread-9/INFO]: [AsyncWorldEdit] You have the latest version of the plugin.
+[15:08:02] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
+[15:08:04] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[15:08:07] [Server thread/INFO]: Time elapsed: 2984 ms
+[15:08:07] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[15:08:16] [Server thread/INFO]: Time elapsed: 9719 ms
+[15:08:16] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[15:08:19] [Server thread/INFO]: Time elapsed: 2284 ms
+[15:08:19] [Server thread/INFO]: [Fenestra] Enabling Fenestra v1.0.3
+[15:08:19] [Server thread/INFO]: [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...

@@ -1,0 +1,13 @@
+26.06.2021 - 14:32:19 - [TAB v2.9.1 Premium] Failed to download PlaceholderAPI expansions. PlaceholderAPI version: 2.10.9
+26.06.2021 - 14:32:19 - java.lang.IllegalStateException: zip file closed
+26.06.2021 - 14:32:19 -        at java.base/java.util.zip.ZipFile.ensureOpen(ZipFile.java:828)
+26.06.2021 - 14:32:19 -        at java.base/java.util.zip.ZipFile.getEntry(ZipFile.java:327)
+26.06.2021 - 14:32:19 -        at java.base/java.util.jar.JarFile.getEntry(JarFile.java:513)
+26.06.2021 - 14:32:19 -        at java.base/java.util.jar.JarFile.getJarEntry(JarFile.java:468)
+26.06.2021 - 14:32:19 -        at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:158)
+26.06.2021 - 14:32:19 -        at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:586)
+26.06.2021 - 14:32:19 -        at org.bukkit.plugin.java.PluginClassLoader.loadClass0(PluginClassLoader.java:108)
+26.06.2021 - 14:32:19 -        at org.bukkit.plugin.java.PluginClassLoader.loadClass(PluginClassLoader.java:103)
+26.06.2021 - 14:32:19 -        at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:519)
+26.06.2021 - 14:32:19 -        at me.neznamy.tab.platforms.bukkit.features.ExpansionDownloader$1$1.run(ExpansionDownloader.java:52)
+26.06.2021 - 14:32:19 -        at java.base/java.lang.Thread.run(Thread.java:831)

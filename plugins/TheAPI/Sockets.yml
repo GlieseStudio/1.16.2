@@ -1,0 +1,14 @@
+Options:
+  Enabled: false
+  Name: "serverName"
+  Password: "EHRsoL4t0HC42386"
+  Port: 25569
+Server:
+  Bungee:
+    IP: "localhost"
+    Password: "INSERT PASSWORD HERE"
+    Port: 25567
+  AnotherSpigotServer:
+    IP: "localhost"
+    Password: "INSERT PASSWORD HERE"
+    Port: 25568
