@@ -18,12 +18,13 @@
 multiverse-configuration:
   ==: com.onarandombox.MultiverseCore.MultiverseCoreConfiguration
   enforceaccess: 'false'
-  prefixchat: 'true'
+  prefixchat: 'false'
   prefixchatformat: '[%world%]%chat%'
   useasyncchat: 'true'
   teleportintercept: 'true'
   firstspawnoverride: 'true'
   displaypermerrors: 'true'
+  enablebuscript: 'true'
   globaldebug: '0'
   silentstart: 'false'
   messagecooldown: '5000'

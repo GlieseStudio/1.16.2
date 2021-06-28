@@ -6,7 +6,7 @@ Economy:
   # Attention! For economy to work properly with other plugins you will need ether an injector or recompiled Vault version. 
   # You can find both option at top of plugins page
   # ATTENTION! If you disabled CMI economy while server was running, you will need to perform full server restart for this to take correct effect and avoid any issues while getting players balances
-  Enabled: true
+  Enabled: false
   # Determines if player needs to confirm money payment by clicking on chat message
   Confirmation: false
   # Set to true if you want to log money transfers between players
@@ -401,7 +401,7 @@ ExploitPatcher:
   NoCommandsInBed: false
   # Due to major exploit relating to oversized books this is recomended to be enabled
   # While this is set to true players will be limited in how many pages they can create
-  # Limitation is determined by cmi.book.pages.§f[20to100]§6 permission node and by default players can create 20 pages
+  # Limitation is determined by cmi.book.pages.missing locale for command.checkperm.info.variablecolor [20to100]missing locale for command.checkperm.info.permissioncolor  permission node and by default players can create 20 pages
   LimitBooks: true
 Vault:
   # If your having issues with vault grabbing correct players' group or balance, consider to turn this to false
@@ -641,6 +641,11 @@ Votifier:
   ExcludeList:
   - None
 Ranks:
+  # If set to true we will check players rank by his access to rank by permission node and prioritize any rank which has more weight over current one
+  # This means that in case player has access to third rank while recorded one is first one, we will prioritize third one
+  # While this is active using command like /cmi setrank will set players rank to highest one he has access too, so as long as player has permission access to third rank you cant go lower than this, 
+  # you will have to remove access to specific rank by removing permission node before trying to derank him
+  PermissionCheck: false
   AutoRankUp:
     # Defines how often in seconds plugin will check for possible player rankups
     # Set it to 0 or less to disable auto rankup checks
@@ -771,14 +776,14 @@ Chat:
   # Time in seconds you want to keep chat rooms alive before removing them
   # This only applies to empty rooms after last user leaves it
   ChatRoomLife: 3600
-  # Defines suggested commands when you click on public, private and similar messages. [playerName] and [playerDisplayName] can be used to include players name
+  # Defines suggested commands when you click on public, private and similar messages. [playerName], [playerDisplayName] and [playerNickName]  can be used to include players name
   ClickSuggestions:
-    pubmsg: '/msg [playerDisplayName] '
-    privmsg: '/msg [playerDisplayName] '
-    staffmsg: '/msg [playerDisplayName] '
-    helpop: '/msg [playerDisplayName] '
-    chatroom: '/msg [playerDisplayName] '
-    discord: '/msg [playerDisplayName] '
+    pubmsg: '/msg [playerNickName] '
+    privmsg: '/msg [playerNickName] '
+    staffmsg: '/msg [playerNickName] '
+    helpop: '/msg [playerNickName] '
+    chatroom: '/msg [playerNickName] '
+    discord: '/msg [playerNickName] '
   # Use numeric increments to separate groups from each other. If player has more than one, then line with higher number will be used
   # Add as many lines as you need too
   # cmi.chatgroup.[id] permnission node to use
@@ -1047,7 +1052,7 @@ Animations:
   DoubleClickDelay: 200
   # Range in blocks from player to look up for valid chair block
   ChairRange: 4
-# All possible damage causes: contact, entity_attack, entity_sweep_attack, projectile, suffocation, fall, fire, fire_tick, melting, lava, drowning, block_explosion, entity_explosion, void, lightning, suicide, starvation, poison, magic, wither, falling_block, thorns, dragon_breath, custom, fly_into_wall, hot_floor, cramming, dryout, 
+# All possible damage causes: contact, entity_attack, entity_sweep_attack, projectile, suffocation, fall, fire, fire_tick, melting, lava, drowning, block_explosion, entity_explosion, void, lightning, suicide, starvation, poison, magic, wither, falling_block, thorns, dragon_breath, custom, fly_into_wall, hot_floor, cramming, dryout, freeze, 
 # Syntax should be [permissionNode]:[damageCause]:[multiplier]
 # Example: nolavadamage:lava:0 will prevent lava damage with cmi.damagecontrol.nolavadamage permission node
 # Negative values will heal player instead of damaging him
@@ -1173,7 +1178,7 @@ FlightCharge:
   # Set this to 'none' if you want to disable it
   GlowColor: none
 Point:
-  # Default particle for point command. Options: fireworks_spark, crit, magic_crit, potion_swirl, potion_swirl_transparent, spell, instant_spell, witch_magic, note, portal, flying_glyph, flame, lava_pop, footstep, splash, particle_smoke, explosion_huge, explosion_large, explosion, void_fog, small_smoke, cloud, coloured_dust, snowball_break, waterdrip, lavadrip, snow_shovel, slime, heart, villager_thundercloud, happy_villager, large_smoke, water_bubble, water_wake, suspended, barrier, mob_appearance, end_rod, damage_indicator, sweep_attack, totem, spit, squid_ink, bubble_pop, current_down, bubble_column_up, nautilus, dolphin, water_splash, campfire_signal_smoke, campfire_cosy_smoke, sneeze, composter, flash, falling_lava, landing_lava, falling_water, dripping_honey, falling_honey, landing_honey, falling_nectar, soul_fire_flame, ash, crimson_spore, warped_spore, soul, dripping_obsidian_tear, falling_obsidian_tear, landing_obsidian_tear, reverse_portal, white_ash, 
+  # Default particle for point command. Options: fireworks_spark, crit, magic_crit, potion_swirl, potion_swirl_transparent, spell, instant_spell, witch_magic, note, portal, flying_glyph, flame, lava_pop, footstep, splash, particle_smoke, explosion_huge, explosion_large, explosion, void_fog, small_smoke, cloud, coloured_dust, snowball_break, waterdrip, lavadrip, snow_shovel, slime, heart, villager_thundercloud, happy_villager, large_smoke, water_bubble, water_wake, suspended, barrier, mob_appearance, end_rod, damage_indicator, sweep_attack, totem, spit, squid_ink, bubble_pop, current_down, bubble_column_up, nautilus, dolphin, water_splash, campfire_signal_smoke, campfire_cosy_smoke, sneeze, composter, flash, falling_lava, landing_lava, falling_water, dripping_honey, falling_honey, landing_honey, falling_nectar, soul_fire_flame, ash, crimson_spore, warped_spore, soul, dripping_obsidian_tear, falling_obsidian_tear, landing_obsidian_tear, reverse_portal, white_ash, light, falling_spore_blossom, spore_blossom_air, small_flame, snowflake, dripping_dripstone_lava, falling_dripstone_lava, dripping_dripstone_water, falling_dripstone_water, glow_squid_ink, glow, wax_on, wax_off, electric_spark, scrape, 
   DefaultParticle: COLOURED_DUST
 Messages:
   Login:
@@ -1240,6 +1245,7 @@ Warnings:
     - cmi tempban [playerName] 5m &cTemporary banned for getting 10 warnings!
 Spawn:
   # Forces players to login in defined spawn point when logging into server
+  # Can be bypasses with cmi.spawnonjoin.bypass permission node
   SpawnOnJoin: false
   # Defines players spawn point after death if set to true, if not, then it will be used only for /cmi spawn command
   # RespawnLocation will indicate if you want to use this location as possible respawn point for player after death
@@ -1281,10 +1287,10 @@ Warps:
   GUI: true
   # Automatically opens GUI when created new warp point
   GUIOnCreation: true
-  # Minimal lenght of warp name
-  MinLenght: 4
-  # Maximal lenght of warp name
-  MaxLenght: 16
+  # Minimal length of warp name
+  MinLength: 4
+  # Maximal length of warp name
+  MaxLength: 16
   # How many warps to show in each page
   perPage: 50
   # Do you want to show creator in warp list
@@ -1320,7 +1326,7 @@ WorldLimits:
   - world-256
   - world_nether-128
   - world_the_end-256
-  # If player will have cmi.worldlimit.god.bypass permission node, fly mode wont be changed
+  # If player will have cmi.worldlimit.god.bypass permission node, god mode wont be changed
   GodMode:
   - world:False
   # Prevents particular entity spawn reasons in defined worlds. All possible reasons: NATURAL, JOCKEY, CHUNK_GEN, SPAWNER, EGG, SPAWNER_EGG, LIGHTNING, BUILD_SNOWMAN, BUILD_IRONGOLEM, BUILD_WITHER, VILLAGE_DEFENSE, VILLAGE_INVASION, BREEDING, SLIME_SPLIT, REINFORCEMENTS, NETHER_PORTAL, DISPENSE_EGG, INFECTION, CURED, OCELOT_BABY, SILVERFISH_BLOCK, MOUNT, TRAP, ENDER_PEARL, SHOULDER_ENTITY, DROWNED, SHEARED, EXPLOSION, RAID, PATROL, BEEHIVE, PIGLIN_ZOMBIFIED, COMMAND, CUSTOM, DEFAULT
@@ -1521,10 +1527,14 @@ Combat:
         Lvl1: 5.0
         Lvl2: 15.0
         Lvl3: 30.0
+      # List of worlds where we should drop player heads. Keep it empty if you want to include all posible ones
+      Worlds: []
     Mob:
       # Enables custom mob heads dropping from mobs with particular chance
       # Check customHeads.yml for customization by entityType
       Drop: false
+      # List of worlds where we should drop mob heads. Keep it empty if you want to include all posible ones
+      Worlds: []
 ShulkerBoxes:
   # When set to true, players will not have option to open shulker boxes while in combat
   # Combat timer can be defined under combat section
@@ -1696,20 +1706,6 @@ RandomTeleportation:
   # Setting to false will not longer generate world setups, but you can add them manually if needed
   AutoGenerateWorlds: true
   Worlds:
-    # World name to use this feature. Add annother one with appropriate name to enable random teleportation
-    world:
-      Enabled: true
-      # Max coordinate to teleport, setting to 1000, player can be teleported between -1000 and 1000 coordinates
-      MaxRange: 1000
-      # If maxcord set to 1000 and mincord to 500, then player can be teleported between -1000 to -500 and 1000 to 500 coordinates
-      MinRange: 500
-      CenterX: 0
-      CenterZ: 0
-      Circle: false
-      IgnoreWater: true
-      IgnoreLava: true
-      minY: 0
-      maxY: 256
     world_nether:
       Enabled: true
       MaxRange: 1000
@@ -1717,10 +1713,6 @@ RandomTeleportation:
       CenterX: 0
       CenterZ: 0
       Circle: false
-      IgnoreWater: true
-      IgnoreLava: true
-      minY: 0
-      maxY: 256
     world_the_end:
       Enabled: true
       MaxRange: 1000
@@ -1728,10 +1720,13 @@ RandomTeleportation:
       CenterX: 0
       CenterZ: 0
       Circle: false
-      IgnoreWater: true
-      IgnoreLava: true
-      minY: 0
-      maxY: 256
+    world:
+      Enabled: true
+      MaxRange: 1000
+      MinRange: 500
+      CenterX: 0
+      CenterZ: 0
+      Circle: false
   # How long force player to wait before using command again.
   Cooldown: 5
   # How many times to try find correct location for teleportation.

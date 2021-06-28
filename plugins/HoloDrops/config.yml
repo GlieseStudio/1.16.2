@@ -1,0 +1,71 @@
+# Language and settings file
+
+### HOLOGRAMS ###
+
+# displays the %amount% of items in the stack
+stack-count: "&fx%amount%"
+# show stack count of 1 on the item name
+single-stack: false
+# prefix that appears on all items
+holo-prefix: "&f"
+# suffix that appears on all items
+holo-suffix: ""
+# the order in which all the elements appear to make the name
+# P = prefix, I = item name, C = stack count, S = suffix
+# you can also directly edit this instead of changing the formats above
+holo-format: "%P%%I% %C%%S%"
+
+### WORLDS ###
+
+# worlds where item drops get holos
+enabled-worlds:
+  - "world"
+  - "world_nether"
+  - "world_the_end"
+
+### MISC ###
+
+# enable to make default item names also appear in item frames (renamed items show up by default from vanilla)
+item-frame-holos: false
+
+# only show item holos if the item has a custom name
+custom-names-only: false
+
+# put custom names here that you never want to see, NOT color sensitive, unlike glowlist
+blacklist:
+  - "ShopItem"
+
+### GLOW ###
+
+# item-glow shows items through walls and in dark areas
+item-glow: false
+# glow-color changes the color items glow in, currently uses the last color seen in the item name
+# putting a color code at the end of an item name below is a good use of this system
+glow-color: true
+# only the names listed here will glow, it's a glow whitelist. if blank then all items glow
+# this IS color sensitive, unlike the blacklist
+glowlist:
+  #- "&4Diamond Sword"
+
+### DROP PROTECTION ###
+
+# drops will be protected and only the player who created the drop can pick it up
+drop-protection: false
+# seconds before a drop becomes available to everyone else. set to 0 for unlimited protection
+protection-time: 60
+# format to show that an item has protection. right now it is forced to go before holo-format
+protection-format: "&b&l%TIME%s &f%PLAYER%'s "
+# list of items that will be protected. leave blank for all drops.
+protection-item-list:
+  #- DIAMOND
+# how a dropped item gets protection. currently limited to block drops
+protection-sources:
+  block-drops: true
+
+
+
+### NAMES ###
+
+# add/remove/edit items & names here (some of these you cant get as drops, fyi)
+item-names:
+  ACACIA_BOAT: "金合欢木船"

@@ -44,8 +44,8 @@ ChatFilter:
       Regex:
       - \b(?i)(f+(\W|_)*(u?)+(\W|_)*(c?)+(\W|_)*k+)
       ReplaceWith: not good
-      BlockType: none
       includePrivateMessages: true
+      BlockType: none
       msgToStaff: '&4!&6[playerName] &4swearing'
       Commands:
       - msg [senderName] &eDon't swear!
@@ -62,3 +62,28 @@ ChatFilter:
     Interval: 5
     # How many commands you can repeat before stopped for cooldown
     MinAmount: 2
+  Caps:
+    # When nebaled we will try to prevent chat messages with multiple capitalized letters by defined criteria
+    # Can be bypassed with cmi.chatfilter.capbypass permission node
+    Filter: true
+    # Defines amount of letters we can ignore
+    # For example ':DDD' would be made of 2 letters with 3 capitalized letters which would make it 75% capitalized
+    IgnoreUnder: 6
+    # Amount in percentage of capitalized letters we should not cross over.
+    # In example 'GOOD thing' would be 4 capitalized and 5 not, spaces gets ignored, whic makes it 44% capitalized and passes check
+    Percentage: 50
+    # List of commands you want to perform when player uses too many caps
+    Commands:
+    - asConsole! cmi titlemsg [playerName] &cToo many caps! -keep:20
+    # List of messages, excluding color codes, player can use even if it 100% capitalized
+    WhiteList:
+    - AFAIK
+    - AFK
+    - BRB
+    - IMHO
+    - OMG
+    - ROFL
+    - ROFLMAO
+    - LQTM
+    - LSMH
+    - LMHO

@@ -10,10 +10,24 @@ repair:
 commands:
   enabled: true
 
-potioneffects:
+armorpotioneffects:
   enabled: true
 
+consumablepotioneffects:
+  enabled: true
+
+# legacy blocks using mushroom stems
 block:
+  tool_types:
+    - WOODEN
+    - STONE
+    - IRON
+    - GOLDEN
+    - DIAMOND
+    - NETHERITE
+  enabled: false
+
+noteblock:
   tool_types:
     - WOODEN
     - STONE
@@ -33,6 +47,9 @@ skin:
   enabled: true
 
 skinnable:
+  enabled: true
+
+consumable:
   enabled: true
 
 # Only 1.16+
@@ -59,6 +76,8 @@ energyblast:
 witherskull:
   enabled: true
 
+fireball:
+  enabled: true
 
 # FARMING
 

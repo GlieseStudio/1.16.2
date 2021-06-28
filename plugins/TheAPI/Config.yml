@@ -24,7 +24,7 @@ Options:
         AutoClear:
           Use: false
           OfflineTime: "1mon"
-          Period: 0
+          Period: "0"
   
   # Saving type of User data
   # Types: YAML, JSON, BYTE

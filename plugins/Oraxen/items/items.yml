@@ -80,6 +80,23 @@ example_potion:
     # - icon: true/false, whether this effect has an icon or not
     - { type: WITHER, duration: 200, amplifier: 2, ambient: false, particles: true, icon: true }
 
+miner_sandwitch:
+  displayname: "&eMiner's sandwitch"
+  material: COOKED_BEEF
+  Pack:
+    generate_model: true
+    parent_model: "item/generated"
+    textures:
+      - default/sandwitch.png # .png extension is not mandatory
+  Mechanics:
+    consumablepotioneffects:
+      fast_digging:
+        amplifier: 0
+        ambient: true # Makes potion effect produce more, translucent, particles.
+        particles: true # whether this effect has particles or not
+        icon: true # whether this effect has an icon or not
+        duration: 72000 # one hour in ticks
+
 amethyst:
   displayname: "&dAmethyst"
   material: DIAMOND
@@ -87,7 +104,7 @@ amethyst:
     generate_model: true
     parent_model: "item/generated"
     textures:
-      - amethyst.png # .png extension is not mandatory
+      - default/amethyst.png # .png extension is not mandatory
 
 ruby:
   displayname: "&cRuby"
@@ -96,7 +113,7 @@ ruby:
     generate_model: true
     parent_model: "item/generated"
     textures:
-      - ruby.png # .png extension is not mandatory
+      - default/ruby.png # .png extension is not mandatory
 
 onyx:
   displayname: "&8Onyx"
@@ -105,7 +122,7 @@ onyx:
     generate_model: true
     parent_model: "item/generated"
     textures:
-      - onyx.png # .png extension is not mandatory
+      - default/onyx.png # .png extension is not mandatory
 
 orax:
   displayname: "&bOrax"
@@ -114,7 +131,7 @@ orax:
     generate_model: true
     parent_model: "item/generated"
     textures:
-      - orax.png # .png extension is not mandatory
+      - default/orax.png # .png extension is not mandatory
 
 fire:
   displayname: "&6Fire"

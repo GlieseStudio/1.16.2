@@ -1625,6 +1625,9 @@ Alias:
   /warp:
     Enabled: false
     Tab: true
+  /warps:
+    Enabled: false
+    Tab: true
   #  
   # /cmi warpgroups $1-
   /warpgroups:

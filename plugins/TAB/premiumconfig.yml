@@ -47,6 +47,7 @@ placeholder-output-replacements:
   '%tps%':
     '20': '&aPerfect'
 align-tabsuffix-on-the-right: false
+character-width-overrides: {}
 conditions:
   health:
     conditions:
