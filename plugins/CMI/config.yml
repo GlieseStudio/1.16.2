@@ -6,7 +6,7 @@ Economy:
   # Attention! For economy to work properly with other plugins you will need ether an injector or recompiled Vault version. 
   # You can find both option at top of plugins page
   # ATTENTION! If you disabled CMI economy while server was running, you will need to perform full server restart for this to take correct effect and avoid any issues while getting players balances
-  Enabled: false
+  Enabled: true
   # Determines if player needs to confirm money payment by clicking on chat message
   Confirmation: false
   # Set to true if you want to log money transfers between players
@@ -401,7 +401,7 @@ ExploitPatcher:
   NoCommandsInBed: false
   # Due to major exploit relating to oversized books this is recomended to be enabled
   # While this is set to true players will be limited in how many pages they can create
-  # Limitation is determined by cmi.book.pages.missing locale for command.checkperm.info.variablecolor [20to100]missing locale for command.checkperm.info.permissioncolor  permission node and by default players can create 20 pages
+  # Limitation is determined by cmi.book.pages.§f[20to100]§6 permission node and by default players can create 20 pages
   LimitBooks: true
 Vault:
   # If your having issues with vault grabbing correct players' group or balance, consider to turn this to false
@@ -1706,13 +1706,20 @@ RandomTeleportation:
   # Setting to false will not longer generate world setups, but you can add them manually if needed
   AutoGenerateWorlds: true
   Worlds:
+    # World name to use this feature. Add annother one with appropriate name to enable random teleportation
     world_nether:
       Enabled: true
+      # Max coordinate to teleport, setting to 1000, player can be teleported between -1000 and 1000 coordinates
       MaxRange: 1000
+      # If maxcord set to 1000 and mincord to 500, then player can be teleported between -1000 to -500 and 1000 to 500 coordinates
       MinRange: 500
       CenterX: 0
       CenterZ: 0
       Circle: false
+      IgnoreWater: true
+      IgnoreLava: true
+      minY: 0
+      maxY: 256
     world_the_end:
       Enabled: true
       MaxRange: 1000
@@ -1720,6 +1727,10 @@ RandomTeleportation:
       CenterX: 0
       CenterZ: 0
       Circle: false
+      IgnoreWater: true
+      IgnoreLava: true
+      minY: 0
+      maxY: 256
     world:
       Enabled: true
       MaxRange: 1000
@@ -1727,6 +1738,10 @@ RandomTeleportation:
       CenterX: 0
       CenterZ: 0
       Circle: false
+      IgnoreWater: true
+      IgnoreLava: true
+      minY: 0
+      maxY: 256
   # How long force player to wait before using command again.
   Cooldown: 5
   # How many times to try find correct location for teleportation.

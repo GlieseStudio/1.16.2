@@ -1,0 +1,113 @@
+#######################                       #######################
+#      _____                                                        #
+#     /    /  /\     /                              _   _   _       #
+#    /___ /  /  \   / |\_/|  _  ___ |\       \   / |_|  _| | |      #
+#   /    /  /    \ /  |   | | |  |  | |  -->  \_/.  _|.|_. |_|      #
+#  /    /  /      /   |   | |_|  |  |/                              #
+#                                                                   #
+####################         Strings.yml         ####################
+
+#
+#All strings in this file support placeholders!
+#
+
+#
+#Online Placeholders:
+#
+
+#
+#Placeholder: %online%
+#Description: display real server's online
+#
+
+#
+#Placeholder: %fakeOnline%
+#Description: display fake server's online
+#
+#This placeholder only works if you
+#allow usage of Data.yml file in
+#config.yml, by setting Data: true
+#
+
+#
+#MaxPlayers Placeholders:
+#
+
+#
+#Placeholder: %maxplayers%
+#Description: display number of real server's slots
+#
+
+#
+#Placeholder: %fakeMaxplayers%
+#Description: display number of fake server's
+#
+#This placeholder only works if you
+#allow usage of Data.yml file in
+#config.yml, by setting Data: true
+#
+
+#
+#Hex Colors Placeholders:
+#
+
+#
+#Placeholder: %#<color>%
+#Description: make a message of any color
+#Example: %#C8A2C8% or %#1CA9C9%
+#
+
+#
+#Placeholder: %#<from-color>->#<to-color>:<text>;<arg-1>;<arg-2>;...<arg-6>%
+#(place formatting codes after ; (these are &k,&l,&m,&n,&o,&r)
+#If you don't want to use formatting codes, don't place them)
+#Description: make a gradient message
+#Example: %#C8A2C8->#1CA9C9:Gradient!;&l%
+#
+#IMPORTANT!
+#Please note that the order of the formatting codes
+#is not strict, but the result directly depends on it.
+#To ensure that the outcome text meets your expectations,
+#arrange the codes in the correct order for you.
+#
+    
+Motd:
+    
+    #What should be displayed on line 1 of your Motd:
+    #(if you have more than 1 line, random will be selected
+    #but it will be on the same position as a line in LineTwo section)
+    LineOne:
+        - "&c&lANMotd &7&l|&r &b1.8-1.16.x &7&l| &r&fThe &6&lGreat &r&fUpdate"
+        - "&c&lANMotd &7&l|&r &b1.8-1.16.x &7&l| &r&fThe &6&lGreat &r&fUpdate"
+        - "&c&lANMotd &7&l|&r &b1.8-1.16.x &7&l| &r&fThe &6&lGreat &r&fUpdate"
+    
+    #What should be displayed on line 2 of your Motd:
+    #(if you have more than 1 line, random will be selected
+    #but it will be on the same position as a line in LineOne section)
+    LineTwo:
+        - "&7&l>&r&f&l Donate and get %#00FF00->#008000:huge;&l%&r &f&ldiscount!"
+        - "&7&l>&r&f&l The best %#FFFF00->#FF00FF:motd plugin;&l%&r &f&lever!"
+        - "&7&l>&r&f&l Supports %#FF0000->#008000:random lines;&l%&r &f&lfunction!"
+    
+HoverBox:
+
+    #What text should be displayed when you hover over a player amount text:
+    HoverText:
+        - "&c&lANMotd &r&f&lInfo"
+        - "&7&m----------"
+        - ""
+        - "&b&lOnline: &r&f&l%fakeOnline%"
+        - "&b&lMaxPlayers: &r&f&l%fakeMaxplayers%"
+        - ""
+        - "&6Donate: &7&l&oexample.com"
+        - ""
+        - "&fHave any &6questions&f?"
+        - "Feel free to &6ask&f me on spigot!"
+        - ""
+        - "&7&m----------"
+        
+Version:
+    
+    #What text should be displayed instead of player amount text:
+    VersionText: "&eConnect &a>&b>&c>                                                   &a&lJOIN! &r&6&l[&r&c&l%fakeOnline%&r&7/&c&l%fakeMaxplayers%&r&6&l]"
+    

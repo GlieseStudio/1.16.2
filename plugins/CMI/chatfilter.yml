@@ -44,8 +44,8 @@ ChatFilter:
       Regex:
       - \b(?i)(f+(\W|_)*(u?)+(\W|_)*(c?)+(\W|_)*k+)
       ReplaceWith: not good
-      includePrivateMessages: true
       BlockType: none
+      includePrivateMessages: true
       msgToStaff: '&4!&6[playerName] &4swearing'
       Commands:
       - msg [senderName] &eDon't swear!
