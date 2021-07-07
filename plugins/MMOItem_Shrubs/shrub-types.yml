@@ -1,0 +1,26 @@
+SupremeMangoShrub:
+  
+  # What MMOItem Should this Shrub Generate?
+  Produced_MMOItem_Type: CONSUMABLE
+  Produced_MMOItem_ID: MANGO
+  
+  # Minimum Amount of Seconds between Generations
+  Minimum_Generation_Time: 10
+  
+  # After enough time has elapsed, every second's chance at generating the MMOItem
+  Generation_Chance: 100
+  
+  # If the conditions are broken, should the generation timer reset?
+  Require_Constant_Conditions: true
+  
+  # In what environment does this shrub produce?
+  Conditions:
+  - Surface
+  - Sunny
+  - Overworld
+  
+  # WIll this shrub run out of uses?
+  Maximum_Cummulative_Generation: 20
+  
+  # How many items can this shrub hold?
+  Storage_Capacity: 1

@@ -1,0 +1,11 @@
+oraxen:
+  prefix: <aqua>Oraxen <dark_gray>|<gray>
+  time:
+    unit:
+      milliseconds: MilliSeconds
+      seconds: Seconds
+      hours: Hours
+      minutes: Minutes
+      days: Days
+      nanoseconds: NanoSeconds
+      microseconds: MicroSeconds

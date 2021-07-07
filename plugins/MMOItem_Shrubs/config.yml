@@ -1,0 +1,26 @@
+
+# Should Shrubs Display their content in armor stands within them? 
+# Disable if people make farms way too big so that the armor stands cause lag.
+# Importance: NICE TO HAVE
+EnableArmorStands: true
+
+# Should shrubs save in the files whenever they generate a new item?
+# In case of an unexpected server crash, would allow shrubs that have generated an item to not lose that item.
+# Importance: MEDIUM
+RealtimeSaving: true
+
+# Should shrubs save in the files whenever they are moved by pistons?
+# In case of an unexpected server crash, this will prevent any problems with Shrub locations.
+# Importance: HIGH
+RealtimeSavingPistons: true
+
+# Every how many ticks will shrubs check if they
+# must now produce fruit.
+# '20' means 'every 1 second'
+ShrubsTickInterval: 20
+
+# When placing a new shrub, if there are more than MaxShrubClusterSize amount
+# of shrubs within ClusterRadius blocks of it (a cuboid around it), it will
+# break next tick (preventing players from overclustering shrubs).
+MaxShrubClusterSize: 2    # Basically this option is disabled, as there will never be more than 2 shrubs in 1 block.
+ClusterRadius: 0          # A Radius of 0 is a cuboid of 1 block. Radius of 1 is a 3x3x3 cuboid (27 blocks).
