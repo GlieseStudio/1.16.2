@@ -1,27 +1,29 @@
-[10:12:06] [main/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[10:12:25] [main/INFO]: Reloading ResourceManager: Default, bukkit
-[10:12:35] [Worker-Main-1/INFO]: Loaded 7 recipes
-[10:12:54] [Server thread/INFO]: Starting minecraft server version 1.17
-[10:12:54] [Server thread/INFO]: Loading properties
-[10:13:00] [Server thread/INFO]: This server is running Paper version git-Paper-46 (MC: 1.17) (Implementing API version 1.17-R0.1-SNAPSHOT) (Git: 9e07703)
-[10:13:00] [Server thread/INFO]: Debug logging is disabled
-[10:13:00] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[10:13:00] [Server thread/INFO]: Using 4 threads for Netty based IO
-[10:13:01] [Server thread/INFO]: Default game type: SURVIVAL
-[10:13:01] [Server thread/INFO]: Generating keypair
-[10:13:01] [Server thread/INFO]: Starting Minecraft server on *:25565
-[10:13:06] [Server thread/INFO]: Using default channel type
-[10:13:19] [Server thread/WARN]: Ambiguous plugin name `WorldEdit'. It is also provided by `FastAsyncWorldEdit'
-[10:13:22] [Server thread/WARN]: Initializing Legacy Material Support. Unless you have legacy plugins and/or data this is a bug!
-[10:13:35] [Server thread/WARN]: Legacy plugin LoginSecurity v3.0.2 does not specify an api-version.
-[10:13:37] [Server thread/INFO]: [AsyncWorldEdit] Detected Java 8+, trying to open modules for reflection access...
-[10:13:37] [Server thread/INFO]: [AsyncWorldEdit] Injector platform set to: InjectorBukkit
-[10:13:37] [Server thread/INFO]: [AsyncWorldEdit] Injecting NMS classes...
-[10:13:37] [Server thread/INFO]: [AsyncWorldEdit] Injecting WorldEdit classes...
-[10:13:37] [Server thread/WARN]: [WorldEdit] Loaded class org.primesoft.asyncworldedit.injector.injected.util.eventbus.IDispatchableEventBus from AsyncWorldEdit v3.9.1 which is not a depend, softdepend or loadbefore of this plugin.
-[10:13:38] [Server thread/INFO]: [AsyncWorldEdit] Injector Enabled
-[10:13:38] [Server thread/INFO]: [AsyncWorldEdit] New class factory set to: org.primesoft.asyncworldedit.asyncinjector.async.AsyncClassFactory
-[10:13:46] [Server thread/ERROR]: Could not load 'plugins\MythicMobs-5.0.0-20210706.085941-23.jar' in folder 'plugins'
+[11:08:55] [main/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[11:08:58] [main/INFO]: Reloading ResourceManager: Default, bukkit
+[11:09:00] [Worker-Main-1/INFO]: Loaded 7 recipes
+[11:09:03] [Server thread/INFO]: Starting minecraft server version 1.17
+[11:09:03] [Server thread/INFO]: Loading properties
+[11:09:05] [Server thread/INFO]: This server is running Paper version git-Paper-46 (MC: 1.17) (Implementing API version 1.17-R0.1-SNAPSHOT) (Git: 9e07703)
+[11:09:05] [Server thread/INFO]: Debug logging is disabled
+[11:09:05] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[11:09:05] [Server thread/INFO]: Using 4 threads for Netty based IO
+[11:09:05] [Server thread/INFO]: Default game type: SURVIVAL
+[11:09:05] [Server thread/INFO]: Generating keypair
+[11:09:06] [Server thread/INFO]: Starting Minecraft server on *:25565
+[11:09:07] [Server thread/INFO]: Using default channel type
+[11:09:10] [Server thread/ERROR]: Ambiguous plugin name `LangUtils' for files `plugins\LangUtils-mc1.17-2.5.3.jar' and `plugins\LangUtils-3.2.3.jar' in `plugins'
+[11:09:11] [Server thread/WARN]: Ambiguous plugin name `WorldEdit'. It is also provided by `FastAsyncWorldEdit'
+[11:09:12] [Server thread/WARN]: Initializing Legacy Material Support. Unless you have legacy plugins and/or data this is a bug!
+[11:09:22] [Server thread/WARN]: Legacy plugin LoginSecurity v3.0.2 does not specify an api-version.
+[11:09:25] [Server thread/WARN]: Legacy plugin 2FA v1.3.2 does not specify an api-version.
+[11:09:27] [Server thread/INFO]: [AsyncWorldEdit] Detected Java 8+, trying to open modules for reflection access...
+[11:09:27] [Server thread/INFO]: [AsyncWorldEdit] Injector platform set to: InjectorBukkit
+[11:09:27] [Server thread/INFO]: [AsyncWorldEdit] Injecting NMS classes...
+[11:09:27] [Server thread/INFO]: [AsyncWorldEdit] Injecting WorldEdit classes...
+[11:09:27] [Server thread/WARN]: [WorldEdit] Loaded class org.primesoft.asyncworldedit.injector.injected.util.eventbus.IDispatchableEventBus from AsyncWorldEdit v3.9.1 which is not a depend, softdepend or loadbefore of this plugin.
+[11:09:28] [Server thread/INFO]: [AsyncWorldEdit] Injector Enabled
+[11:09:28] [Server thread/INFO]: [AsyncWorldEdit] New class factory set to: org.primesoft.asyncworldedit.asyncinjector.async.AsyncClassFactory
+[11:09:28] [Server thread/ERROR]: Could not load 'plugins\MythicMobs-5.0.0-20210706.085941-23.jar' in folder 'plugins'
 org.bukkit.plugin.InvalidPluginException: java.lang.NoClassDefFoundError: io/lumine/utils/plugin/LuminePlugin
 	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:157) ~[patched_1.17.jar:git-Paper-46]
 	at org.bukkit.plugin.SimplePluginManager.loadPlugin(SimplePluginManager.java:414) ~[patched_1.17.jar:git-Paper-46]
@@ -62,7 +64,7 @@ Caused by: java.lang.ClassNotFoundException: io.lumine.utils.plugin.LuminePlugin
 	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:71) ~[patched_1.17.jar:git-Paper-46]
 	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:153) ~[patched_1.17.jar:git-Paper-46]
 	... 7 more
-[10:13:47] [Server thread/ERROR]: Could not load 'plugins\MythicCrucible-0.0.1-20210613.212409-18.jar' in folder 'plugins'
+[11:09:28] [Server thread/ERROR]: Could not load 'plugins\MythicCrucible-0.0.1-20210613.212409-18.jar' in folder 'plugins'
 org.bukkit.plugin.UnknownDependencyException: Unknown/missing dependency plugins: [MythicMobs]. Please download and install these plugins to run 'MythicCrucible'.
 	at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:291) ~[patched_1.17.jar:git-Paper-46]
 	at org.bukkit.craftbukkit.v1_17_R1.CraftServer.loadPlugins(CraftServer.java:393) ~[patched_1.17.jar:git-Paper-46]
@@ -70,7 +72,7 @@ org.bukkit.plugin.UnknownDependencyException: Unknown/missing dependency plugins
 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1118) ~[patched_1.17.jar:git-Paper-46]
 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:320) ~[patched_1.17.jar:git-Paper-46]
 	at java.lang.Thread.run(Thread.java:831) [?:?]
-[10:13:47] [Server thread/ERROR]: Could not load 'plugins\MythicEnchants-0.0.1-20210625.024747-22.jar' in folder 'plugins'
+[11:09:29] [Server thread/ERROR]: Could not load 'plugins\MythicEnchants-0.0.1-20210625.024747-22.jar' in folder 'plugins'
 org.bukkit.plugin.UnknownDependencyException: Unknown/missing dependency plugins: [MythicMobs]. Please download and install these plugins to run 'MythicEnchants'.
 	at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:291) ~[patched_1.17.jar:git-Paper-46]
 	at org.bukkit.craftbukkit.v1_17_R1.CraftServer.loadPlugins(CraftServer.java:393) ~[patched_1.17.jar:git-Paper-46]
@@ -78,7 +80,7 @@ org.bukkit.plugin.UnknownDependencyException: Unknown/missing dependency plugins
 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1118) ~[patched_1.17.jar:git-Paper-46]
 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:320) ~[patched_1.17.jar:git-Paper-46]
 	at java.lang.Thread.run(Thread.java:831) [?:?]
-[10:13:47] [Server thread/ERROR]: Could not load 'plugins\MythicArtifacts-0.1.30-20200728.052531-17.jar' in folder 'plugins'
+[11:09:29] [Server thread/ERROR]: Could not load 'plugins\MythicArtifacts-0.1.30-20200728.052531-17.jar' in folder 'plugins'
 org.bukkit.plugin.UnknownDependencyException: Unknown/missing dependency plugins: [MythicMobs]. Please download and install these plugins to run 'MythicArtifacts'.
 	at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:291) ~[patched_1.17.jar:git-Paper-46]
 	at org.bukkit.craftbukkit.v1_17_R1.CraftServer.loadPlugins(CraftServer.java:393) ~[patched_1.17.jar:git-Paper-46]
@@ -86,418 +88,435 @@ org.bukkit.plugin.UnknownDependencyException: Unknown/missing dependency plugins
 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1118) ~[patched_1.17.jar:git-Paper-46]
 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:320) ~[patched_1.17.jar:git-Paper-46]
 	at java.lang.Thread.run(Thread.java:831) [?:?]
-[10:13:47] [Server thread/INFO]: [LuckPerms] Loading LuckPerms v5.3.48
-[10:13:49] [Server thread/INFO]: [LoginSecurity] Loading LoginSecurity v3.0.2
-[10:13:49] [Server thread/INFO]: [PlaceholderAPI] Loading PlaceholderAPI v2.10.9
-[10:13:49] [Server thread/INFO]: [ItemsXL] Loading ItemsXL v1.0.2
-[10:13:49] [Server thread/INFO]: [PlugMan] Loading PlugMan v2.2.2
-[10:13:49] [Server thread/INFO]: [HoloDropsX] Loading HoloDropsX v3.0.0
-[10:13:49] [Server thread/INFO]: [ProtocolLib] Loading ProtocolLib v4.7.0-SNAPSHOT-b526
-[10:14:14] [Server thread/INFO]: [LiteSignIn] Loading LiteSignIn v1.5.0
-[10:14:14] [Server thread/INFO]: [ANM] Loading AdvancedNMotd v9.2.0
-[10:14:14] [Server thread/INFO]: [LangUtils] Loading LangUtils v2.5.3
-[10:14:14] [Server thread/INFO]: [Vault] Loading Vault v1.7.3-b${env.TRAVIS_BUILD_NUMBER}
-[10:14:14] [Server thread/INFO]: [PvPManager] Loading PvPManager v3.8.1
-[10:14:14] [Server thread/INFO]: [WorldEdit] Loading WorldEdit v7.3.0-SNAPSHOT+5836-183ae4a
-[10:14:22] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@53a5aeef]
-[10:14:22] [Server thread/INFO]: [VentureChat] Loading VentureChat v2.23.3
-[10:14:22] [Server thread/INFO]: [PlayerPoints] Loading PlayerPoints v3.0.3
-[10:14:22] [Server thread/INFO]: [Multiverse-Core] Loading Multiverse-Core v4.3.1-SNAPSHOT-b847
-[10:14:22] [Server thread/INFO]: [Citizens] Loading Citizens v2.0.28-SNAPSHOT (build 2337)
-[10:14:22] [Server thread/INFO]: [AsyncWorldEdit] Loading AsyncWorldEdit v3.9.1
-[10:14:22] [Server thread/INFO]: [AsyncWorldEdit] Plugin installed
-[10:14:22] [Server thread/INFO]: [FastAsyncWorldEdit] Loading FastAsyncWorldEdit v1.17-38;af1a3c3
-[10:14:22] [Server thread/WARN]: You installed WorldEdit alongside FastAsyncWorldEdit. That is unneeded and will cause unforeseen issues, because FastAsyncWorldEdit already provides WorldEdit. Stop your server and delete the 'worldedit-bukkit' jar from your plugins folder.
-[10:14:24] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@352befcb]
-[10:14:24] [Server thread/INFO]: [AdvancedAchievements] Loading AdvancedAchievements v7.1.0
-[10:14:24] [Server thread/INFO]: [TAB] Loading TAB v2.9.1
-[10:14:24] [Server thread/INFO]: [TheAPI] Loading TheAPI v6.3
-[10:14:27] [Server thread/INFO]: TheAPI: ********************
-[10:14:27] [Server thread/INFO]: TheAPI: Action: Loading plugin..
-[10:14:27] [Server thread/INFO]: TheAPI: ********************
-[10:14:27] [Server thread/INFO]: [CoreProtect] Loading CoreProtect v19.5
-[10:14:27] [Server thread/INFO]: [WESV] Loading WorldEditSelectionVisualizer v2.1.0
-[10:14:27] [Server thread/INFO]: [AmazingFishing] Loading AmazingFishing v4.1
-[10:14:27] [Server thread/INFO]: [MythicLib] Loading MythicLib v1.1.1
-[10:14:27] [Server thread/INFO]: [MythicLib] Detected Bukkit Version: v1_17_R1
-[10:14:27] [Server thread/INFO]: [CMILib] Loading CMILib v1.0.2.9
-[10:14:27] [Server thread/INFO]: [CMI] Loading CMI v9.0.0.7
-[10:14:27] [Server thread/INFO]: [Residence] Loading Residence v5.0.0.0
-[10:14:27] [Server thread/INFO]: [MMOCore] Loading MMOCore v1.8.0
-[10:14:27] [Server thread/INFO]: [SmoothTimber] Loading SmoothTimber v1.17.1
-[10:14:27] [Server thread/INFO]: [MMOItems] Loading MMOItems v6.6.0
-[10:14:27] [Server thread/INFO]: [MMOItems] Hooked onto WorldEdit
-[10:14:34] [Server thread/INFO]: [DungeonsXL] Loading DungeonsXL v0.18-SNAPSHOT-1109
-[10:14:34] [Server thread/INFO]: [GooP] Loading Gunging_Ootilities_Plugin v1.8.0
-[10:14:35] [Server thread/INFO]: [MMOItem Shrubs] Loading MMOItem_Shrubs v1.6.0
-[10:14:35] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[10:14:35] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.3.48
-[10:14:40] [Server thread/INFO]:         __    
-[10:14:40] [Server thread/INFO]:   |    |__)   LuckPerms v5.3.48
-[10:14:40] [Server thread/INFO]:   |___ |      Running on Bukkit - Paper
-[10:14:40] [Server thread/INFO]: 
-[10:14:40] [Server thread/INFO]: [LuckPerms] Loading configuration...
-[10:14:44] [Server thread/INFO]: [LuckPerms] Loading storage provider... [H2]
-[10:14:47] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
-[10:14:47] [Server thread/INFO]: [LuckPerms] Performing initial data load...
-[10:14:49] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 13893ms)
-[10:14:49] [Server thread/INFO]: [ProtocolLib] Enabling ProtocolLib v4.7.0-SNAPSHOT-b526
-[10:14:49] [Server thread/INFO]: [ProtocolLib] Started structure compiler thread.
-[10:14:49] [Server thread/INFO]: [Vault] Enabling Vault v1.7.3-b${env.TRAVIS_BUILD_NUMBER}
-[10:14:49] [Server thread/WARN]: [Vault] Loaded class com.Zrips.CMI.Modules.Economy.Economy from CMI v9.0.0.7 which is not a depend, softdepend or loadbefore of this plugin.
-[10:14:49] [Server thread/INFO]: [Vault] [Economy] CMI Economy found: Waiting
-[10:14:49] [Server thread/INFO]: [Vault] [Permission] SuperPermissions loaded as backup permission system.
-[10:14:50] [Server thread/INFO]: [Vault] Enabled Version 1.7.3-b${env.TRAVIS_BUILD_NUMBER}
-[10:14:50] [Server thread/INFO]: [LuckPerms] Registered Vault permission & chat hook.
-[10:14:50] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v7.3.0-SNAPSHOT+5836-183ae4a
-[10:14:50] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
-[10:14:51] [Server thread/INFO]: WEPIF: Vault detected! Using Vault for permissions
-[10:14:53] [Server thread/INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.Spigot_v1_17_R1 as the Bukkit adapter
-[10:14:56] [Server thread/INFO]: [AsyncWorldEdit] Enabling AsyncWorldEdit v3.9.1
-[10:14:56] [Server thread/INFO]: [AsyncWorldEdit] Platform set to Bukkit API
-[10:14:56] [Server thread/INFO]: [AsyncWorldEdit] ===================================================================================
-[10:14:56] [Server thread/INFO]: [AsyncWorldEdit] =     ___                         _       __           __    ________    ___ __   =
-[10:14:56] [Server thread/INFO]: [AsyncWorldEdit] =    /   |  _______  ______  ____| |     / /___  _____/ /___/ / ____/___/ (_) /_  =
-[10:14:56] [Server thread/INFO]: [AsyncWorldEdit] =   / /| | / ___/ / / / __ \/ ___/ | /| / / __ \/ ___/ / __  / __/ / __  / / __/  =
-[10:14:56] [Server thread/INFO]: [AsyncWorldEdit] =  / ___ |(__  ) /_/ / / / / /__ | |/ |/ / /_/ / /  / / /_/ / /___/ /_/ / / /_    =
-[10:14:56] [Server thread/INFO]: [AsyncWorldEdit] = /_/  |_/____/\__, /_/ /_/\___/ |__/|__/\____/_/  /_/\__,_/_____/\__,_/_/\__/    =
-[10:14:56] [Server thread/INFO]: [AsyncWorldEdit] =             /____/                                                              =
-[10:14:56] [Server thread/INFO]: [AsyncWorldEdit] = Author: SBPrime                                                                 =
-[10:14:56] [Server thread/INFO]: [AsyncWorldEdit] =                                ________________                                 =
-[10:14:56] [Server thread/INFO]: [AsyncWorldEdit] =                            ___/  free version  \___                             =
-[10:14:56] [Server thread/INFO]: [AsyncWorldEdit] ===================================================================================
-[10:14:56] [Server thread/INFO]: [AsyncWorldEdit] Initializing WorldEdit.
-[10:14:56] [AWE:Cron:undoCleanup/INFO]: [AsyncWorldEdit] Undo cleanup started...
-[10:14:56] [AWE:Cron:undoCleanup/INFO]: [AsyncWorldEdit] ...undo cleanup done.
-[10:14:57] [Server thread/INFO]: [AsyncWorldEdit] No matching adapter found for Bukkit.v1_17_R1, DirectChunkAPI disabled
-[10:14:57] [Server thread/INFO]: [AsyncWorldEdit] PlotMeFix set to class org.primesoft.asyncworldedit.plotme.NullFix.
-[10:14:57] [Server thread/INFO]: [AsyncWorldEdit] Enabled
-[10:14:57] [Server thread/INFO]: [FastAsyncWorldEdit] Enabling FastAsyncWorldEdit v1.17-38;af1a3c3
-[10:15:04] [Thread-11/INFO]: [AsyncWorldEdit] You have the latest version of the plugin.
-[10:19:14] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
-[10:19:14] [Server thread/INFO]: WEPIF: Vault detected! Using Vault for permissions
-[10:19:15] [Server thread/INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.fawe.FAWE_Spigot_v1_17_R1 as the Bukkit adapter
-[10:19:17] [Server thread/INFO]: [AsyncWorldEdit] Initializing WorldEdit.
-[10:19:17] [Server thread/INFO]: Preparing level "world"
-[10:19:24] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[10:19:28] [Server thread/INFO]: Time elapsed: 3828 ms
-[10:19:28] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
-[10:19:34] [Server thread/INFO]: Time elapsed: 6534 ms
-[10:19:34] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
-[10:20:04] [Server thread/INFO]: Time elapsed: 30016 ms
-[10:20:05] [Server thread/INFO]: [LoginSecurity] Enabling LoginSecurity v3.0.2*
-[10:20:05] [Server thread/INFO]: [LoginSecurity] Loading base translations from "en_us"
-[10:20:05] [Server thread/INFO]: [LoginSecurity] Loading specified translations from "en_us"
-[10:22:08] [Server thread/INFO]: [LoginSecurity] Registering commands...
-[10:22:08] [Server thread/INFO]: [LoginSecurity] Registering listeners...
-[10:22:08] [Server thread/INFO]: [LoginSecurity] Using 1.12+ map captcha renderer
-[10:22:08] [Server thread/INFO]: [PlaceholderAPI] Enabling PlaceholderAPI v2.10.9
-[10:22:08] [Server thread/INFO]: [PlaceholderAPI] Fetching available expansion information...
-[10:22:08] [Server thread/INFO]: [ItemsXL] Enabling ItemsXL v1.0.2
-[10:22:09] [Server thread/INFO]: [ItemsXL] [##########[ItemsXL]##########]
-[10:22:09] [Server thread/INFO]: [ItemsXL] Internals: [v1_17_R1]
-[10:22:09] [Server thread/INFO]: [ItemsXL] Paper API: [true]
-[10:22:09] [Server thread/INFO]: [ItemsXL] Economy: [false]
-[10:22:09] [Server thread/INFO]: [ItemsXL] Permissions: [false]
-[10:22:09] [Server thread/INFO]: [ItemsXL] Metrics: [https://bstats.org/plugin/bukkit/ItemsXL/1041]
-[10:22:09] [Server thread/INFO]: [ItemsXL] SpigotMC ID: [14472]
-[10:22:09] [Server thread/INFO]: [ItemsXL] [###############################]
-[10:22:09] [Server thread/INFO]: [ItemsXL] Successfully loaded Vignette module "Inventory".
-[10:22:12] [Server thread/INFO]: [PlugMan] Enabling PlugMan v2.2.2
-[10:22:13] [Server thread/INFO]: [HoloDropsX] Enabling HoloDropsX v3.0.0
-[10:22:13] [Server thread/INFO]: [LiteSignIn] Enabling LiteSignIn v1.5.0
-[10:22:13] [Server thread/INFO]: [LiteSignIn] 语言信息已加载。
-[10:22:14] [Server thread/INFO]: LiteSignIn >>> 成功连接到 SQLite 服务器.
-[10:22:14] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: litesignin
-[10:22:14] [Server thread/INFO]: LiteSignIn >>> 找到 PlaceholderAPI ， 准备就绪。
-[10:22:14] [Server thread/INFO]: LiteSignIn >>> 插件无法获取配置文件 Config.yml 路径 Wood-Signs-Script, 已通过获取默认配置文件进行修复.
-[10:22:15] [Server thread/INFO]: LiteSignIn >>> 插件加载完成。
-[10:22:15] [Server thread/INFO]: [ANM] Enabling AdvancedNMotd v9.2.0
-[10:22:15] [Server thread/INFO]: 
-[10:22:15] [Server thread/INFO]: ---------------- AdvancedNMotd --------------
-[10:22:15] [Server thread/INFO]:            AdvancedNMotd is enabled!
-[10:22:15] [Server thread/INFO]: ---------------------------------------------
-[10:22:15] [Server thread/INFO]: 
-[10:22:15] [Server thread/INFO]: [LangUtils] Enabling LangUtils v2.5.3
-[10:22:16] [Server thread/INFO]: [LangUtils] en_us has been loaded.
-[10:22:16] [Server thread/INFO]: [LangUtils] zh_cn has been loaded.
-[10:22:16] [Server thread/INFO]: [LangUtils] Language Utils has been enabled.(530ms)
-[10:22:16] [Server thread/INFO]: [PvPManager] Enabling PvPManager v3.8.1
-[10:22:16] [Server thread/INFO]: [PvPManager] Loaded 0 players from users file
-[10:22:17] [Server thread/INFO]: [PvPManager] Vault Found! Using it for currency related features
-[10:22:17] [Server thread/INFO]: [PvPManager] PlaceholderAPI Found! Hooked successfully
-[10:22:17] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: pvpmanager
-[10:22:17] [Server thread/INFO]: [PvPManager] PvPManager Enabled (1140 ms)
-[10:22:17] [Server thread/INFO]: [VentureChat] Enabling VentureChat v2.23.3
-[10:22:17] [Server thread/INFO]: [VentureChat] - Initializing...
-[10:22:17] [Server thread/INFO]: [VentureChat] - Config found! Loading file.
-[10:22:18] [Server thread/INFO]: [VentureChat] - Checking for Vault...
-[10:22:18] [Server thread/INFO]: [VentureChat] - Loading player data
-[10:22:19] [Server thread/INFO]: [VentureChat] - Registering Listeners
-[10:22:19] [Server thread/INFO]: [VentureChat] - Attaching to Executors
-[10:22:19] [Server thread/INFO]: [VentureChat] - Establishing BungeeCord
-[10:22:19] [Server thread/INFO]: [VentureChat] - Enabling PlaceholderAPI Hook
-[10:22:19] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: venturechat
-[10:22:19] [Server thread/INFO]: [VentureChat] - Enabled Successfully
-[10:22:19] [Server thread/INFO]: [PlayerPoints] Enabling PlayerPoints v3.0.3
-[10:22:19] [Server thread/INFO]: [PlayerPoints] Initializing using RoseGarden v1.0.7-SNAPSHOT
-[10:22:19] [Server thread/INFO]: [PlayerPoints] Data handler connected using SQLite.
-[10:22:20] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: playerpoints
-[10:22:20] [Server thread/INFO]: [Multiverse-Core] Enabling Multiverse-Core v4.3.1-SNAPSHOT-b847
-[10:22:20] [Server thread/WARN]: [Multiverse-Core] "Multiverse-Core v4.3.1-SNAPSHOT-b847" has registered a listener for org.bukkit.event.entity.EntityCreatePortalEvent on method "public void com.onarandombox.MultiverseCore.listeners.MVPortalListener.entityPortalCreate(org.bukkit.event.entity.EntityCreatePortalEvent)", but the event is Deprecated. "Server performance will be affected"; please notify the authors [dumptruckman, Rigby, fernferret, lithium3141, main--].
-[10:22:20] [Server thread/INFO]: [Multiverse-Core] We are aware of the warning about the deprecated event. There is no alternative that allows us to do what we need to do and performance impact is negligible. It is safe to ignore.
-[10:22:21] [Server thread/INFO]: [Multiverse-Core] 3 - World(s) loaded.
-[10:22:21] [Server thread/WARN]: [Multiverse-Core] Buscript failed to load! The script command will be disabled! If you would like not to see this message, use `/mv conf enablebuscript false` to disable Buscript from loading.
-[10:22:21] [Server thread/INFO]: [Multiverse-Core] Version 4.3.1-SNAPSHOT-b847 (API v24) Enabled - By dumptruckman, Rigby, fernferret, lithium3141 and main--
-[10:22:21] [Server thread/INFO]: [Citizens] Enabling Citizens v2.0.28-SNAPSHOT (build 2337)
-[10:22:23] [Server thread/INFO]: [AdvancedAchievements] Enabling AdvancedAchievements v7.1.0
-[10:22:24] [Server thread/INFO]: [AdvancedAchievements] Backing up and loading configuration files...
-[10:22:24] [Server thread/WARN]: [AdvancedAchievements] Overriding configuration: disabling PetMasterGive and PetMasterReceive categories.
-[10:22:24] [Server thread/WARN]: [AdvancedAchievements] Ensure you have placed Pet Master in your plugins folder or add PetMasterGive and PetMasterReceive to the DisabledCategories list in config.yml.
-[10:22:24] [Server thread/WARN]: [AdvancedAchievements] Overriding configuration: disabling JobsReborn category.
-[10:22:24] [Server thread/WARN]: [AdvancedAchievements] Ensure you have placed JobsReborn in your plugins folder or add JobsReborn to the DisabledCategories list in config.yml.
-[10:22:24] [Server thread/INFO]: [AdvancedAchievements] Loaded 60 achievements in 49 categories.
-[10:22:24] [Server thread/INFO]: [AdvancedAchievements] 4 disabled categories: [PetMasterReceive, PetMasterGive, AdvancementsCompleted, JobsReborn]
-[10:22:24] [Server thread/INFO]: [AdvancedAchievements] Registering event listeners...
-[10:22:25] [Server thread/INFO]: [AdvancedAchievements] Initialising h2 database...
-[10:22:26] [Server thread/INFO]: [AdvancedAchievements] Backing up database file...
-[10:22:28] [Server thread/INFO]: [AdvancedAchievements] Setting up command executor and custom tab completers...
-[10:22:28] [Server thread/INFO]: [AdvancedAchievements] Launching scheduled tasks...
-[10:22:28] [Server thread/INFO]: [AdvancedAchievements] Registering permissions...
-[10:22:28] [Thread-17/INFO]: [AdvancedAchievements] Checking for plugin update...
-[10:22:29] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: aach
-[10:22:29] [Server thread/INFO]: [AdvancedAchievements] Plugin has finished loading and is ready to run! Took 6253ms.
-[10:22:29] [Server thread/INFO]: [TAB] Enabling TAB v2.9.1
-[10:22:29] [Server thread/INFO]: [TAB] Server version: 1.17 (v1_17_R1)
-[10:22:31] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: tab
-[10:22:31] [Server thread/INFO]: [TAB] Enabled in 457ms
-[10:22:31] [Server thread/INFO]: [TheAPI] Enabling TheAPI v6.3
-[10:22:31] [Server thread/INFO]: TheAPI: ********************
-[10:22:31] [Server thread/INFO]: TheAPI: Action: Enabling plugin, creating config and registering economy..
-[10:22:31] [Server thread/INFO]: TheAPI: ********************
-[10:22:33] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: theapi
-[10:22:33] [Server thread/INFO]: [CoreProtect] Enabling CoreProtect v19.5
-[10:22:34] [Server thread/INFO]: [CoreProtect] CoreProtect has been successfully enabled! 
-[10:22:34] [Server thread/INFO]: [CoreProtect] Using SQLite for data storage.
-[10:22:34] [Server thread/INFO]: --------------------
-[10:22:34] [Server thread/INFO]: [CoreProtect] Enjoy CoreProtect? Join our Discord!
-[10:22:34] [Server thread/INFO]: [CoreProtect] Discord: www.coreprotect.net/discord/
-[10:22:34] [Server thread/INFO]: --------------------
-[10:22:34] [MultiThread-Worker-2/INFO]: TheAPI: ********************
-[10:22:34] [MultiThread-Worker-2/INFO]: TheAPI: Action: Looking for Vault Economy..
-[10:22:34] [MultiThread-Worker-2/INFO]: TheAPI: ********************
-[10:22:34] [Server thread/INFO]: [WESV] Enabling WorldEditSelectionVisualizer v2.1.0
-[10:22:34] [MultiThread-Worker-4/INFO]: TheAPI: ********************
-[10:22:34] [MultiThread-Worker-4/INFO]: TheAPI: Found Vault Economy
-[10:22:34] [MultiThread-Worker-4/INFO]: TheAPI: ********************
-[10:22:34] [Server thread/INFO]: [WESV] Using WorldEdit 7 api
-[10:22:34] [MultiThread-Worker-2/INFO]: TheAPI: *********************************************
-[10:22:34] [MultiThread-Worker-2/INFO]: TheAPI: Update checker: Found new version of TheAPI.
-[10:22:34] [MultiThread-Worker-2/INFO]: TheAPI:        https://www.spigotmc.org/resources/72679/
-[10:22:34] [MultiThread-Worker-2/INFO]: TheAPI: *********************************************
-[10:22:34] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: wesv
-[10:22:34] [Server thread/INFO]: [WESV] PlaceholderAPI extension successfully registered.
-[10:22:34] [Server thread/INFO]: [AmazingFishing] Enabling AmazingFishing v4.1
-[10:22:35] [Server thread/INFO]: AmazingFishing ? Fish registered (1) & removed unregistered (0).
-[10:22:35] [Server thread/INFO]: AmazingFishing ? Treasures registered (1) & removed unregistered (0).
-[10:22:35] [Server thread/INFO]: AmazingFishing ? Enchantments registered (1) & removed unregistered (0).
-[10:22:35] [Server thread/INFO]: AmazingFishing ? Quests registered (1) & removed unregistered (0).
-[10:22:35] [Server thread/INFO]: AmazingFishing ? Achievements registered (1) & removed unregistered (0).
-[10:22:35] [Server thread/INFO]: [MythicLib] Enabling MythicLib v1.1.1
-[10:22:35] [Server thread/INFO]: [LumineUtils] (io.lumine.mythic.utils.) is bound to plugin MythicLib - io.lumine.mythic.lib.MythicLib
-[10:22:35] [Server thread/INFO]: [MythicLib] Started up bStats Metrics
-[10:22:36] [Server thread/INFO]: [CMILib] Enabling CMILib v1.0.2.9
-[10:22:39] [Server thread/INFO]: CMI hooked.
-[10:22:39] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: cmil
-[10:22:39] [Server thread/INFO]: PlaceholderAPI hooked.
-[10:22:39] [Server thread/INFO]: Updated (EN) language file. Took 197ms
-[10:22:39] [Server thread/INFO]: [CMI] Enabling CMI v9.0.0.7
-[10:22:40] [Server thread/INFO]: ┏━━━┓ ┏━┓┏━┓ ┏━━┓
-[10:22:40] [Server thread/INFO]: ┃┏━┓┃ ┃ ┗┛ ┃ ┗┫┣┛
-[10:22:40] [Server thread/INFO]: ┃┃ ┗┛ ┃┏┓┏┓┃  ┃┃ 
-[10:22:40] [Server thread/INFO]: ┃┃ ┏┓ ┃┃┃┃┃┃  ┃┃ 
-[10:22:40] [Server thread/INFO]: ┃┗━┛┃ ┃┃┃┃┃┃ ┏┫┣┓
-[10:22:40] [Server thread/INFO]: ┗━━━┛ ┗┛┗┛┗┛ ┗━━┛
-[10:22:40] [Server thread/INFO]: _______________________________________________________
-[10:22:40] [Server thread/INFO]:   Integrating PaperSpigot async methods
-[10:22:42] [Server thread/INFO]:   Citizens found.
-[10:22:42] [Server thread/INFO]:   56 Enabled and 0 Disabled modules
-[10:22:43] [Server thread/INFO]:   Permission plugin: LuckPerms5.3.48
-[10:22:43] [Server thread/INFO]:   Initialized Cipher256 AES
-[10:22:43] [Server thread/INFO]:   Loaded (56) regular alias into memory. Took 106ms
-[10:22:43] [Server thread/INFO]:   Loaded (1) custom text's into memory. Took 47ms
-[10:22:43] [Server thread/INFO]:   3.34.0 data base type detected
-[10:22:44] [Server thread/INFO]:   Started SqLite data base. Took 385ms
-[10:22:44] [Server thread/INFO]:   Vault was found - Enabling capabilities. Economy: CMIEconomy
-[10:22:44] [Server thread/INFO]:   Loaded (5) warning categories into memory. Took 1ms
-[10:22:44] [Server thread/INFO]:   Loaded (3) warning commands into memory. Took 0ms
-[10:22:44] [Server thread/INFO]:   Loaded (134) custom mob heads into memory. Took 44ms
-[10:22:44] [Server thread/INFO]:   Loaded (0) cooldowns into memory. Took 56ms
-[10:22:44] [Server thread/INFO]:   Initializing BungeeCord
-[10:22:44] [Server thread/INFO]:   Loaded (5) kits into memory. Took 134ms
-[10:22:45] [Server thread/INFO]:   Loaded (7) ranks into memory. Took 187ms
-[10:22:45] [Server thread/INFO]:   Loaded (8) playtime rewards into memory. Took 31ms
-[10:22:45] [Server thread/INFO]:   Loaded (0) player data into memory. Took 1ms
-[10:22:45] [Server thread/INFO]:   Loaded (0) playtime records into memory. Took 0ms
-[10:22:45] [Server thread/INFO]:   Loaded (0) playtime reward records into memory. Took 1ms
-[10:22:45] [Server thread/INFO]:   Registered events. Took 237ms
-[10:22:45] [Server thread/INFO]:   Loaded (0) event action commands into memory. Took 40ms
-[10:22:45] [Server thread/INFO]:   Updated (EN) language file. Took 154ms
-[10:22:45] [Server thread/INFO]:   Loaded (245) worth values into memory. Took 230ms
-[10:22:45] [Server thread/INFO]:   Vault permissions was found - Enabling capabilities.
-[10:22:45] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: cmi
-[10:22:45] [Server thread/INFO]:   PlaceholderAPI hooked.
-[10:22:45] [Server thread/INFO]:   PlaceholderAPI was found - Enabling capabilities.
-[10:22:45] [Server thread/INFO]:   Starting world timer.
-[10:22:45] [Server thread/INFO]:   Initializing world manager.
-[10:22:46] [Server thread/INFO]:   Loaded (5) schedules into memory. Took 36ms
-[10:22:46] [Server thread/INFO]:   Loaded GeoIP
-[10:22:46] [Server thread/INFO]:   Loaded (0) skin cache entries into memory. Took 0ms
-[10:22:46] [Server thread/INFO]:   Version 9.0.0.7 has been enabled
-[10:22:46] [Server thread/INFO]: ???????????????????????????????????????????????????????
-[10:22:46] [Server thread/INFO]: [Vault][Economy] CMI Economy hooked.
-[10:22:46] [Server thread/INFO]: [Residence] Enabling Residence v5.0.0.0
-[10:22:46] [Server thread/INFO]: [Residence] Found Vault using permissions plugin:LuckPerms
-[10:22:46] [Server thread/INFO]: [Residence] Scanning for economy systems...
-[10:22:46] [Server thread/INFO]: [Residence] Found Vault using economy system: CMIEconomy
-[10:22:46] [Server thread/INFO]: [Residence] Loading save data for world world...
-[10:22:46] [Server thread/INFO]: [Residence] Loaded world data. (1 ms)
-[10:22:46] [Server thread/INFO]: [Residence] Loading save data for world world_the_end...
-[10:22:46] [Server thread/INFO]: [Residence] Loaded world_the_end data. (1 ms)
-[10:22:46] [Server thread/INFO]: [Residence] Loading save data for world world_nether...
-[10:22:46] [Server thread/INFO]: [Residence] Loaded world_nether data. (0 ms)
-[10:22:46] [Server thread/INFO]: [Residence] Loading world data into memory...
-[10:22:46] [Server thread/INFO]: [Residence] Loaded world data into memory. (0 ms) -> 0 residences
-[10:22:46] [Server thread/INFO]: [Residence] Loading world_the_end data into memory...
-[10:22:46] [Server thread/INFO]: [Residence] Loaded world_the_end data into memory. (0 ms) -> 0 residences
-[10:22:46] [Server thread/INFO]: [Residence] Loading world_nether data into memory...
-[10:22:46] [Server thread/INFO]: [Residence] Loaded world_nether data into memory. (0 ms) -> 0 residences
-[10:22:46] [Server thread/INFO]: [Residence] Found WorldEdit 7.3.0-SNAPSHOT+5836-183ae4a
-[10:22:47] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: residence
-[10:22:47] [Server thread/INFO]: [Residence] PlaceholderAPI hooked.
-[10:22:47] [Server thread/INFO]: [Residence] PlaceholderAPI was found - Enabling capabilities.
-[10:22:47] [Server thread/INFO]: [Residence] Enabled! Version 5.0.0.0 by Zrips
-[10:22:47] [Server thread/INFO]: [MMOCore] Enabling MMOCore v1.8.0
-[10:22:47] [Server thread/INFO]: [MMOCore] Hooked onto Vault
-[10:22:47] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: mmocore
-[10:22:47] [Server thread/INFO]: [MMOCore] Hooked onto PlaceholderAPI
-[10:22:47] [Server thread/INFO]: [MMOCore] Hooked onto Citizens
-[10:22:47] [Server thread/INFO]: [MMOCore] Hooked onto Residence
-[10:22:47] [Server thread/INFO]: [MMOCore] Hooked onto CMI Holograms
-[10:22:47] [Server thread/WARN]: [MMOCore] Could not load custom mining condition 'region{name="example_region,example_region2,__global__"}': Could not match any Condition to 'region' in database
-[10:22:47] [Server thread/WARN]: [MMOCore] Could not load condition 'region{name=swamp}' from fishing drop table 'overriding-drop-table': Could not match any Condition to 'region' in database
-[10:22:48] [Server thread/WARN]: [MMOCore] Could not load objective '5' from quest 'tutorial': Could not match any Objective to 'killmythicmob' in database
-[10:22:48] [Server thread/WARN]: [MMOCore] An error occured while trying to load loot chest region 'sample-region': Could not find world world_name_here
-[10:22:48] [Server thread/INFO]: [SmoothTimber] Enabling SmoothTimber v1.17.1
-[10:22:48] [Server thread/INFO]: SmoothTimber || You're currently using the supported Minecraft Version 1.17 (Core v1_16x)
-[10:22:48] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: smoothtimber
-[10:22:48] [MultiThread-Worker-5/INFO]: TheAPI: TheAPI using 1 plugin
-[10:22:48] [Server thread/INFO]: [MMOItems] Enabling MMOItems v6.6.0
-[10:22:49] [Server thread/INFO]: [MMOItems RPG Provider] Using MMOCore as RPGPlayer provider
-[10:22:50] [Server thread/INFO]: [MMOItems Item Templates] Loading template modifiers, please wait..
-[10:22:50] [Server thread/INFO]: [MMOItems Item Templates] Loading item templates, please wait...
-[10:22:51] [Server thread/INFO]: [MMOItems] Hooked onto Vault
-[10:22:51] [Server thread/INFO]: [MMOItems] Loading crafting stations, please wait..
-[10:22:51] [Server thread/INFO]: [MMOItems] Hooked onto Residence
-[10:22:51] [Server thread/INFO]: [MMOItems] Hooked onto CMI Holograms
-[10:22:51] [Server thread/INFO]: [MMOItems] Hooked onto PlaceholderAPI
-[10:22:51] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: mmoitems
-[10:22:51] [Server thread/INFO]: [MMOItems] Loading recipes, please wait...
-[10:22:56] [Server thread/INFO]: [DungeonsXL] Enabling DungeonsXL v0.18-SNAPSHOT-1109
-[10:22:57] [Server thread/INFO]: [DungeonsXL] [##########[DungeonsXL]##########]
-[10:22:57] [Server thread/INFO]: [DungeonsXL] Internals: [v1_17_R1]
-[10:22:57] [Server thread/INFO]: [DungeonsXL] Paper API: [true]
-[10:22:57] [Server thread/INFO]: [DungeonsXL] Economy: [true]
-[10:22:57] [Server thread/INFO]: [DungeonsXL] Permissions: [true]
-[10:22:57] [Server thread/INFO]: [DungeonsXL] Metrics: [https://bstats.org/plugin/bukkit/DungeonsXL/1039]
-[10:22:57] [Server thread/INFO]: [DungeonsXL] SpigotMC ID: [9488]
-[10:22:57] [Server thread/INFO]: [DungeonsXL] [###############################]
-[10:22:57] [Server thread/WARN]: [DungeonsXL] Support for Minecraft 1.14 and higher is experimental. Do not use this in a production environment.
-[10:22:59] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: dxl
-[10:22:59] [Server thread/INFO]: [DungeonsXL] Successfully loaded Vignette module "Inventory".
-[10:22:59] [Server thread/INFO]: [GooP] Enabling Gunging_Ootilities_Plugin v1.8.0
-[10:23:00] [Server thread/INFO]: [GooP] Checking for Premium Modules...
-[10:23:00] [Server thread/INFO]: [GooP] Premium Custom Structures not found.
-[10:23:00] [Server thread/INFO]: [GooP] Premium Containers not found.
-[10:23:00] [Server thread/INFO]: [GooP] Enabling GooP Extensions...
-[10:23:00] [Server thread/INFO]: [GooP] MMOItem Shrubs enabled.
-[10:23:00] [Server thread/INFO]: [GooP] Crossbow2RocketLauncher not found.
-[10:23:00] [Server thread/INFO]: [GooP] Checking for Compatible Plugins...
-[10:23:00] [Server thread/INFO]: [GooP] WorldGuard not found.
-[10:23:00] [Server thread/INFO]: [GooP] WorldEdit found.
-[10:23:00] [Server thread/INFO]: [GooP] DiscordSRV not found.
-[10:23:00] [Server thread/INFO]: [GooP] MMOItems found.
-[10:23:00] [Server thread/INFO]: [GooP] MMOCore found.
-[10:23:00] [Server thread/INFO]: [GooP] Vault found.
-[10:23:00] [Server thread/INFO]: [GooP] Graveyards not found.
-[10:23:00] [Server thread/INFO]: [GooP] MythicMobs not found.
-[10:23:00] [Server thread/INFO]: [GooP] McMMO not found.
-[10:23:00] [Server thread/INFO]: [GooP] PlaceholderAPI found.
-[10:23:00] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: goop
-[10:23:00] [Server thread/INFO]: [GooP] GriefPrevention found.
-[10:23:02] [Server thread/INFO]: [GooP] Initialization Complete. Success.
-[10:23:07] [Server thread/INFO]: Reloading ResourceManager: Default, bukkit
-[10:23:09] [Server thread/INFO]: Loaded 7 recipes
-[10:23:13] [Server thread/INFO]: Oraxen | Automatic upload of the resource pack is enabled, uploading...
-[10:23:13] [Server thread/INFO]: Oraxen | Successfully loaded on Windows 10
-[10:23:13] [Server thread/INFO]: [MMOItem Shrubs] Enabling MMOItem_Shrubs v1.6.0
-[10:23:14] [Server thread/INFO]: [MMOItem Shrubs] Loading Shrub Instances...
-[10:23:15] [Server thread/WARN]: [GooP] Loaded class gunging.ootilities.mmoitem_shrubs.MMOItem_Shrub_Manager from MMOItem_Shrubs v1.6.0 which is not a depend, softdepend or loadbefore of this plugin.
-[10:23:15] [Server thread/INFO]: [MMOItem Shrubs] Initialization Complete. Success..
-[10:23:18] [Server thread/INFO]: [PlaceholderAPI] Placeholder expansion registration initializing...
-[10:23:18] [Server thread/INFO]: Running delayed init tasks
-[10:23:18] [Server thread/INFO]: [AsyncWorldEdit] Loading plugins...
-[10:23:19] [Craft Scheduler Thread - 8/INFO]: [PvPManager] Checking for updates...
-[10:23:19] [Craft Scheduler Thread - 30/INFO]: [CMI] Failed to download https://raw.githubusercontent.com/Zrips/CMI/master/Translations/Locale_CZ.yml file into plugins\CMI\Translations\ folder 
-[10:23:19] [Craft Scheduler Thread - 30/INFO]: [CMI] You can do it manually or try again later or simply ignore it
-[10:23:19] [Craft Scheduler Thread - 17/INFO]: [CMI] Failed to download https://raw.githubusercontent.com/Zrips/CMI/master/Translations/Locale_CN.yml file into plugins\CMI\Translations\ folder 
-[10:23:19] [Craft Scheduler Thread - 17/INFO]: [CMI] You can do it manually or try again later or simply ignore it
-[10:23:19] [Craft Scheduler Thread - 18/INFO]: [CMI] Failed to download https://raw.githubusercontent.com/Zrips/CMI/master/Translations/Locale_DE.yml file into plugins\CMI\Translations\ folder 
-[10:23:19] [Craft Scheduler Thread - 18/INFO]: [CMI] You can do it manually or try again later or simply ignore it
-[10:23:19] [Craft Scheduler Thread - 19/INFO]: [CMI] Failed to download https://raw.githubusercontent.com/Zrips/CMI/master/Translations/Locale_ES.yml file into plugins\CMI\Translations\ folder 
-[10:23:19] [Craft Scheduler Thread - 19/INFO]: [CMI] You can do it manually or try again later or simply ignore it
-[10:23:19] [Craft Scheduler Thread - 20/INFO]: [CMI] Failed to download https://raw.githubusercontent.com/Zrips/CMI/master/Translations/Locale_IT.yml file into plugins\CMI\Translations\ folder 
-[10:23:19] [Craft Scheduler Thread - 20/INFO]: [CMI] You can do it manually or try again later or simply ignore it
-[10:23:19] [Craft Scheduler Thread - 21/INFO]: [CMI] Failed to download https://raw.githubusercontent.com/Zrips/CMI/master/Translations/Locale_LT.yml file into plugins\CMI\Translations\ folder 
-[10:23:19] [Craft Scheduler Thread - 21/INFO]: [CMI] You can do it manually or try again later or simply ignore it
-[10:23:19] [Craft Scheduler Thread - 22/INFO]: [CMI] Failed to download https://raw.githubusercontent.com/Zrips/CMI/master/Translations/Locale_RU.yml file into plugins\CMI\Translations\ folder 
-[10:23:19] [Craft Scheduler Thread - 22/INFO]: [CMI] You can do it manually or try again later or simply ignore it
-[10:23:19] [Craft Scheduler Thread - 23/INFO]: [CMI] Failed to download https://raw.githubusercontent.com/Zrips/CMI/master/Translations/Locale_SK.yml file into plugins\CMI\Translations\ folder 
-[10:23:19] [Craft Scheduler Thread - 23/INFO]: [CMI] You can do it manually or try again later or simply ignore it
-[10:23:19] [Craft Scheduler Thread - 24/INFO]: [CMI] Failed to download https://raw.githubusercontent.com/Zrips/CMI/master/Translations/Locale_SL.yml file into plugins\CMI\Translations\ folder 
-[10:23:19] [Craft Scheduler Thread - 24/INFO]: [CMI] You can do it manually or try again later or simply ignore it
-[10:23:19] [Craft Scheduler Thread - 25/INFO]: [CMI] Failed to download https://raw.githubusercontent.com/Zrips/CMI/master/Translations/Locale_FR.yml file into plugins\CMI\Translations\ folder 
-[10:23:19] [Craft Scheduler Thread - 25/INFO]: [CMI] You can do it manually or try again later or simply ignore it
-[10:23:19] [Craft Scheduler Thread - 26/INFO]: [CMI] Failed to download https://raw.githubusercontent.com/Zrips/CMI/master/Translations/Locale_PL.yml file into plugins\CMI\Translations\ folder 
-[10:23:19] [Craft Scheduler Thread - 26/INFO]: [CMI] You can do it manually or try again later or simply ignore it
-[10:23:19] [Craft Scheduler Thread - 27/INFO]: [CMI] Failed to download https://raw.githubusercontent.com/Zrips/CMI/master/Translations/Locale_NO.yml file into plugins\CMI\Translations\ folder 
-[10:23:19] [Craft Scheduler Thread - 27/INFO]: [CMI] You can do it manually or try again later or simply ignore it
-[10:23:19] [Craft Scheduler Thread - 28/INFO]: [CMI] Failed to download https://raw.githubusercontent.com/Zrips/CMI/master/Translations/Locale_ZH.yml file into plugins\CMI\Translations\ folder 
-[10:23:19] [Craft Scheduler Thread - 28/INFO]: [CMI] You can do it manually or try again later or simply ignore it
-[10:23:19] [Craft Scheduler Thread - 29/INFO]: [CMI] Failed to download https://raw.githubusercontent.com/Zrips/CMI/master/Translations/Locale_TR.yml file into plugins\CMI\Translations\ folder 
-[10:23:19] [Craft Scheduler Thread - 29/INFO]: [CMI] You can do it manually or try again later or simply ignore it
-[10:23:19] [Craft Scheduler Thread - 35/INFO]: [MMOItems] A new build is available: 6.5.8 (you are running 6.6.0)
-[10:23:19] [Craft Scheduler Thread - 35/INFO]: [MMOItems] Download it here: https://www.spigotmc.org/resources/39267/
-[10:23:20] [Server thread/INFO]: [com.fastasyncworldedit.bukkit.FaweBukkit] Attempting to use plugin 'Residence'
-[10:23:20] [Craft Scheduler Thread - 43/INFO]: [Vault] Checking for Updates ... 
-[10:23:21] [Craft Scheduler Thread - 7/INFO]: [ItemsXL] The plugin is up to date.
-[10:23:21] [Craft Scheduler Thread - 34/INFO]: [MMOCore] A new build is available: 1.7.1 (you are running 1.8.0)
-[10:23:21] [Craft Scheduler Thread - 34/INFO]: [MMOCore] Download it here: https://www.spigotmc.org/resources/70575/
-[10:23:21] [Craft Scheduler Thread - 14/INFO]: [MythicLib] A new build is available: 1.0.14.1 (you are running 1.1.1)
-[10:23:21] [Craft Scheduler Thread - 14/INFO]: [MythicLib] Download it here: https://www.spigotmc.org/resources/73855/
-[10:23:21] [Server thread/INFO]: 
-[10:23:21] [Server thread/INFO]: ------------ AdvancedNMotd Updater ----------
-[10:23:21] [Server thread/INFO]: Could not check for updates because of no internet access!
-[10:23:21] [Server thread/INFO]: Please, turn it on to get notified about latest versions!
-[10:23:21] [Server thread/INFO]: ---------------------------------------------
-[10:23:21] [Server thread/INFO]: 
-[10:23:21] [Server thread/INFO]: [CoreProtect] WorldEdit logging successfully initialized.
-[10:23:21] [Craft Scheduler Thread - 37/INFO]: Oraxen | Resourcepack uploaded on url http://atlas.oraxen.com/pack.zip?id=1827a363fd8e31d670414f470522a34a43108d91 in 7833ms
-[10:23:21] [Craft Scheduler Thread - 36/INFO]: [DungeonsXL] The plugin is up to date.
-[10:23:22] [Craft Scheduler Thread - 8/INFO]: [PvPManager] No update found
-[10:23:23] [Craft Scheduler Thread - 43/INFO]: [Vault] No new version available
-[10:23:26] [Server thread/INFO]: [Citizens] 已载入 0 个NPC.
-[10:23:26] [Server thread/WARN]: [PlaceholderAPI] Task #120 for PlaceholderAPI v2.10.9 generated an exception
+[11:09:29] [Server thread/INFO]: [LuckPerms] Loading LuckPerms v5.3.48
+[11:09:30] [Server thread/INFO]: [LoginSecurity] Loading LoginSecurity v3.0.2
+[11:09:30] [Server thread/INFO]: [PlaceholderAPI] Loading PlaceholderAPI v2.10.9
+[11:09:30] [Server thread/INFO]: [ItemsXL] Loading ItemsXL v1.0.2
+[11:09:30] [Server thread/INFO]: [PlugMan] Loading PlugMan v2.2.2
+[11:09:30] [Server thread/INFO]: [HoloDropsX] Loading HoloDropsX v3.0.0
+[11:09:30] [Server thread/INFO]: [ProtocolLib] Loading ProtocolLib v4.7.0-SNAPSHOT-b526
+[11:09:41] [Server thread/INFO]: [LiteSignIn] Loading LiteSignIn v1.5.0
+[11:09:41] [Server thread/INFO]: [2FA] Loading 2FA v1.3.2
+[11:09:41] [Server thread/INFO]: [ANM] Loading AdvancedNMotd v9.2.0
+[11:09:41] [Server thread/INFO]: [LangUtils] Loading LangUtils v2.5.3
+[11:09:41] [Server thread/INFO]: [Vault] Loading Vault v1.7.3-b${env.TRAVIS_BUILD_NUMBER}
+[11:09:41] [Server thread/INFO]: [PvPManager] Loading PvPManager v3.8.1
+[11:09:41] [Server thread/INFO]: [WorldEdit] Loading WorldEdit v7.3.0-SNAPSHOT+5836-183ae4a
+[11:09:43] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@54a2075e]
+[11:09:43] [Server thread/INFO]: [VentureChat] Loading VentureChat v2.23.3
+[11:09:43] [Server thread/INFO]: [NF] Loading NoOneFishing v1.0.9
+[11:09:43] [Server thread/INFO]: [PlayerPoints] Loading PlayerPoints v3.0.3
+[11:09:43] [Server thread/INFO]: [Multiverse-Core] Loading Multiverse-Core v4.3.1-SNAPSHOT-b847
+[11:09:43] [Server thread/INFO]: [Citizens] Loading Citizens v2.0.28-SNAPSHOT (build 2337)
+[11:09:43] [Server thread/INFO]: [AsyncWorldEdit] Loading AsyncWorldEdit v3.9.1
+[11:09:43] [Server thread/INFO]: [AsyncWorldEdit] Plugin installed
+[11:09:43] [Server thread/INFO]: [FastAsyncWorldEdit] Loading FastAsyncWorldEdit v1.17-38;af1a3c3
+[11:09:43] [Server thread/WARN]: You installed WorldEdit alongside FastAsyncWorldEdit. That is unneeded and will cause unforeseen issues, because FastAsyncWorldEdit already provides WorldEdit. Stop your server and delete the 'worldedit-bukkit' jar from your plugins folder.
+[11:09:44] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@72ef1714]
+[11:09:44] [Server thread/INFO]: [AdvancedAchievements] Loading AdvancedAchievements v7.1.0
+[11:09:44] [Server thread/INFO]: [TAB] Loading TAB v2.9.1
+[11:09:44] [Server thread/INFO]: [PlayerVaults] Loading PlayerVaults v4.2.0
+[11:09:44] [Server thread/INFO]: [CoreProtect] Loading CoreProtect v19.5
+[11:09:44] [Server thread/INFO]: [WESV] Loading WorldEditSelectionVisualizer v2.1.0
+[11:09:44] [Server thread/INFO]: [HeadDatabase] Loading HeadDatabase v4.14.1
+[11:09:44] [Server thread/INFO]: [MythicLib] Loading MythicLib v1.1.1
+[11:09:44] [Server thread/INFO]: [MythicLib] Detected Bukkit Version: v1_17_R1
+[11:09:44] [Server thread/INFO]: [CMILib] Loading CMILib v1.0.2.9
+[11:09:44] [Server thread/INFO]: [CMI] Loading CMI v9.0.0.7
+[11:09:44] [Server thread/INFO]: [Residence] Loading Residence v5.0.0.0
+[11:09:44] [Server thread/INFO]: [MMOCore] Loading MMOCore v1.8.0
+[11:09:44] [Server thread/INFO]: [SmoothTimber] Loading SmoothTimber v1.17.1
+[11:09:44] [Server thread/INFO]: [MMOItems] Loading MMOItems v6.6.0
+[11:09:44] [Server thread/INFO]: [MMOItems] Hooked onto WorldEdit
+[11:09:45] [Server thread/INFO]: [DungeonsXL] Loading DungeonsXL v0.18-SNAPSHOT-1109
+[11:09:45] [Server thread/INFO]: [GooP] Loading Gunging_Ootilities_Plugin v1.8.0
+[11:09:45] [Server thread/INFO]: [MMOItem Shrubs] Loading MMOItem_Shrubs v1.6.0
+[11:09:45] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[11:09:45] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.3.48
+[11:09:46] [Server thread/INFO]:         __    
+[11:09:46] [Server thread/INFO]:   |    |__)   LuckPerms v5.3.48
+[11:09:46] [Server thread/INFO]:   |___ |      Running on Bukkit - Paper
+[11:09:46] [Server thread/INFO]: 
+[11:09:46] [Server thread/INFO]: [LuckPerms] Loading configuration...
+[11:09:48] [Server thread/INFO]: [LuckPerms] Loading storage provider... [H2]
+[11:09:51] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
+[11:09:52] [Server thread/INFO]: [LuckPerms] Performing initial data load...
+[11:09:53] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 7753ms)
+[11:09:53] [Server thread/INFO]: [ProtocolLib] Enabling ProtocolLib v4.7.0-SNAPSHOT-b526
+[11:09:53] [Server thread/INFO]: [ProtocolLib] Started structure compiler thread.
+[11:09:53] [Server thread/INFO]: [Vault] Enabling Vault v1.7.3-b${env.TRAVIS_BUILD_NUMBER}
+[11:09:54] [Server thread/WARN]: [Vault] Loaded class com.Zrips.CMI.Modules.Economy.Economy from CMI v9.0.0.7 which is not a depend, softdepend or loadbefore of this plugin.
+[11:09:54] [Server thread/INFO]: [Vault] [Economy] CMI Economy found: Waiting
+[11:09:54] [Server thread/INFO]: [Vault] [Permission] SuperPermissions loaded as backup permission system.
+[11:09:54] [Server thread/INFO]: [Vault] Enabled Version 1.7.3-b${env.TRAVIS_BUILD_NUMBER}
+[11:09:54] [Server thread/INFO]: [LuckPerms] Registered Vault permission & chat hook.
+[11:09:54] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v7.3.0-SNAPSHOT+5836-183ae4a
+[11:09:54] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
+[11:09:56] [Server thread/INFO]: WEPIF: Vault detected! Using Vault for permissions
+[11:09:57] [Server thread/INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.Spigot_v1_17_R1 as the Bukkit adapter
+[11:10:02] [Server thread/INFO]: [AsyncWorldEdit] Enabling AsyncWorldEdit v3.9.1
+[11:10:03] [Server thread/INFO]: [AsyncWorldEdit] Platform set to Bukkit API
+[11:10:03] [Server thread/INFO]: [AsyncWorldEdit] ===================================================================================
+[11:10:03] [Server thread/INFO]: [AsyncWorldEdit] =     ___                         _       __           __    ________    ___ __   =
+[11:10:03] [Server thread/INFO]: [AsyncWorldEdit] =    /   |  _______  ______  ____| |     / /___  _____/ /___/ / ____/___/ (_) /_  =
+[11:10:03] [Server thread/INFO]: [AsyncWorldEdit] =   / /| | / ___/ / / / __ \/ ___/ | /| / / __ \/ ___/ / __  / __/ / __  / / __/  =
+[11:10:03] [Server thread/INFO]: [AsyncWorldEdit] =  / ___ |(__  ) /_/ / / / / /__ | |/ |/ / /_/ / /  / / /_/ / /___/ /_/ / / /_    =
+[11:10:03] [Server thread/INFO]: [AsyncWorldEdit] = /_/  |_/____/\__, /_/ /_/\___/ |__/|__/\____/_/  /_/\__,_/_____/\__,_/_/\__/    =
+[11:10:03] [Server thread/INFO]: [AsyncWorldEdit] =             /____/                                                              =
+[11:10:03] [Server thread/INFO]: [AsyncWorldEdit] = Author: SBPrime                                                                 =
+[11:10:03] [Server thread/INFO]: [AsyncWorldEdit] =                                ________________                                 =
+[11:10:03] [Server thread/INFO]: [AsyncWorldEdit] =                            ___/  free version  \___                             =
+[11:10:03] [Server thread/INFO]: [AsyncWorldEdit] ===================================================================================
+[11:10:03] [Server thread/INFO]: [AsyncWorldEdit] Initializing WorldEdit.
+[11:10:04] [Server thread/INFO]: [AsyncWorldEdit] No matching adapter found for Bukkit.v1_17_R1, DirectChunkAPI disabled
+[11:10:04] [Server thread/INFO]: [AsyncWorldEdit] PlotMeFix set to class org.primesoft.asyncworldedit.plotme.NullFix.
+[11:10:04] [Server thread/INFO]: [AsyncWorldEdit] Enabled
+[11:10:04] [Server thread/INFO]: [FastAsyncWorldEdit] Enabling FastAsyncWorldEdit v1.17-38;af1a3c3
+[11:10:04] [AWE:Cron:undoCleanup/INFO]: [AsyncWorldEdit] Undo cleanup started...
+[11:10:04] [AWE:Cron:undoCleanup/INFO]: [AsyncWorldEdit] ...undo cleanup done.
+[11:10:05] [Thread-11/INFO]: [AsyncWorldEdit] You have the latest version of the plugin.
+[11:13:23] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
+[11:13:23] [Server thread/INFO]: WEPIF: Vault detected! Using Vault for permissions
+[11:13:24] [Server thread/INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.fawe.FAWE_Spigot_v1_17_R1 as the Bukkit adapter
+[11:13:25] [Server thread/INFO]: [AsyncWorldEdit] Initializing WorldEdit.
+[11:13:25] [Server thread/INFO]: Preparing level "world"
+[11:13:30] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[11:13:34] [Server thread/INFO]: Time elapsed: 3963 ms
+[11:13:35] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[11:13:37] [Server thread/INFO]: Time elapsed: 2711 ms
+[11:13:37] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[11:14:01] [Server thread/INFO]: Time elapsed: 23169 ms
+[11:14:01] [Server thread/INFO]: [LoginSecurity] Enabling LoginSecurity v3.0.2*
+[11:14:01] [Server thread/INFO]: [LoginSecurity] Loading base translations from "en_us"
+[11:14:01] [Server thread/INFO]: [LoginSecurity] Loading specified translations from "en_us"
+[11:14:58] [Server thread/INFO]: [LoginSecurity] Registering commands...
+[11:14:58] [Server thread/INFO]: [LoginSecurity] Registering listeners...
+[11:15:02] [Server thread/INFO]: [LoginSecurity] Using 1.12+ map captcha renderer
+[11:15:02] [Server thread/INFO]: [PlaceholderAPI] Enabling PlaceholderAPI v2.10.9
+[11:15:03] [Server thread/INFO]: [PlaceholderAPI] Fetching available expansion information...
+[11:15:03] [Server thread/INFO]: [ItemsXL] Enabling ItemsXL v1.0.2
+[11:15:04] [Server thread/INFO]: [ItemsXL] [##########[ItemsXL]##########]
+[11:15:04] [Server thread/INFO]: [ItemsXL] Internals: [v1_17_R1]
+[11:15:04] [Server thread/INFO]: [ItemsXL] Paper API: [true]
+[11:15:04] [Server thread/INFO]: [ItemsXL] Economy: [false]
+[11:15:04] [Server thread/INFO]: [ItemsXL] Permissions: [false]
+[11:15:04] [Server thread/INFO]: [ItemsXL] Metrics: [https://bstats.org/plugin/bukkit/ItemsXL/1041]
+[11:15:04] [Server thread/INFO]: [ItemsXL] SpigotMC ID: [14472]
+[11:15:04] [Server thread/INFO]: [ItemsXL] [###############################]
+[11:15:07] [Server thread/INFO]: [ItemsXL] Successfully loaded Vignette module "Inventory".
+[11:15:42] [Server thread/INFO]: [PlugMan] Enabling PlugMan v2.2.2
+[11:15:43] [Server thread/INFO]: [HoloDropsX] Enabling HoloDropsX v3.0.0
+[11:15:45] [Server thread/INFO]: [LiteSignIn] Enabling LiteSignIn v1.5.0
+[11:15:46] [Server thread/INFO]: [LiteSignIn] 语言信息已加载。
+[11:15:52] [Server thread/INFO]: LiteSignIn >>> 成功连接到 SQLite 服务器.
+[11:15:52] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: litesignin
+[11:15:52] [Server thread/INFO]: LiteSignIn >>> 找到 PlaceholderAPI ， 准备就绪。
+[11:15:52] [Server thread/INFO]: LiteSignIn >>> 插件加载完成。
+[11:15:52] [Server thread/INFO]: [2FA] Enabling 2FA v1.3.2*
+[11:15:54] [Server thread/INFO]: [ANM] Enabling AdvancedNMotd v9.2.0
+[11:15:56] [Server thread/INFO]: 
+[11:15:56] [Server thread/INFO]: ---------------- AdvancedNMotd --------------
+[11:15:56] [Server thread/INFO]:            AdvancedNMotd is enabled!
+[11:15:56] [Server thread/INFO]: ---------------------------------------------
+[11:15:56] [Server thread/INFO]: 
+[11:15:56] [Server thread/INFO]: [LangUtils] Enabling LangUtils v2.5.3
+[11:15:57] [Server thread/INFO]: [LangUtils] en_us has been loaded.
+[11:15:57] [Server thread/INFO]: [LangUtils] zh_cn has been loaded.
+[11:15:57] [Server thread/INFO]: [LangUtils] Language Utils has been enabled.(862ms)
+[11:15:57] [Server thread/INFO]: [PvPManager] Enabling PvPManager v3.8.1
+[11:15:57] [Server thread/INFO]: [PvPManager] Loaded 0 players from users file
+[11:15:58] [Server thread/INFO]: [PvPManager] Vault Found! Using it for currency related features
+[11:15:58] [Server thread/INFO]: [PvPManager] PlaceholderAPI Found! Hooked successfully
+[11:15:58] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: pvpmanager
+[11:16:00] [Server thread/INFO]: [PvPManager] PvPManager Enabled (2907 ms)
+[11:16:00] [Server thread/INFO]: [VentureChat] Enabling VentureChat v2.23.3
+[11:16:00] [Server thread/INFO]: [VentureChat] - Initializing...
+[11:16:00] [Server thread/INFO]: [VentureChat] - Config found! Loading file.
+[11:16:00] [Server thread/INFO]: [VentureChat] - Checking for Vault...
+[11:16:00] [Server thread/INFO]: [VentureChat] - Loading player data
+[11:16:04] [Server thread/INFO]: [VentureChat] - Registering Listeners
+[11:16:04] [Server thread/INFO]: [VentureChat] - Attaching to Executors
+[11:16:04] [Server thread/INFO]: [VentureChat] - Establishing BungeeCord
+[11:16:04] [Server thread/INFO]: [VentureChat] - Enabling PlaceholderAPI Hook
+[11:16:04] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: venturechat
+[11:16:04] [Server thread/INFO]: [VentureChat] - Enabled Successfully
+[11:16:04] [Server thread/INFO]: [NF] Enabling NoOneFishing v1.0.9
+[11:16:04] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: nf
+[11:16:06] [Server thread/INFO]: 
+[11:16:06] [Server thread/INFO]: ?█▄─?█ █??█ ?█???█ █??▄ █?? ?█??? ─?─ █?? █──█ ─?─ █??▄ █??? 
+[11:16:06] [Server thread/INFO]: ?█?█?█ █──█ ?█──?█ █──█ █?? ?█??? ?█? ??█ █??█ ?█? █──█ █─?█ 
+[11:16:06] [Server thread/INFO]: ?█──?█ ???? ?█▄▄▄█ ?──? ??? ?█─── ??? ??? ?──? ??? ?──? ????
+[11:16:06] [Server thread/INFO]: Version: 1.0.9
+[11:16:06] [Server thread/INFO]: Developer: NoOneBoss
+[11:16:06] [Server thread/INFO]: Fish count: 28
+[11:16:06] [Server thread/INFO]: Vault hooked: +
+[11:16:06] [Server thread/INFO]: 
+[11:16:06] [Server thread/INFO]: [PlayerPoints] Enabling PlayerPoints v3.0.3
+[11:16:06] [Server thread/INFO]: [PlayerPoints] Initializing using RoseGarden v1.0.7-SNAPSHOT
+[11:16:08] [Server thread/INFO]: [PlayerPoints] Data handler connected using SQLite.
+[11:16:09] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: playerpoints
+[11:16:09] [Server thread/INFO]: [Multiverse-Core] Enabling Multiverse-Core v4.3.1-SNAPSHOT-b847
+[11:16:10] [Server thread/WARN]: [Multiverse-Core] "Multiverse-Core v4.3.1-SNAPSHOT-b847" has registered a listener for org.bukkit.event.entity.EntityCreatePortalEvent on method "public void com.onarandombox.MultiverseCore.listeners.MVPortalListener.entityPortalCreate(org.bukkit.event.entity.EntityCreatePortalEvent)", but the event is Deprecated. "Server performance will be affected"; please notify the authors [dumptruckman, Rigby, fernferret, lithium3141, main--].
+[11:16:10] [Server thread/INFO]: [Multiverse-Core] We are aware of the warning about the deprecated event. There is no alternative that allows us to do what we need to do and performance impact is negligible. It is safe to ignore.
+[11:16:11] [Server thread/INFO]: [Multiverse-Core] 3 - World(s) loaded.
+[11:16:11] [Server thread/WARN]: [Multiverse-Core] Buscript failed to load! The script command will be disabled! If you would like not to see this message, use `/mv conf enablebuscript false` to disable Buscript from loading.
+[11:16:11] [Server thread/INFO]: [Multiverse-Core] Version 4.3.1-SNAPSHOT-b847 (API v24) Enabled - By dumptruckman, Rigby, fernferret, lithium3141 and main--
+[11:16:11] [Server thread/INFO]: [Citizens] Enabling Citizens v2.0.28-SNAPSHOT (build 2337)
+[11:16:28] [Server thread/INFO]: [AdvancedAchievements] Enabling AdvancedAchievements v7.1.0
+[11:16:34] [Server thread/INFO]: [AdvancedAchievements] Backing up and loading configuration files...
+[11:16:35] [Server thread/WARN]: [AdvancedAchievements] Overriding configuration: disabling PetMasterGive and PetMasterReceive categories.
+[11:16:35] [Server thread/WARN]: [AdvancedAchievements] Ensure you have placed Pet Master in your plugins folder or add PetMasterGive and PetMasterReceive to the DisabledCategories list in config.yml.
+[11:16:35] [Server thread/WARN]: [AdvancedAchievements] Overriding configuration: disabling JobsReborn category.
+[11:16:35] [Server thread/WARN]: [AdvancedAchievements] Ensure you have placed JobsReborn in your plugins folder or add JobsReborn to the DisabledCategories list in config.yml.
+[11:16:35] [Server thread/INFO]: [AdvancedAchievements] Loaded 60 achievements in 49 categories.
+[11:16:35] [Server thread/INFO]: [AdvancedAchievements] 4 disabled categories: [JobsReborn, AdvancementsCompleted, PetMasterGive, PetMasterReceive]
+[11:16:35] [Server thread/INFO]: [AdvancedAchievements] Registering event listeners...
+[11:16:40] [Server thread/INFO]: [AdvancedAchievements] Initialising h2 database...
+[11:16:52] [Server thread/INFO]: [AdvancedAchievements] Setting up command executor and custom tab completers...
+[11:16:52] [Server thread/INFO]: [AdvancedAchievements] Launching scheduled tasks...
+[11:16:52] [Server thread/INFO]: [AdvancedAchievements] Registering permissions...
+[11:16:52] [Thread-19/INFO]: [AdvancedAchievements] Checking for plugin update...
+[11:16:56] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: aach
+[11:16:56] [Server thread/INFO]: [AdvancedAchievements] Plugin has finished loading and is ready to run! Took 28511ms.
+[11:16:56] [Server thread/INFO]: [TAB] Enabling TAB v2.9.1
+[11:16:56] [Server thread/INFO]: [TAB] Server version: 1.17 (v1_17_R1)
+[11:17:08] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: tab
+[11:17:08] [Server thread/INFO]: [TAB] Enabled in 2791ms
+[11:17:08] [Server thread/INFO]: [PlayerVaults] Enabling PlayerVaults v4.2.0
+[11:17:11] [Server thread/INFO]: [PlayerVaults] Added PUMPKIN to list of blocked materials.
+[11:17:11] [Server thread/INFO]: [PlayerVaults] Added DIAMOND_BLOCK to list of blocked materials.
+[11:17:11] [Server thread/INFO]: [PlayerVaults] No old vaults found to convert to new format. :)
+[11:17:11] [Server thread/INFO]: [PlayerVaults] Loaded! Took 3493ms
+[11:17:11] [Server thread/INFO]: [CoreProtect] Enabling CoreProtect v19.5
+[11:17:15] [Server thread/INFO]: [CoreProtect] CoreProtect has been successfully enabled! 
+[11:17:15] [Server thread/INFO]: [CoreProtect] Using SQLite for data storage.
+[11:17:15] [Server thread/INFO]: --------------------
+[11:17:15] [Server thread/INFO]: [CoreProtect] Enjoy CoreProtect? Join our Discord!
+[11:17:15] [Server thread/INFO]: [CoreProtect] Discord: www.coreprotect.net/discord/
+[11:17:15] [Server thread/INFO]: --------------------
+[11:17:15] [Server thread/INFO]: [WESV] Enabling WorldEditSelectionVisualizer v2.1.0
+[11:17:17] [Server thread/INFO]: [WESV] Using WorldEdit 7 api
+[11:17:18] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: wesv
+[11:17:18] [Server thread/INFO]: [WESV] PlaceholderAPI extension successfully registered.
+[11:17:18] [Server thread/INFO]: [HeadDatabase] Enabling HeadDatabase v4.14.1
+[11:17:22] [Server thread/INFO]: [HeadDatabase] Could not load find "texts" folder!
+[11:17:22] [Server thread/INFO]: [HeadDatabase] Creating new folder
+[11:17:22] [Server thread/INFO]: [HeadDatabase] Importing en_US.lang ...
+[11:17:22] [Server thread/INFO]: [HeadDatabase] Importing de_DE.lang ...
+[11:17:23] [Server thread/INFO]: [HeadDatabase] Importing pl_PL.lang ...
+[11:17:23] [Server thread/INFO]: [HeadDatabase] Importing pt_BR.lang ...
+[11:17:23] [Server thread/INFO]: [HeadDatabase] Importing pt_PT.lang ...
+[11:17:23] [Server thread/INFO]: [HeadDatabase] Importing fr_FR.lang ...
+[11:17:23] [Server thread/INFO]: [HeadDatabase] Importing he_IL.lang ...
+[11:17:23] [Server thread/INFO]: [HeadDatabase] Importing hu_HU.lang ...
+[11:17:23] [Server thread/INFO]: [HeadDatabase] Importing it_IT.lang ...
+[11:17:23] [Server thread/INFO]: [HeadDatabase] Importing cs_CZ.lang ...
+[11:17:23] [Server thread/INFO]: [HeadDatabase] Importing es_MX.lang ...
+[11:17:23] [Server thread/INFO]: [HeadDatabase] Importing es_ES.lang ...
+[11:17:23] [Server thread/INFO]: [HeadDatabase] Importing ru_RU.lang ...
+[11:17:23] [Server thread/INFO]: [HeadDatabase] Importing lc_US.lang ...
+[11:17:23] [Server thread/INFO]: [HeadDatabase] Importing ko_KR.lang ...
+[11:17:23] [Server thread/INFO]: [HeadDatabase] Importing nl_NL.lang ...
+[11:17:23] [Server thread/INFO]: [HeadDatabase] Importing ro_RO.lang ...
+[11:17:23] [Server thread/INFO]: [HeadDatabase] Importing uk_UA.lang ...
+[11:17:23] [Server thread/INFO]: [HeadDatabase] Importing zh_CN.lang ...
+[11:17:23] [Server thread/INFO]: [HeadDatabase] Imported 19 new languages!
+[11:17:23] [Server thread/INFO]: [HeadDatabase] Using default "en_US.lang" created by Arcaniax
+[11:17:23] [Server thread/WARN]: [HeadDatabase] Economy was not loaded, some features will be disabled!
+[11:17:23] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: hdb
+[11:17:23] [Server thread/INFO]: [MythicLib] Enabling MythicLib v1.1.1
+[11:17:30] [Server thread/INFO]: [LumineUtils] (io.lumine.mythic.utils.) is bound to plugin MythicLib - io.lumine.mythic.lib.MythicLib
+[11:17:30] [Server thread/INFO]: [MythicLib] Started up bStats Metrics
+[11:17:35] [Server thread/INFO]: [CMILib] Enabling CMILib v1.0.2.9
+[11:17:46] [Server thread/INFO]: CMI hooked.
+[11:17:46] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: cmil
+[11:17:46] [Server thread/INFO]: PlaceholderAPI hooked.
+[11:17:47] [Server thread/INFO]: Updated (EN) language file. Took 551ms
+[11:17:47] [Server thread/INFO]: [CMI] Enabling CMI v9.0.0.7
+[11:17:49] [Server thread/INFO]: ┏━━━┓ ┏━┓┏━┓ ┏━━┓
+[11:17:49] [Server thread/INFO]: ┃┏━┓┃ ┃ ┗┛ ┃ ┗┫┣┛
+[11:17:49] [Server thread/INFO]: ┃┃ ┗┛ ┃┏┓┏┓┃  ┃┃ 
+[11:17:49] [Server thread/INFO]: ┃┃ ┏┓ ┃┃┃┃┃┃  ┃┃ 
+[11:17:49] [Server thread/INFO]: ┃┗━┛┃ ┃┃┃┃┃┃ ┏┫┣┓
+[11:17:49] [Server thread/INFO]: ┗━━━┛ ┗┛┗┛┗┛ ┗━━┛
+[11:17:49] [Server thread/INFO]: _______________________________________________________
+[11:17:49] [Server thread/INFO]:   Integrating PaperSpigot async methods
+[11:18:06] [Server thread/INFO]:   Citizens found.
+[11:18:10] [Server thread/INFO]:   56 Enabled and 0 Disabled modules
+[11:18:16] [Server thread/INFO]:   Permission plugin: LuckPerms5.3.48
+[11:18:18] [Server thread/INFO]:   Initialized Cipher256 AES
+[11:18:22] [Server thread/INFO]:   Loaded (56) regular alias into memory. Took 948ms
+[11:18:23] [Server thread/INFO]:   Loaded (1) custom text's into memory. Took 115ms
+[11:18:24] [Server thread/INFO]:   3.34.0 data base type detected
+[11:18:25] [Server thread/INFO]:   Started SqLite data base. Took 1603ms
+[11:18:25] [Server thread/INFO]:   Vault was found - Enabling capabilities. Economy: CMIEconomy
+[11:18:26] [Server thread/INFO]:   Loaded (5) warning categories into memory. Took 1ms
+[11:18:26] [Server thread/INFO]:   Loaded (3) warning commands into memory. Took 0ms
+[11:18:27] [Server thread/INFO]:   Loaded (134) custom mob heads into memory. Took 400ms
+[11:18:27] [Server thread/INFO]:   Loaded (0) cooldowns into memory. Took 627ms
+[11:18:27] [Server thread/INFO]:   Initializing BungeeCord
+[11:18:29] [Server thread/INFO]:   Loaded (5) kits into memory. Took 869ms
+[11:18:29] [Server thread/INFO]:   Loaded (7) ranks into memory. Took 713ms
+[11:18:29] [Server thread/INFO]:   Loaded (8) playtime rewards into memory. Took 63ms
+[11:18:29] [Server thread/INFO]:   Loaded (0) player data into memory. Took 1ms
+[11:18:29] [Server thread/INFO]:   Loaded (0) playtime records into memory. Took 1ms
+[11:18:29] [Server thread/INFO]:   Loaded (0) playtime reward records into memory. Took 0ms
+[11:18:30] [Server thread/INFO]:   Registered events. Took 297ms
+[11:18:30] [Server thread/INFO]:   Loaded (0) event action commands into memory. Took 97ms
+[11:18:30] [Server thread/INFO]:   Updated (EN) language file. Took 200ms
+[11:18:32] [Server thread/INFO]:   Loaded (245) worth values into memory. Took 1471ms
+[11:18:32] [Server thread/INFO]:   Vault permissions was found - Enabling capabilities.
+[11:18:32] [Server thread/INFO]:   PlayerVaultsNBT was found - Enabling capabilities.
+[11:18:32] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: cmi
+[11:18:32] [Server thread/INFO]:   PlaceholderAPI hooked.
+[11:18:32] [Server thread/INFO]:   PlaceholderAPI was found - Enabling capabilities.
+[11:18:32] [Server thread/INFO]:   Starting world timer.
+[11:18:32] [Server thread/INFO]:   Initializing world manager.
+[11:18:32] [Server thread/INFO]:   Loaded (5) schedules into memory. Took 191ms
+[11:18:32] [Server thread/INFO]:   Loaded GeoIP
+[11:18:32] [Server thread/INFO]:   Loaded (0) skin cache entries into memory. Took 0ms
+[11:18:32] [Server thread/INFO]:   Version 9.0.0.7 has been enabled
+[11:18:32] [Server thread/INFO]: ???????????????????????????????????????????????????????
+[11:18:32] [Server thread/INFO]: [Vault][Economy] CMI Economy hooked.
+[11:18:32] [Server thread/INFO]: [Residence] Enabling Residence v5.0.0.0
+[11:18:33] [Server thread/INFO]: [Residence] Found Vault using permissions plugin:LuckPerms
+[11:18:33] [Server thread/INFO]: [Residence] Scanning for economy systems...
+[11:18:33] [Server thread/INFO]: [Residence] Found Vault using economy system: CMIEconomy
+[11:18:34] [Server thread/INFO]: [Residence] Loading save data for world world...
+[11:18:34] [Server thread/INFO]: [Residence] Loaded world data. (33 ms)
+[11:18:34] [Server thread/INFO]: [Residence] Loading save data for world world_the_end...
+[11:18:34] [Server thread/INFO]: [Residence] Loaded world_the_end data. (1 ms)
+[11:18:34] [Server thread/INFO]: [Residence] Loading save data for world world_nether...
+[11:18:34] [Server thread/INFO]: [Residence] Loaded world_nether data. (0 ms)
+[11:18:34] [Server thread/INFO]: [Residence] Loading world data into memory...
+[11:18:34] [Server thread/INFO]: [Residence] Loaded world data into memory. (0 ms) -> 0 residences
+[11:18:34] [Server thread/INFO]: [Residence] Loading world_the_end data into memory...
+[11:18:34] [Server thread/INFO]: [Residence] Loaded world_the_end data into memory. (0 ms) -> 0 residences
+[11:18:34] [Server thread/INFO]: [Residence] Loading world_nether data into memory...
+[11:18:34] [Server thread/INFO]: [Residence] Loaded world_nether data into memory. (0 ms) -> 0 residences
+[11:18:34] [Server thread/INFO]: [Residence] Found WorldEdit 7.3.0-SNAPSHOT+5836-183ae4a
+[11:18:34] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: residence
+[11:18:34] [Server thread/INFO]: [Residence] PlaceholderAPI hooked.
+[11:18:34] [Server thread/INFO]: [Residence] PlaceholderAPI was found - Enabling capabilities.
+[11:18:34] [Server thread/INFO]: [Residence] Enabled! Version 5.0.0.0 by Zrips
+[11:18:34] [Server thread/INFO]: [MMOCore] Enabling MMOCore v1.8.0
+[11:18:34] [Server thread/INFO]: [MMOCore] Hooked onto Vault
+[11:18:34] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: mmocore
+[11:18:34] [Server thread/INFO]: [MMOCore] Hooked onto PlaceholderAPI
+[11:18:34] [Server thread/INFO]: [MMOCore] Hooked onto Citizens
+[11:18:34] [Server thread/INFO]: [MMOCore] Hooked onto Residence
+[11:18:34] [Server thread/INFO]: [MMOCore] Hooked onto CMI Holograms
+[11:18:35] [Server thread/WARN]: [MMOCore] Could not load custom mining condition 'region{name="example_region,example_region2,__global__"}': Could not match any Condition to 'region' in database
+[11:18:35] [Server thread/WARN]: [MMOCore] Could not load condition 'region{name=swamp}' from fishing drop table 'overriding-drop-table': Could not match any Condition to 'region' in database
+[11:18:36] [Server thread/WARN]: [MMOCore] Could not load objective '5' from quest 'tutorial': Could not match any Objective to 'killmythicmob' in database
+[11:18:36] [Server thread/WARN]: [MMOCore] An error occured while trying to load loot chest region 'sample-region': Could not find world world_name_here
+[11:18:36] [Server thread/INFO]: [SmoothTimber] Enabling SmoothTimber v1.17.1
+[11:18:37] [Server thread/INFO]: SmoothTimber || You're currently using the supported Minecraft Version 1.17 (Core v1_16x)
+[11:18:37] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: smoothtimber
+[11:18:37] [Server thread/INFO]: [MMOItems] Enabling MMOItems v6.6.0
+[11:18:39] [Server thread/INFO]: [MMOItems RPG Provider] Using MMOCore as RPGPlayer provider
+[11:18:40] [Server thread/INFO]: [MMOItems Item Templates] Loading template modifiers, please wait..
+[11:18:40] [Server thread/INFO]: [MMOItems Item Templates] Loading item templates, please wait...
+[11:18:40] [Server thread/INFO]: [MMOItems] Hooked onto Vault
+[11:18:40] [Server thread/INFO]: [MMOItems] Loading crafting stations, please wait..
+[11:18:40] [Server thread/INFO]: [MMOItems] Hooked onto Residence
+[11:18:40] [Server thread/INFO]: [MMOItems] Hooked onto CMI Holograms
+[11:18:40] [Server thread/INFO]: [MMOItems] Hooked onto PlaceholderAPI
+[11:18:40] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: mmoitems
+[11:18:40] [Server thread/INFO]: [MMOItems] Loading recipes, please wait...
+[11:18:43] [Server thread/INFO]: [DungeonsXL] Enabling DungeonsXL v0.18-SNAPSHOT-1109
+[11:18:43] [Server thread/INFO]: [DungeonsXL] [##########[DungeonsXL]##########]
+[11:18:43] [Server thread/INFO]: [DungeonsXL] Internals: [v1_17_R1]
+[11:18:43] [Server thread/INFO]: [DungeonsXL] Paper API: [true]
+[11:18:43] [Server thread/INFO]: [DungeonsXL] Economy: [true]
+[11:18:43] [Server thread/INFO]: [DungeonsXL] Permissions: [true]
+[11:18:43] [Server thread/INFO]: [DungeonsXL] Metrics: [https://bstats.org/plugin/bukkit/DungeonsXL/1039]
+[11:18:43] [Server thread/INFO]: [DungeonsXL] SpigotMC ID: [9488]
+[11:18:43] [Server thread/INFO]: [DungeonsXL] [###############################]
+[11:18:43] [Server thread/WARN]: [DungeonsXL] Support for Minecraft 1.14 and higher is experimental. Do not use this in a production environment.
+[11:18:44] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: dxl
+[11:18:44] [Server thread/INFO]: [DungeonsXL] Successfully loaded Vignette module "Inventory".
+[11:18:44] [Server thread/INFO]: [GooP] Enabling Gunging_Ootilities_Plugin v1.8.0
+[11:18:46] [Server thread/INFO]: [GooP] Checking for Premium Modules...
+[11:18:46] [Server thread/INFO]: [GooP] Premium Custom Structures not found.
+[11:18:46] [Server thread/INFO]: [GooP] Premium Containers not found.
+[11:18:46] [Server thread/INFO]: [GooP] Enabling GooP Extensions...
+[11:18:46] [Server thread/INFO]: [GooP] MMOItem Shrubs enabled.
+[11:18:46] [Server thread/INFO]: [GooP] Crossbow2RocketLauncher not found.
+[11:18:46] [Server thread/INFO]: [GooP] Checking for Compatible Plugins...
+[11:18:46] [Server thread/INFO]: [GooP] WorldGuard not found.
+[11:18:46] [Server thread/INFO]: [GooP] WorldEdit found.
+[11:18:46] [Server thread/INFO]: [GooP] DiscordSRV not found.
+[11:18:46] [Server thread/INFO]: [GooP] MMOItems found.
+[11:18:46] [Server thread/INFO]: [GooP] MMOCore found.
+[11:18:46] [Server thread/INFO]: [GooP] Vault found.
+[11:18:46] [Server thread/INFO]: [GooP] Graveyards not found.
+[11:18:46] [Server thread/INFO]: [GooP] MythicMobs not found.
+[11:18:46] [Server thread/INFO]: [GooP] McMMO not found.
+[11:18:46] [Server thread/INFO]: [GooP] PlaceholderAPI found.
+[11:18:46] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: goop
+[11:18:46] [Server thread/INFO]: [GooP] GriefPrevention found.
+[11:18:46] [Server thread/INFO]: [GooP] Initialization Complete. Success.
+[11:18:47] [Server thread/INFO]: Reloading ResourceManager: Default, bukkit
+[11:18:49] [Server thread/INFO]: Loaded 7 recipes
+[11:18:51] [Server thread/INFO]: Oraxen | Automatic upload of the resource pack is enabled, uploading...
+[11:18:51] [Server thread/INFO]: Oraxen | Successfully loaded on Windows 10
+[11:18:51] [Server thread/INFO]: [MMOItem Shrubs] Enabling MMOItem_Shrubs v1.6.0
+[11:18:52] [Server thread/INFO]: [MMOItem Shrubs] Loading Shrub Instances...
+[11:18:52] [Server thread/WARN]: [GooP] Loaded class gunging.ootilities.mmoitem_shrubs.MMOItem_Shrub_Manager from MMOItem_Shrubs v1.6.0 which is not a depend, softdepend or loadbefore of this plugin.
+[11:18:52] [Server thread/INFO]: [MMOItem Shrubs] Initialization Complete. Success..
+[11:18:53] [Server thread/INFO]: [PlaceholderAPI] Placeholder expansion registration initializing...
+[11:18:53] [Server thread/INFO]: Running delayed init tasks
+[11:18:53] [Server thread/INFO]: [AsyncWorldEdit] Loading plugins...
+[11:18:54] [Craft Scheduler Thread - 33/INFO]: [CMI] Failed to download https://raw.githubusercontent.com/Zrips/CMI/master/Translations/Locale_CZ.yml file into plugins\CMI\Translations\ folder 
+[11:18:54] [Craft Scheduler Thread - 33/INFO]: [CMI] You can do it manually or try again later or simply ignore it
+[11:18:54] [Craft Scheduler Thread - 23/INFO]: [CMI] Failed to download https://raw.githubusercontent.com/Zrips/CMI/master/Translations/Locale_IT.yml file into plugins\CMI\Translations\ folder 
+[11:18:54] [Craft Scheduler Thread - 23/INFO]: [CMI] You can do it manually or try again later or simply ignore it
+[11:18:54] [Craft Scheduler Thread - 24/INFO]: [CMI] Failed to download https://raw.githubusercontent.com/Zrips/CMI/master/Translations/Locale_LT.yml file into plugins\CMI\Translations\ folder 
+[11:18:54] [Craft Scheduler Thread - 24/INFO]: [CMI] You can do it manually or try again later or simply ignore it
+[11:18:54] [Craft Scheduler Thread - 22/INFO]: [CMI] Failed to download https://raw.githubusercontent.com/Zrips/CMI/master/Translations/Locale_ES.yml file into plugins\CMI\Translations\ folder 
+[11:18:54] [Craft Scheduler Thread - 22/INFO]: [CMI] You can do it manually or try again later or simply ignore it
+[11:18:54] [Craft Scheduler Thread - 25/INFO]: [CMI] Failed to download https://raw.githubusercontent.com/Zrips/CMI/master/Translations/Locale_RU.yml file into plugins\CMI\Translations\ folder 
+[11:18:54] [Craft Scheduler Thread - 25/INFO]: [CMI] You can do it manually or try again later or simply ignore it
+[11:18:54] [Craft Scheduler Thread - 21/INFO]: [CMI] Failed to download https://raw.githubusercontent.com/Zrips/CMI/master/Translations/Locale_DE.yml file into plugins\CMI\Translations\ folder 
+[11:18:54] [Craft Scheduler Thread - 21/INFO]: [CMI] You can do it manually or try again later or simply ignore it
+[11:18:54] [Craft Scheduler Thread - 26/INFO]: [CMI] Failed to download https://raw.githubusercontent.com/Zrips/CMI/master/Translations/Locale_SK.yml file into plugins\CMI\Translations\ folder 
+[11:18:54] [Craft Scheduler Thread - 26/INFO]: [CMI] You can do it manually or try again later or simply ignore it
+[11:18:54] [Craft Scheduler Thread - 20/INFO]: [CMI] Failed to download https://raw.githubusercontent.com/Zrips/CMI/master/Translations/Locale_CN.yml file into plugins\CMI\Translations\ folder 
+[11:18:54] [Craft Scheduler Thread - 20/INFO]: [CMI] You can do it manually or try again later or simply ignore it
+[11:18:54] [Craft Scheduler Thread - 32/INFO]: [CMI] Failed to download https://raw.githubusercontent.com/Zrips/CMI/master/Translations/Locale_TR.yml file into plugins\CMI\Translations\ folder 
+[11:18:54] [Craft Scheduler Thread - 32/INFO]: [CMI] You can do it manually or try again later or simply ignore it
+[11:18:54] [Craft Scheduler Thread - 27/INFO]: [CMI] Failed to download https://raw.githubusercontent.com/Zrips/CMI/master/Translations/Locale_SL.yml file into plugins\CMI\Translations\ folder 
+[11:18:54] [Craft Scheduler Thread - 27/INFO]: [CMI] You can do it manually or try again later or simply ignore it
+[11:18:54] [Craft Scheduler Thread - 28/INFO]: [CMI] Failed to download https://raw.githubusercontent.com/Zrips/CMI/master/Translations/Locale_FR.yml file into plugins\CMI\Translations\ folder 
+[11:18:54] [Craft Scheduler Thread - 28/INFO]: [CMI] You can do it manually or try again later or simply ignore it
+[11:18:54] [Craft Scheduler Thread - 29/INFO]: [CMI] Failed to download https://raw.githubusercontent.com/Zrips/CMI/master/Translations/Locale_PL.yml file into plugins\CMI\Translations\ folder 
+[11:18:54] [Craft Scheduler Thread - 29/INFO]: [CMI] You can do it manually or try again later or simply ignore it
+[11:18:54] [Craft Scheduler Thread - 30/INFO]: [CMI] Failed to download https://raw.githubusercontent.com/Zrips/CMI/master/Translations/Locale_NO.yml file into plugins\CMI\Translations\ folder 
+[11:18:54] [Craft Scheduler Thread - 30/INFO]: [CMI] You can do it manually or try again later or simply ignore it
+[11:18:54] [Craft Scheduler Thread - 31/INFO]: [CMI] Failed to download https://raw.githubusercontent.com/Zrips/CMI/master/Translations/Locale_ZH.yml file into plugins\CMI\Translations\ folder 
+[11:18:54] [Craft Scheduler Thread - 31/INFO]: [CMI] You can do it manually or try again later or simply ignore it
+[11:18:54] [Craft Scheduler Thread - 9/INFO]: [PvPManager] Checking for updates...
+[11:18:54] [Server thread/INFO]: [com.fastasyncworldedit.bukkit.FaweBukkit] Attempting to use plugin 'Residence'
+[11:18:54] [Craft Scheduler Thread - 38/INFO]: [MMOItems] A new build is available: 6.5.8 (you are running 6.6.0)
+[11:18:54] [Craft Scheduler Thread - 38/INFO]: [MMOItems] Download it here: https://www.spigotmc.org/resources/39267/
+[11:18:54] [Craft Scheduler Thread - 17/INFO]: [MythicLib] A new build is available: 1.0.14.1 (you are running 1.1.1)
+[11:18:54] [Craft Scheduler Thread - 17/INFO]: [MythicLib] Download it here: https://www.spigotmc.org/resources/73855/
+[11:18:54] [Craft Scheduler Thread - 37/INFO]: [MMOCore] A new build is available: 1.7.1 (you are running 1.8.0)
+[11:18:54] [Craft Scheduler Thread - 37/INFO]: [MMOCore] Download it here: https://www.spigotmc.org/resources/70575/
+[11:18:55] [Craft Scheduler Thread - 40/INFO]: Oraxen | Resourcepack uploaded on url http://atlas.oraxen.com/pack.zip?id=1827a363fd8e31d670414f470522a34a43108d91 in 3949ms
+[11:18:55] [Craft Scheduler Thread - 39/INFO]: [DungeonsXL] The plugin is up to date.
+[11:18:55] [Craft Scheduler Thread - 13/INFO]: There is not a new update available.
+[11:18:55] [Craft Scheduler Thread - 7/INFO]: [ItemsXL] The plugin is up to date.
+[11:18:57] [Server thread/INFO]: 
+[11:18:57] [Server thread/INFO]: ------------ AdvancedNMotd Updater ----------
+[11:18:57] [Server thread/INFO]: You have the latest version of AdvancedNMotd!
+[11:18:57] [Server thread/INFO]: Current version: 9.2.0 for every 1.8+ server!
+[11:18:57] [Server thread/INFO]: ---------------------------------------------
+[11:18:57] [Server thread/INFO]: 
+[11:18:57] [Server thread/INFO]: [CoreProtect] WorldEdit logging successfully initialized.
+[11:18:57] [Craft Scheduler Thread - 9/INFO]: [PvPManager] No update found
+[11:18:57] [Server thread/WARN]: [PlaceholderAPI] Task #124 for PlaceholderAPI v2.10.9 generated an exception
 java.lang.NullPointerException: Cannot invoke "java.lang.Class.getName()" because "clazz" is null
 	at me.clip.placeholderapi.expansion.manager.LocalExpansionManager.createExpansionInstance(LocalExpansionManager.java:343) ~[?:?]
 	at me.clip.placeholderapi.expansion.manager.LocalExpansionManager.register(LocalExpansionManager.java:138) ~[?:?]
@@ -517,10 +536,16 @@ java.lang.NullPointerException: Cannot invoke "java.lang.Class.getName()" becaus
 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1127) ~[patched_1.17.jar:git-Paper-46]
 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:320) ~[patched_1.17.jar:git-Paper-46]
 	at java.lang.Thread.run(Thread.java:831) [?:?]
-[10:23:26] [Server thread/INFO]: Done (632.380s)! For help, type "help"
-[10:23:26] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 7663ms or 153 ticks behind
-[10:23:26] [Server thread/INFO]: Timings Reset
-[10:23:56] [Server thread/WARN]: UUID of added entity already exists: EntityCow['Cow'/22, uuid='fa4b58aa-98af-4cdc-9acb-2c915fad503f', l='ServerLevel[world]', x=-44.98, y=76.00, z=-146.99, cpos=[-3, -10], tl=23763, v=false, rR=null]
-[10:23:56] [Server thread/WARN]: UUID of added entity already exists: EntitySheep['Sheep'/24, uuid='a5d210f5-0758-4ee9-b1c8-cada855ca6a6', l='ServerLevel[world]', x=-46.27, y=76.00, z=-145.51, cpos=[-3, -10], tl=35752, v=false, rR=null]
-[10:23:58] [Server thread/WARN]: UUID of added entity already exists: EntitySheep['Sheep'/53, uuid='ecdd63d6-5f1f-4030-8510-1490a2286834', l='ServerLevel[world]', x=-5.78, y=64.00, z=-75.78, cpos=[-1, -5], tl=41755, v=false, rR=null]
-[10:23:58] [Server thread/WARN]: UUID of added entity already exists: EntitySheep['Sheep'/68, uuid='a3f287fe-d9e2-4421-b276-ce53d8c2b131', l='ServerLevel[world]', x=20.53, y=81.00, z=-175.73, cpos=[1, -11], tl=47686, v=false, rR=null]
+[11:18:58] [Craft Scheduler Thread - 16/INFO]: [HeadDatabase] Succesfully loaded 38039 heads!
+[11:18:58] [Craft Scheduler Thread - 16/INFO]: [HeadDatabase] Successfully loaded 18 featured tags!
+[11:19:01] [Server thread/INFO]: [Citizens] 已载入 0 个NPC.
+[11:19:01] [Server thread/INFO]: Done (598.211s)! For help, type "help"
+[11:19:01] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 7991ms or 159 ticks behind
+[11:19:01] [Server thread/INFO]: Timings Reset
+[11:19:01] [Craft Scheduler Thread - 16/INFO]: [Vault] Checking for Updates ... 
+[11:19:03] [Craft Scheduler Thread - 16/INFO]: [Vault] No new version available
+[11:19:22] [Server thread/WARN]: UUID of added entity already exists: EntityCow['Cow'/19, uuid='fa4b58aa-98af-4cdc-9acb-2c915fad503f', l='ServerLevel[world]', x=-44.98, y=76.00, z=-146.99, cpos=[-3, -10], tl=23763, v=false, rR=null]
+[11:19:22] [Server thread/WARN]: UUID of added entity already exists: EntitySheep['Sheep'/21, uuid='a5d210f5-0758-4ee9-b1c8-cada855ca6a6', l='ServerLevel[world]', x=-46.27, y=76.00, z=-145.51, cpos=[-3, -10], tl=35752, v=false, rR=null]
+[11:19:22] [Server thread/WARN]: UUID of added entity already exists: EntitySheep['Sheep'/52, uuid='ecdd63d6-5f1f-4030-8510-1490a2286834', l='ServerLevel[world]', x=-5.78, y=64.00, z=-75.78, cpos=[-1, -5], tl=41755, v=false, rR=null]
+[11:19:22] [Server thread/WARN]: UUID of added entity already exists: EntitySheep['Sheep'/67, uuid='a3f287fe-d9e2-4421-b276-ce53d8c2b131', l='ServerLevel[world]', x=20.53, y=81.00, z=-175.73, cpos=[1, -11], tl=47686, v=false, rR=null]
+[11:25:21] [Server thread/INFO]: [2FA] This command must be ran as a player
