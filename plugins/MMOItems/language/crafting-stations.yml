@@ -17,6 +17,9 @@ condition:
   mana:
     positive: '&a✔ Requires #mana# Mana'
     negative: '&c✖ Requires #mana# Mana'
+  money:
+    positive: '&a✔ Requires $#money#'
+    negative: '&c✖ Requires $#money#'
 ingredient:
   mmoitem:
     positive: '&8✔ &7#amount# #level##item#'

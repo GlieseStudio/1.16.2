@@ -99,6 +99,7 @@ Optimizations:
   MonochromeConsole: false
   # Time in seconds we want to give for playes who joins server a immortality state
   # Set this to 0 to disable
+  # Max 60 seonds
   ImmortalityOnJoin: 3
   # Enables or disables maintenance mode
   Maintenance: false
@@ -169,6 +170,7 @@ Optimizations:
     # Time in seconds player should be invulnerable after teleporting
     # This will prevent player who teleported to damage others for defined time
     # Set this to 0 if you want to disable it
+    # Max 60 seconds
     Invulnerability: 5
     # When this set to true each time player teleports to any destination he will be teleported to spawn point
     # This is to prevent from people knowing to which direction you have teleported too
@@ -238,6 +240,9 @@ Optimizations:
   # When set to true, player play time will be grabbed from user stats file instead of from CMI user data file
   # This can help to get more accurate play time if you have older server and using players stats feature
   PlayTimeFromStats: true
+  # Do you want to run auto top playtime updater
+  # This is responsible for providing players current top playtimes which gets updated on consistent intervals, useful for placeholders
+  PlayTimeAutoUpdater: true
   # When set to true, playtimetop list will be loaded on server startup
   PreloadTopPlaytime: false
   # Do you want to use CMI playtime tracking
@@ -416,6 +421,16 @@ Worth:
   CustomNameBlocking: false
   # If enabled any item with custom lore will not be allowed to be sold with /cmi sell command
   LoreBlocking: false
+  # When enabled we will not allow to sell items which are not fully repaired
+  RequireFullDurability: false
+  # When enabled items which doesnt have full durability will be worth less. 30% left durability will result in items worth going down by 70%
+  # This only works while RequireFullDurability is disabled
+  DevalueByDurability: false
+  AutoGenerate:
+    # Value in percentages in how much more we should add to end product while auto calculating items price based on its ingredient worth
+    # For examplem one stick is worth 0.1 and diamond 44 then end result as diamond_hoe will be worth 88.2 and with extra 2% this will be changed to 89.96
+    # Value can be negative
+    PriceIncrease: 0
 BossBar:
   # Enables or disbales bossbar hp bar on 1.9+ servers
   # Only players with cmi.bossbar.hpbar permission node can see it
@@ -461,6 +476,7 @@ ReSpawn:
   # Time in seconds to make player immortal after he respawns
   # Can be used to prevent respawn camping
   # Set to 0 if you want to disable it
+  # Max 60 seconds
   Immortality: 3
   # If you want 3rd party plugin to handle player respawning, simply set this to false and reload plugin
   Enabled: true
