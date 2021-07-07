@@ -1,0 +1,36 @@
+
+### Specify to which kinds of blocks a seed packet can be applied to.
+###
+### A shrub to which you specify one of these will be instructed to behave as seed packets:
+###
+###
+###
+#
+# GrapesSeedPacket:
+#   Produced_MMOItem_Type: CONSUMABLE
+#   Produced_MMOItem_Type: GRAPES
+#
+#   Minimum_Generation_Time: 10
+#
+#   Storage_Capacity: 1
+#
+#   SeedPacket: 'Leaves'     # Allows these to be planted on the leaves specified below
+
+Leaves:
+  - OAK_LEAVES
+  - ACACIA_LEAVES
+  - BIRCH_LEAVES
+  - DARK_OAK_LEAVES
+  - JUNGLE_LEAVES
+  - SPRUCE_LEAVES
+
+TallPlant:
+  - TALL_GRASS
+  - SUNFLOWER
+  - LARGE_FERN
+  - LILAC
+  - ROSE_BUSH
+  - PEONY
+
+Dandelion:
+  - DANDELION

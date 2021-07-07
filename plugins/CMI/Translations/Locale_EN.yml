@@ -329,7 +329,8 @@ command:
       info: '&eCheck block information'
       args: ''
     info:
-      Info: ' &eId: &6[id][data] &eMaterial: &6[name][ndata]'
+      Id: ' &eId: &6[id][data]'
+      Material: ' &eMaterial: &6[name][ndata]'
       RealName: ' &eReal name: &6[name]'
       TempLight: ' &eTemperature: &6[temp]&e, Light - block: &6[blevel]&e, sky: &6[slevel]&e,
         overral: &6[level]'
@@ -1072,6 +1073,10 @@ command:
   gamerule:
     help:
       info: '&eManage gamerules'
+      args: ''
+  generateworth:
+    help:
+      info: '&eAuto generate posible item worth values'
       args: ''
   getbook:
     help:
@@ -2755,7 +2760,6 @@ command:
       startScanning: '&eFound &6[amount] &echunks to check. Starting!'
       paused: '&eScanning paused, to continue use &6/cmi scan continue.'
       continuing: '&eScanning continuing'
-      holdItem: '&eYou need to hold the item in hand'
       stoped: '&eScanning stoppeds. You can check the results with /cmi scan info'
       speedChange: '&eSpeed changed to [amount]'
       autospeedChange: '&eAutoSpeed changed to [state]'
@@ -3951,6 +3955,9 @@ command:
       args: (all/blocks/hand/material)
     info:
       worthless: '&eWorthless'
+      damaged: ' &6(&2[percent]% &6damaged)'
+      shulker: '&6Remove items from shulker box before selling'
+      repair: '&eRepair before selling'
       basePrice: '&6[itemName]&e(&7[amount]&e) -> &f[price]'
       fullPrice: '&7[price]'
       total: '&eTotal worth: &7[total]'

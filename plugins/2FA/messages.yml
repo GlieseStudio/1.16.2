@@ -1,0 +1,36 @@
+PREFIX: '&7[&b2FA&7]&r '
+VALIDATE_ACCOUNT: '&c请进行双重身份认证来验证您的账户'
+INVALID_CODE: '&c您输入的动态令牌无效，请重试!'
+SUCCESSFULLY_SETUP: '&a双重身份验证（2FA）启用成功!'
+MUST_BE_A_PLAYER: '此命令必须由玩家运行。'
+USAGE: '&c用法: /2fa <code>'
+YOU_ARE_REQUIRED: '&6您需要启用双重身份验证（2FA）!'
+SUCCESSFULLY_AUTHENTICATED: '&a您已成功验证2FA！'
+INCORRECT_CODE: '&c代码错误，请重试'
+AUTHENTICATED_AUTOMATICALLY: '&a您已通过自动验证'
+ALREADY_SETUP: '&您已经设置过了双重身份验证（2FA）'
+RESET_2FA: '&a您的双重身份验证（2FA）已重置'
+NOT_SETUP: '&c您还没有设置过双重身份验证（2FA）'
+NO_PERMISSIONS: '&c您无权使用此指令。'
+USE_QR_CODE_TO_SETUP_2FA: '&a请扫描屏幕上方的二维码来设置双重身份验证（2FA）'
+SETUP_RECOMMENDATION: '&6此服务器支持双重身份验证（2FA）并建议您尽快设置'
+GET_STARTED: '&6请执行 "/2fa enable" 来启用2FA'
+DIDNT_SETUP_YET: '&c您尚未启用 2FA。请先执行 "/2fa enable"！'
+TWOFA_IS_ENABLED: '&c您的帐户已启用双重验证'
+PLEASE_AUTHENTICATE: '&c请使用 /2fa <code> 进行身份验证'
+CLICK_TO_OPEN_QR: '&e点击这里打开二维码'
+RESET_FOR: '&a%name%的双重身份验证（2FA）已重置'
+PLAYER_NOT_FOUND: '&c找不到用户：%name%'
+PLAYER_NOT_SETUP: '&c用户%name%尚未设置双重身份验证'
+RELOADED_CONFIG: '&a配置已重新加载'
+FAILED_AUTHENTICATION_ALERT: '&c%name% 身份验证失败 %times% 次'
+SOMETHING_WENT_WRONG: '&c出错了。请联系开发团队！'
+HELP_HEADER: '&7----- &b2FA &7-----'
+HELP_COMMAND: '&7• &b%command% &e%aliases%&7: %description%'
+HELP_FOOTER: '&7----- -------- -----'
+DESCRIPTION_OF_DISABLE_COMMAND: 关闭双重身份验证
+DESCRIPTION_OF_DISABLE_OTHERS_COMMAND: 禁用其他用户的两步验证
+DESCRIPTION_OF_ENABLE_COMMAND: 启用双重身份验证（2FA）
+DESCRIPTION_OF_HELP_COMMAND: 显示双重身份验证（2FA）插件的帮助
+DESCRIPTION_OF_RELOAD_COMMAND: 重新载入配置
+DESCRIPTION_OF_PRINT_INFO_COMMAND: Prints useful info about the plugin

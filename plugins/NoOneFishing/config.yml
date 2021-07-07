@@ -1,0 +1,861 @@
+prefix: "&7(#6e7b9fNoOneFishing&7) &r"
+
+settings:
+  check-open-water: true
+  use-custom-check-open-water: false
+  custom-check-open-water:
+    Xradius: 1
+    Yradius: 1
+    Zradius: 1
+  check-ow-message: true
+  vanilla-drop: true
+  vanilla-drop-chance: 10
+  timeformat:
+    d: "d"
+    h: "h"
+    m: "m"
+    s: "s"
+  timezone:
+    usetimezone: false #false = the time of the dedicated server will be used
+    UTC: +1
+  baitparticles: true
+  antiafk: true
+  antiafkmsg: "Ay-yay-yay you can't stand afk!"
+  antiafk-action:
+    #summon/cancel/console
+    type: summon
+    mob: PUFFERFISH
+    #if type: console
+    #command: "effect give %player% minecraft:poison 10 1"
+
+
+competition:
+  enable: true
+  min-players: 3
+  actionbar: true
+  actionbartext: "&bFishing competition &8|&7 Time left: &3%time% &8|&7 Point: &3%point% &8|&7 Place: &3%place%"
+  WorldGuardHook:
+    enable: true
+    message: "#bbb5bbThe competition takes place in these regions: #0799c3%regions%"
+    regions:
+      - "__global__" #automatically replaced with " global" in the message
+  typepoints:
+    common: 1
+    uncommon: 2
+    rare: 3
+    mythical: 5
+    legendary: 10
+    divine: 20
+  starts_every:
+    d: 0
+    h: 1
+    m: 0
+    s: 0
+  duration:
+    d: 0
+    h: 0
+    m: 10
+    s: 0
+  rewards:
+    firstplace:
+        command: "effect give %name% minecraft:hero_of_the_village 300 3"
+    secondplace:
+        command: "effect give %name% minecraft:hero_of_the_village 300 2"
+    thirdplace:
+        command: "effect give %name% minecraft:hero_of_the_village 300 1"
+
+
+sellmenu:
+  title: "Catch market"
+  sellbtn:
+    item: "EMERALD"
+    name: "#00c24eSell"
+    lore:
+      - "&7Click to sell!"
+listmenu:
+  mainmenu:
+    title: "Fishing diary"
+    statistic:
+      material: CONDUIT
+      name: "#a8dbe9&lCatch statistic"
+      lore:
+        - "#a8dbe9Total amount of catch: &7%nf_caughtcount%"
+        - "#bbb5bbCommon #a8dbe9catch caught: &7%nf_common_caughtcount%"
+        - "#6c9394Uncommon #a8dbe9catch caught: &7%nf_uncommon_caughtcount%"
+        - "#2758a6Rare #a8dbe9catch caught: &7%nf_rare_caughtcount%"
+        - "#8927a6Mythical #a8dbe9catch caught: &7%nf_mythical_caughtcount%"
+        - "#ec7504Legendary #a8dbe9catch caught: &7%nf_legendary_caughtcount%"
+        - "#ec0404Divine #a8dbe9catch caught: &7%nf_divine_caughtcount%"
+    playerstatistic:
+      name: "#e4c300&lYour statistic"
+      lore:
+        - "#e4c300Maximum catch weight: &7%nf_maxweight% kg"
+        - "#e4c300Wins in the competition: &7%nf_competition_wins%"
+    catchlist:
+      material: MAP
+      name: "#bbb5bbCatch list"
+      lore:
+        - "#bbb5bbClick to view"
+    backbtn:
+      material: STONE_BUTTON
+      name: "&cBack"
+    filter:
+      allmaterial: NETHER_STAR
+      allname: "&3All catch"
+      commonmaterial: GRAY_DYE
+      commonname: "#bbb5bbCommon catch"
+      uncommonmaterial: LIGHT_GRAY_DYE
+      uncommonname: "#6c9394Uncommon catch"
+      rarematerial: BLUE_DYE
+      rarename: "#2758a6Rare catch"
+      mythicalmaterial: PURPLE_DYE
+      mythicalname: "#8927a6Mythical catch"
+      legendarymaterial: ORANGE_DYE
+      legendaryname: "#ec7504Legendary catch"
+      divinematerial: RED_DYE
+      divinename: "#ec0404Divine catch"
+  title: "Catch list"
+  catch_item:
+    name: "%name%"
+    lore:
+      - "&f‣ #95e8eeWeight: &7%minweight%-%maxweight% kg"
+      - "&f‣ #95e8eeRarity: %rarity%"
+      - "&f‣ #95e8eeActivity time: &6%time%"
+      - "&f‣ #95e8eeActivity weather: &6%weather%"
+      - "&f‣ #95e8eeActivity difficulty: &6%difficulty%"
+      - "&f‣ #95e8eeTo be found at a height: &6%minY%&7-&6%maxY%"
+      - "&f‣ #95e8eeIt can be found in the"
+      - "  #95e8eefollowing biomes:"
+      - "%biomes%"
+    translations:
+      day: "Day"
+      night: "Night"
+      timenull: "Always"
+      rain: "Rain"
+      sun: "Sun"
+      weathernull: "Always"
+      peaceful: "Peaceful"
+      easy: "Easy"
+      normal: "Normal"
+      hard: "Hard"
+      difficultynull: "Always"
+      Yposnull: "Everywhere"
+  nextpagebtn:
+    name: "#95e8ee>>"
+  prevpagebtn:
+    name: "#95e8ee<<"
+
+baitmenu:
+  title: "Baits market"
+  loreaddition: "count"
+  baititem:
+    lore:
+      - "#bbb5bbPrice: #00ff04&l$#00ff04%price%"
+      - "#bbb5bbCount: #00ff04%count%"
+      - ""
+      - "#bbb5bbClick to buy!"
+msg:
+  sell: "#bbb5bbYou have successfully sold #00c2b6%count%#bbb5bb items for #00c24e&l$#00c24e%price%"
+  vault: "#bbb5bbVault not found!"
+  reload: "#bbb5bbReloaded config!"
+  dhperm: "#bbb5bbYou don't have enough permissions!"
+  check-open-water-msg: "#bbb5bbFishing is prohibited in this place, use the territory of %1r%x%2r%x%3r% water!"
+  buybites: "#bbb5bbYou have successfully purchased %name%#bbb5bb for #00ff04&l$#00ff04%price%#bbb5bb!"
+  fullinv: "#bbb5bbYour inventory is full!"
+  baitwork: "#bbb5bbYou caught %name%#bbb5bb with a bait!"
+  baitnotwork: "#bbb5bbThe %name%#bbb5bb escaped from the hook, but you caught another one!"
+  fishnotfind: "#bbb5bbThere are no fish here, find a better place!"
+  competitionstarted: "#bbb5bbThe #0ebac9&nfishing competition#bbb5bb has started, you have #0ebac9%time%#bbb5bb, the one who catches a lot of fish will win!"
+  competitionend: "#bbb5bbThe #0ebac9&nfishing competition#bbb5bb is over!\n
+  \n#79d7de▄■▀■▄■▀■▄■▀■▄▄■▀■▄■▀■▄■▀■▄▄■▀■▄■▀■▄\n
+  \n                           #bbb5bbResults:
+  \n                     #fed500① #f1da64%first_place_name% - %first_place_point%
+  \n                     #868582② #b4b3b1%second_place_name% - %second_place_point%
+  \n                     #a8601b③ #db7513%third_place_name% - %third_place_point%\n
+  \n#79d7de▄■▀■▄■▀■▄■▀■▄▄■▀■▄■▀■▄■▀■▄▄■▀■▄■▀■▄"
+  competitionnotstarted: "#bbb5bbThe #0ebac9&nfishing competition#bbb5bb hasn't started yet!"
+  helpcmd:
+    - ""
+    - "#95e8ee&lNoOneFishing help"
+    - "&f‣ &3nfsell &b-#bbb5bb here you can sell your catch :3"
+    - "&f‣ &3nfbuy &b-#bbb5bb here you can buy baites"
+    - "&f‣ &3nfreload &b-#bbb5bb reloads the plugin configuration (only admin command)"
+    - "&f‣ &3nflist &b-#bbb5bb shows the entire list of available catch"
+    - "&f‣ &3nfcompetition &b-#bbb5bb shows information about the current competition"
+    - ""
+  competitioncmd:
+    - ""
+    - "#95e8ee&lNoOneFishing competition &7| #95e8eeTime remaining: %time%"
+    - "#fed500① #f1da64%first_place_name% - %first_place_point%"
+    - "#868582② #b4b3b1%second_place_name% - %second_place_point%"
+    - "#a8601b③ #db7513%third_place_name% - %third_place_point%"
+    - ""
+    - "#d2d2d1Your place: #95e8ee%place%"
+    - "#d2d2d1Your point: #95e8ee%point%"
+    - ""
+  emptyplace: "#d2d2d1Empty :3"
+  competitionalreadystarted: "#bbb5bbThe competition has already started!"
+  competitioncommandbadusage: "#bbb5bbYou entered the command incorrectly (Example: /nfcompetition start 0 0 10 0)"
+
+rarity: #change only string value
+  common: "#bbb5bbCommon"
+  uncommon: "#6c9394Uncommon"
+  rare: "#2758a6Rare"
+  mythical: "#8927a6Mythical"
+  legendary: "#ec7504Legendary"
+  divine: "#ec0404Divine"
+raritymod: #change only value
+  common: 1.0
+  uncommon: 1.1
+  rare: 1.2
+  mythical: 1.5
+  legendary: 2.0
+  divine: 2.5
+chance: #change only value
+  common: 40
+  uncommon: 25
+  rare: 20
+  mythical: 10
+  legendary: 4
+  divine: 1
+
+baits:
+  uncommon:
+    type: uncommon
+    chance-add: 10
+    count: 3
+    price: 10
+    material: SPIDER_EYE
+    name: "#6c9394Uncommon bait"
+    lore:
+      - "#bbb5bbIf there is a fish with"
+      - "#6c9394&nuncommon#bbb5bb rarity in the reservoir,"
+      - "#bbb5bbthen the chances of getting it"
+      - "#bbb5bbwill increase by &b%chance%#bbb5bb!"
+      - "#bbb5bbCount: &b%count%"
+      - ""
+      - "&6To use the bait,#bbb5bb click it on"
+      - "#bbb5bbthe fishing rod in the inventory"
+  rare:
+    type: rare
+    chance-add: 10
+    count: 3
+    price: 50
+    material: IRON_NUGGET
+    name: "#2758a6Rare bait"
+    lore:
+      - "#bbb5bbIf there is a fish with"
+      - "#2758a6&nrare#bbb5bb rarity in the reservoir,"
+      - "#bbb5bbthen the chances of getting it"
+      - "#bbb5bbwill increase by &b%chance%#bbb5bb!"
+      - "#bbb5bbCount: &b%count%"
+      - ""
+      - "&6To use the bait,#bbb5bb click it on"
+      - "#bbb5bbthe fishing rod in the inventory"
+  mythical:
+    type: mythical
+    chance-add: 10
+    count: 3
+    price: 250
+    material: GOLD_NUGGET
+    name: "#8927a6Mythical bait"
+    lore:
+      - "#bbb5bbIf there is a fish with"
+      - "#8927a6&nmythical#bbb5bb rarity in the reservoir,"
+      - "#bbb5bbthen the chances of getting it"
+      - "#bbb5bbwill increase by &b%chance%#bbb5bb!"
+      - "#bbb5bbCount: &b%count%"
+      - ""
+      - "&6To use the bait,#bbb5bb click it on"
+      - "#bbb5bbthe fishing rod in the inventory"
+  legendary:
+    type: legendary
+    chance-add: 5
+    count: 3
+    price: 500
+    material: GLOWSTONE_DUST
+    name: "#ec7504Legendary bait"
+    lore:
+      - "#bbb5bbIf there is a fish with"
+      - "#ec7504&nlegendary#bbb5bb rarity in the reservoir,"
+      - "#bbb5bbthen the chances of getting it"
+      - "#bbb5bbwill increase by &b%chance%#bbb5bb!"
+      - "#bbb5bbCount: &b%count%"
+      - ""
+      - "&6To use the bait,#bbb5bb click it on"
+      - "#bbb5bbthe fishing rod in the inventory"
+  divine:
+    type: divine
+    chance-add: 5
+    count: 3
+    price: 1000
+    material: REDSTONE
+    name: "#ec0404Divine bait"
+    lore:
+      - "#bbb5bbIf there is a fish with"
+      - "#ec0404&ndivine#bbb5bb rarity in the reservoir,"
+      - "#bbb5bbthen the chances of getting it"
+      - "#bbb5bbwill increase by &b%chance%#bbb5bb!"
+      - "#bbb5bbCount: &b%count%"
+      - ""
+      - "&6To use the bait,#bbb5bb click it on"
+      - "#bbb5bbthe fishing rod in the inventory"
+
+
+#You must have a drop that can be caught in all biomes (biome: ALL)!!!
+#Do not use shiny on items with enchantments!!!
+#You can find the Biome ID on this wiki by scrolling almost to the end: https://minecraft.fandom.com/wiki/Biome
+#Avaible placeholders in lore: %weight% %rarity% %catch_time% %catcher_name%
+drops:
+  ANGLERFISH:
+    material: PLAYER_HEAD
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzMzYzUxNmYzZjM4MDkxNmQ0MWE5MzU1YTMxOWY4NTk0M2FhY2M4YTljMWI0YTEzODAxNzQ4NGI2MTExNGY2OCJ9fX0="
+    name: "#6a6868Anglerfish"
+    lore:
+      - "#6a6868Weight: &7%weight% kg"
+      - "#6a6868Rarity: %rarity%"
+      - "#6a6868Catch time: &7%catch_time%"
+      - "#6a6868Catcher: &7%catcher_name%"
+    minimal-weight: 100
+    maximum-weight: 150
+    price: 100
+    CustomModelData: 1
+    biome:
+      - "ALL"
+    rarity: legendary
+    glow: true
+    shiny: false
+    hideenchants: false
+    checkDifficulty:
+      enabled: true
+      difficulty: easy
+    checkTime:
+      enabled: true
+      time: day #or night
+    checkWeather:
+      enabled: true
+      weather: rain #or sun
+    checkYpos:
+      enabled: true
+      minY: 10
+      maxY: 50
+  ANGRYBEEFISH:
+    material: PLAYER_HEAD
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjY1YjlmZDFhNDU2YzIyODRlNjdiY2M3MjkyNGZlODE1ZmRlN2RlMDRmMzUyNTU0NzdkZTNkMjhiMjkzZjg3In19fQ=="
+    name: "#fff800A#5d5d5dn#fff800g#5d5d5dr#fff800y #5d5d5dB#fff800e#5d5d5de #fff800F#5d5d5di#fff800s#5d5d5dh"
+    lore:
+      - "#fff800Weight: &7%weight% kg"
+      - "#fff800Rarity: %rarity%"
+      - "#fff800Catch time: &7%catch_time%"
+      - "#fff800Catcher: &7%catcher_name%"
+    minimal-weight: 1
+    maximum-weight: 3
+    price: 100
+    biome:
+      - "FOREST"
+      - "BIRCH_FOREST"
+      - "birch_forest_hills"
+      - "dark_forest"
+      - "flower_forest"
+    rarity: mythical
+    glow: false
+    shiny: false
+    hideenchants: false
+  BEEFISH:
+    material: PLAYER_HEAD
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWQ1N2RlODdlZjhhMTcxNmIwYWJiZTAxMzU5YTI3YWVhODUxMmZjNTdjMWFhZTcwZGVlNWUxNWY2ZDFmOWRmZCJ9fX0="
+    name: "#fff800B#5d5d5de#fff800e #5d5d5dF#fff800i#5d5d5ds#fff800h"
+    lore:
+      - "#fff800Weight: &7%weight% kg"
+      - "#fff800Rarity: %rarity%"
+      - "#fff800Catch time: &7%catch_time%"
+      - "#fff800Catcher: &7%catcher_name%"
+    minimal-weight: 1
+    maximum-weight: 3
+    price: 100
+    biome:
+      - "FOREST"
+      - "BIRCH_FOREST"
+      - "birch_forest_hills"
+      - "dark_forest"
+      - "flower_forest"
+    rarity: rare
+    glow: false
+    shiny: false
+    hideenchants: false
+  GOLD:
+    material: GOLD_INGOT
+    name: "#c2bd00Gold ingot"
+    lore:
+      - "#c2bd00Weight: &7%weight% kg"
+      - "#c2bd00Rarity: %rarity%"
+      - "#c2bd00Catch time: &7%catch_time%"
+      - "#c2bd00Catcher: &7%catcher_name%"
+    minimal-weight: 0.5
+    maximum-weight: 2
+    price: 100
+    biome:
+      - "ALL"
+    rarity: rare
+    glow: false
+    shiny: false
+    hideenchants: false
+  IRON:
+    material: IRON_INGOT
+    name: "#abc0c3Iron ingot"
+    lore:
+      - "#abc0c3Weight: &7%weight% kg"
+      - "#abc0c3Rarity: %rarity%"
+      - "#abc0c3Catch time: &7%catch_time%"
+      - "#abc0c3Catcher: &7%catcher_name%"
+    minimal-weight: 1
+    maximum-weight: 3
+    biome:
+      - "ALL"
+    rarity: uncommon
+    glow: false
+    shiny: false
+    hideenchants: false
+  SCUTE:
+    material: SCUTE
+    name: "#00c23dTurtle shell"
+    lore:
+      - "#00c23dWeight: &7%weight% kg"
+      - "#00c23dRarity: %rarity%"
+      - "#00c23dCatch time: &7%catch_time%"
+      - "#00c23dCatcher: &7%catcher_name%"
+    minimal-weight: 0.5
+    maximum-weight: 0.2
+    price: 100
+    biome:
+      - "ALL"
+    rarity: rare
+    glow: false
+    shiny: false
+    hideenchants: false
+  SHELL:
+    material: NAUTILUS_SHELL
+    name: "#abc0c3Nautilus Shell"
+    lore:
+      - "#abc0c3Weight: &7%weight% kg"
+      - "#abc0c3Rarity: %rarity%"
+      - "#abc0c3Catch time: &7%catch_time%"
+      - "#abc0c3Catcher: &7%catcher_name%"
+    minimal-weight: 0.1
+    maximum-weight: 0.5
+    price: 100
+    biome:
+      - "ALL"
+    rarity: rare
+    glow: false
+    shiny: false
+    hideenchants: false
+  WYVERN_FISH:
+    material: PLAYER_HEAD
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDBjZDcxZmJiYmJiNjZjN2JhZjc4ODFmNDE1YzY0ZmE4NGY2NTA0OTU4YTU3Y2NkYjg1ODkyNTI2NDdlYSJ9fX0="
+    name: "#28d3ebWyvern Fish"
+    lore:
+      - "#28d3ebWeight: &7%weight% kg"
+      - "#28d3ebRarity: %rarity%"
+      - "#28d3ebCatch time: &7%catch_time%"
+      - "#28d3ebCatcher: &7%catcher_name%"
+    minimal-weight: 200
+    maximum-weight: 400
+    price: 100
+    biome:
+      - "DEEP_OCEAN"
+      - "DEEP_FROZEN_OCEAN"
+      - "ICE_SPIKES"
+      - "COLD_OCEAN"
+    rarity: divine
+    glow: true
+    shiny: false
+    hideenchants: false
+  DRAGON_FISH:
+    material: PLAYER_HEAD
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2VjOGZmNTc2NWQ3MmJhNmVhNzQzOTM4ZjAzM2E0NmFhMTlhZjYxMTkyNzhmZTIyN2E3YjZkNmJkZmYxOSJ9fX0="
+    name: "#eb2828Dragon Fish"
+    lore:
+      - "#eb2828Weight: &7%weight% kg"
+      - "#eb2828Rarity: %rarity%"
+      - "#eb2828Catch time: &7%catch_time%"
+      - "#eb2828Catcher: &7%catcher_name%"
+    minimal-weight: 100
+    maximum-weight: 300
+    price: 100
+    biome:
+      - "DEEP_OCEAN"
+      - "DEEP_LUKEWARM_OCEAN"
+      - "DEEP_WARM_OCEAN"
+    rarity: divine
+    glow: true
+    shiny: false
+    hideenchants: false
+  bow3:
+    material: BOW
+    name: "#f69000God's Bow"
+    lore:
+      - "#f69000Rarity: %rarity%"
+      - "#f69000Catch time: &7%catch_time%"
+      - "#f69000Catcher: &7%catcher_name%"
+    biome:
+      - "DEEP_OCEAN"
+    rarity: divine
+    price: 100
+    enchants:
+      - "UNBREAKING:3"
+      - "POWER:3"
+      - "INFINITY:1"
+      - "MENDING:1"
+    glow: false
+    shiny: false
+    hideenchants: false
+  bow2:
+    material: BOW
+    name: "#a100f6Professional Bow"
+    lore:
+      - "#a100f6Rarity: %rarity%"
+      - "#a100f6Catch time: &7%catch_time%"
+      - "#a100f6Catcher: &7%catcher_name%"
+    biome:
+      - "RIVER"
+      - "DEEP_OCEAN"
+      - "WARM_OCEAN"
+      - "LUKEWARM_OCEAN"
+    rarity: mythical
+    price: 100
+    enchants:
+      - "UNBREAKING:3"
+      - "POWER:3"
+      - "MENDING:1"
+    glow: false
+    shiny: false
+    hideenchants: false
+  bow1:
+    material: BOW
+    name: "#0079f6Semi-professional Bow"
+    lore:
+      - "#0079f6Rarity: %rarity%"
+      - "#0079f6Catch time: &7%catch_time%"
+      - "#0079f6Catcher: &7%catcher_name%"
+    biome:
+      - "RIVER"
+      - "BEACH"
+    rarity: rare
+    price: 100
+    enchants:
+      - "UNBREAKING:2"
+      - "POWER:2"
+      - "MENDING:1"
+    glow: false
+    shiny: false
+    hideenchants: false
+  bow:
+    material: BOW
+    name: "#00f0f6Beginner's Bow"
+    lore:
+      - "#00f0f6Rarity: %rarity%"
+      - "#00f0f6Catch time: &7%catch_time%"
+      - "#00f0f6Catcher: &7%catcher_name%"
+    biome:
+      - "ALL"
+    enchants:
+      - "UNBREAKING:1"
+      - "POWER:1"
+      - "MENDING:1"
+    rarity: uncommon
+    price: 100
+    glow: false
+    shiny: false
+    hideenchants: false
+  SCRAP:
+    material: NETHERITE_SCRAP
+    name: "#bbb5bbScrap"
+    lore:
+      - "#bbb5bbWeight: &7%weight% kg"
+      - "#bbb5bbRarity: %rarity%"
+      - "#bbb5bbCatch time: &7%catch_time%"
+      - "#bbb5bbCatcher: &7%catcher_name%"
+    minimal-weight: 1
+    maximum-weight: 5
+    price: 100
+    biome:
+      - "DEEP_OCEAN"
+      - "FROZE_OCEAN"
+    rarity: mythical
+    glow: false
+    shiny: false
+    hideenchants: false
+  CAN:
+    material: PLAYER_HEAD
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzE0YmVmZDRkMzc5N2E4YTZhYjUzY2VlZGViYWIzYzEyYjdiMWYwMzQ0MGJmMDA4NTAxMDAyNWMzNTcxNzYyOCJ9fX0="
+    name: "#bbb5bbCan"
+    lore:
+      - "#bbb5bbWeight: &7%weight% kg"
+      - "#bbb5bbRarity: %rarity%"
+      - "#bbb5bbCatch time: &7%catch_time%"
+      - "#bbb5bbCatcher: &7%catcher_name%"
+    minimal-weight: 1
+    maximum-weight: 5
+    price: 100
+    biome:
+      - "ALL"
+    rarity: common
+    glow: false
+    shiny: false
+    hideenchants: false
+  JUNGLE_FISH:
+    material: PLAYER_HEAD
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjViZjU0YWU0ZTJjZjc3NzI2ZGM4Mjg2NjZlYjdiZTg2MTI2ZjM0ZTk1M2Y5ODlmNjA0YWUyOWFkNTY5ZjU2YyJ9fX0="
+    name: "#00c23dJungle Fish"
+    lore:
+      - "#00c23dWeight: &7%weight% kg"
+      - "#00c23dRarity: %rarity%"
+      - "#00c23dCatch time: &7%catch_time%"
+      - "#00c23dCatcher: &7%catcher_name%"
+    minimal-weight: 1
+    maximum-weight: 5
+    price: 100
+    biome:
+      - "JUNGLE"
+      - "JUNGLE_EDGE"
+      - "BAMBOO_JUNGLE"
+    rarity: common
+    glow: false
+    shiny: false
+    hideenchants: false
+  DESERT_FISH:
+    material: PLAYER_HEAD
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTcwMDg3ZGRlMTMwODQ2YzBlOTc1ZmU2ODQzNWQ4OTQwZjA5MzM5ZmFiYzYwMjZhOTY5OWZkYjYxMmI0ZjEyMSJ9fX0="
+    name: "#f6da00Desert Fish"
+    lore:
+      - "#f6da00Weight: &7%weight% kg"
+      - "#f6da00Rarity: %rarity%"
+      - "#f6da00Catch time: &7%catch_time%"
+      - "#f6da00Catcher: &7%catcher_name%"
+    minimal-weight: 1
+    maximum-weight: 3
+    price: 100
+    biome:
+      - "DESERT"
+      - "DESERT_HILLS"
+    rarity: common
+    glow: false
+    shiny: false
+    hideenchants: false
+  fishing_rod4:
+    material: FISHING_ROD
+    name: "#f69000God's Fishing Rod"
+    lore:
+      - "#f69000Rarity: %rarity%"
+      - "#f69000Catch time: &7%catch_time%"
+      - "#f69000Catcher: &7%catcher_name%"
+    biome:
+      - "DEEP_OCEAN"
+    rarity: divine
+    price: 100
+    enchants:
+      - "UNBREAKING:3"
+      - "LURE:3"
+      - "LUCK_OF_THE_SEA:3"
+      - "MENDING:1"
+    glow: false
+    shiny: false
+    hideenchants: false
+  fishing_rod3:
+    material: FISHING_ROD
+    name: "#a100f6Professional Fishing rod"
+    lore:
+      - "#a100f6Rarity: %rarity%"
+      - "#a100f6Catch time: &7%catch_time%"
+      - "#a100f6Catcher: &7%catcher_name%"
+    biome:
+      - "RIVER"
+      - "DEEP_OCEAN"
+      - "WARM_OCEAN"
+      - "LUKEWARM_OCEAN"
+    rarity: mythical
+    price: 100
+    enchants:
+      - "UNBREAKING:2"
+      - "LURE:3"
+      - "LUCK_OF_THE_SEA:3"
+    glow: false
+    shiny: false
+    hideenchants: false
+  fishing_rod1:
+    material: FISHING_ROD
+    name: "#0079f6Semi-professional Fishing rod"
+    lore:
+      - "#0079f6Rarity: %rarity%"
+      - "#0079f6Catch time: &7%catch_time%"
+      - "#0079f6Catcher: &7%catcher_name%"
+    biome:
+      - "RIVER"
+      - "BEACH"
+    rarity: rare
+    price: 100
+    enchants:
+      - "UNBREAKING:1"
+      - "LURE:2"
+      - "LUCK_OF_THE_SEA:2"
+    glow: false
+    shiny: false
+    hideenchants: false
+  fishing_rod:
+    material: FISHING_ROD
+    name: "#00f0f6Beginner's Fishing rod"
+    lore:
+      - "#00f0f6Rarity: %rarity%"
+      - "#00f0f6Catch time: &7%catch_time%"
+      - "#00f0f6Catcher: &7%catcher_name%"
+    biome:
+      - "RIVER"
+      - "OCEAN"
+      - "BEACH"
+      - "DEEP_OCEAN"
+      - "WARM_OCEAN"
+      - "LUKEWARM_OCEAN"
+      - "DESERT"
+    rarity: uncommon
+    price: 100
+    enchants:
+      - "UNBREAKING:1"
+      - "LURE:1"
+      - "LUCK_OF_THE_SEA:1"
+    glow: false
+    shiny: false
+    hideenchants: false
+  leather_boots:
+    material: LEATHER_BOOTS
+    name: "#8b4203Poor man's Shoes"
+    lore:
+      - "#8b4203Rarity: %rarity%"
+      - "#8b4203Catch time: &7%catch_time%"
+      - "#8b4203Catcher: &7%catcher_name%"
+    biome:
+      - "RIVER"
+      - "OCEAN"
+      - "BEACH"
+      - "DEEP_OCEAN"
+      - "WARM_OCEAN"
+      - "LUKEWARM_OCEAN"
+      - "DESERT"
+    rarity: uncommon
+    price: 100
+    enchants:
+      - "VANISHING_CURSE:1"
+      - "PROTECTION:3"
+    glow: false
+    shiny: false
+    hideenchants: false
+  shark:
+    material: PLAYER_HEAD
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTk4Nzc1YWM2Yzk3M2U2MTQyNTg0NDJkNmRjZThiNTJjNGQ5ZGJmNjQ4MzY5ZTY1ZDUyM2NhZmI0MzJiOTk1In19fQ=="
+    name: "#53a4f4Shark"
+    lore:
+      - "#53a4f4Weight: &7%weight% kg"
+      - "#53a4f4Rarity: %rarity%"
+      - "#53a4f4Catch time: &7%catch_time%"
+      - "#53a4f4Catcher: &7%catcher_name%"
+    minimal-weight: 300
+    maximum-weight: 800
+    price: 100
+    biome:
+      - "WARM_OCEAN"
+    rarity: divine
+    glow: false
+    shiny: true
+    hideenchants: false
+  jellyfish:
+    material: PLAYER_HEAD
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTEzZjA4NmNjYjU2MzIzZjIzOGJhMzQ4OWZmMmExYTM0YzBmZGNlZWFmYzQ4M2FjZmYwZTU0ODhjZmQ2YzJmMSJ9fX0="
+    name: "#f574e7Jellyfish"
+    lore:
+      - "#f574e7Weight: &7%weight% kg"
+      - "#f574e7Rarity: %rarity%"
+      - "#f574e7Catch time: &7%catch_time%"
+      - "#f574e7Catcher: &7%catcher_name%"
+    minimal-weight: 0.1
+    maximum-weight: 0.5
+    price: 100
+    biome:
+      - "OCEAN"
+      - "BEACH"
+      - "DEEP_OCEAN"
+      - "WARM_OCEAN"
+      - "LUKEWARM_OCEAN"
+    rarity: rare
+    glow: false
+    shiny: false
+    hideenchants: false
+  salmon:
+    material: SALMON
+    name: "#ed2d06Salmon"
+    lore:
+      - "#ed2d06Weight: &7%weight% kg"
+      - "#ed2d06Rarity: %rarity%"
+      - "#ed2d06Catch time: &7%catch_time%"
+      - "#ed2d06Catcher: &7%catcher_name%"
+    minimal-weight: 0.5
+    maximum-weight: 2
+    price: 100
+    biome:
+      - "ALL"
+    rarity: common
+    glow: false
+    shiny: false
+    hideenchants: false
+  cod:
+    material: COD
+    name: "#b69790Cod"
+    lore:
+      - "#b69790Weight: &7%weight% kg"
+      - "#b69790Rarity: %rarity%"
+      - "#b69790Catch time: &7%catch_time%"
+      - "#b69790Catcher: &7%catcher_name%"
+    minimal-weight: 1
+    maximum-weight: 3
+    price: 100
+    biome:
+      - "ALL"
+    rarity: common
+    glow: false
+    shiny: false
+    hideenchants: false
+  pufferfish:
+    material: PUFFERFISH
+    name: "#f6df02Pufferfish"
+    lore:
+      - "#f6df02Weight: &7%weight% kg"
+      - "#f6df02Rarity: %rarity%"
+      - "#f6df02Catch time: &7%catch_time%"
+      - "#f6df02Catcher: &7%catcher_name%"
+    minimal-weight: 0.5
+    maximum-weight: 1
+    price: 100
+    biome:
+      - "OCEAN"
+      - "DEEP_OCEAN"
+    rarity: mythical
+    glow: false
+    shiny: false
+    hideenchants: false
+  tropical_fish:
+    material: TROPICAL_FISH
+    name: "#f67c02Tropical fish"
+    lore:
+      - "#f67c02Weight: &7%weight% kg"
+      - "#f67c02Rarity: %rarity%"
+      - "#f67c02Catch time: &7%catch_time%"
+      - "#f67c02Catcher: &7%catcher_name%"
+    minimal-weight: 1
+    maximum-weight: 2
+    price: 100
+    biome:
+      - "JUNGLE"
+      - "BAMBOO_JUNGLE"
+    rarity: mythical
+    glow: true
+    shiny: false
+    hideenchants: false
