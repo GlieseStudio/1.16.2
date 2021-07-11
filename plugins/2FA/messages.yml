@@ -2,7 +2,7 @@ PREFIX: '&7[&b2FA&7]&r '
 VALIDATE_ACCOUNT: '&c请进行双重身份认证来验证您的账户'
 INVALID_CODE: '&c您输入的动态令牌无效，请重试!'
 SUCCESSFULLY_SETUP: '&a双重身份验证（2FA）启用成功!'
-MUST_BE_A_PLAYER: '此命令必须由玩家运行。'
+MUST_BE_A_PLAYER: 此命令必须由玩家运行。
 USAGE: '&c用法: /2fa <code>'
 YOU_ARE_REQUIRED: '&6您需要启用双重身份验证（2FA）!'
 SUCCESSFULLY_AUTHENTICATED: '&a您已成功验证2FA！'

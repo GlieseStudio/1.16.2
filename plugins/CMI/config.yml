@@ -133,6 +133,9 @@ Optimizations:
   ShortDateFormat: dd/MM/yy
   # Do you want to record sell hand actions into file
   SellLog: true
+  # When set to true players with same name but different capitalization will be denyied from joining server to avoid possible issues. In example if on first day player Zrips joined server and on second day player zRips tries to join server, he will be rejected
+  # RECOMMENDED to keep this at true
+  PreventDifferentCapitalizationNames: false
   # When this set to true by using any command, requiring players name, in case plugin cant determine player by given full name, then partial matches from online players will be used. In example: /cmi heal rips can heal player Zrips 
   # Useful when you have players with complicated names
   PartialPlayerName: false
@@ -877,6 +880,11 @@ Command:
       - login
       - register
   Spy:
+    # Delay in seconds for commands spy to turn on after relog
+    # This will prevent some one from loging in with admin account and seeing commands before loging in
+    # Keep it at same or higher than your login plugin delay for entering password
+    # This includes social spy too
+    DelayForTrigger: 60
     # Commands in this list will not be shown when command spy is enabled for player for security/privacy reasons
     # This can be bypassed with cmi.command.commandspy.bypass permission node
     BlackListed:
