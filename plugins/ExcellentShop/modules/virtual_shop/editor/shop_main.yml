@@ -1,0 +1,134 @@
+title: Virtual Shop Editor
+size: 54
+content:
+  return:
+    material: BARRIER
+    name: '&cReturn'
+    lore: []
+    type: RETURN
+    slots: 49
+
+editor:
+  icon:
+    material: STONE
+    name: '&eShop Icon'
+    lore:
+    - '&bCurrent: &a%icon%'
+    - '&7'
+    - '&7Shop display item.'
+    - '&7'
+    - '&6Drag & Drop: &eReplace'
+    type: CHANGE_ICON
+    slots: 4
+
+  permission:
+    material: REDSTONE
+    name: '&ePermission'
+    lore:
+    - '&bRequired: &a%permission-required%'
+    - '&bNode: &a%permission-node%'
+    - '&7'
+    - '&7Defines if player must have'
+    - '&7the permission to open this shop.'
+    - '&7'
+    - '&6Left-Click: &eToggle'
+    animation:
+      auto-play: false
+      start-frame: 0
+    animation-frames:
+      '0':
+        material: GUNPOWDER
+        name: '%GLOBAL%'
+        lore:
+        - '%GLOBAL%'
+      '1':
+        material: REDSTONE
+        name: '%GLOBAL%'
+        lore:
+        - '%GLOBAL%'
+    type: CHANGE_PERMISSION
+    slots: 13
+
+  discounts:
+    material: GOLD_NUGGET
+    name: '&eDiscount Manager'
+    lore:
+    - '&7Manage discounts here.'
+    - '&7'
+    - '&6Left-Click: &eNavigate'
+    type: CHANGE_DISCOUNTS
+    slots: 22
+
+  pages:
+    material: BOOK
+    name: '&eShop Pages'
+    lore:
+    - '&bPages: &a%pages%'
+    - '&7'
+    - '&7Amount of shop pages.'
+    - '&7'
+    - '&6Left-Click: &e+1 Page'
+    - '&6Right-Click: &e-1 Page'
+    type: CHANGE_PAGES
+    slots: 11
+
+  operations:
+    material: WRITABLE_BOOK
+    name: '&eTransaction Manager'
+    lore:
+    - '&bBuying: &a%buying%'
+    - '&bSelling: &a%selling%'
+    - '&7'
+    - '&7Currency settings.'
+    - '&7'
+    - '&6Left-Click: &eToggle Buying'
+    - '&6Right-Click: &eToggle Selling'
+    type: CHANGE_TRANSACTIONS
+    slots: 15
+
+  products:
+    material: CHEST
+    name: '&eProduct Manager'
+    lore:
+    - '&7Manage shop products here.'
+    - '&7'
+    - '&6Left-Click: &eNavigate'
+    type: CHANGE_PRODUCTS
+    slots: 23
+
+  view_design:
+    material: PAINTING
+    name: '&eShop View Design'
+    lore:
+    - '&bTitle: &a%title%'
+    - '&bSize: &a%size%'
+    - '&7'
+    - '&7Here you can change the'
+    - '&7shop GUI design.'
+    - '&7'
+    - '&6Left-Click: &eNavigate'
+    - '&6Shift-Left: &eChange Title'
+    - '&6Shift-Right: &eChange Size'
+    type: CHANGE_VIEW_DESIGN
+    slots: 21
+
+  citizens:
+    material: PLAYER_HEAD
+    name: '&eAttached NPCs'
+    lore:
+    - '&bThe following NPCs will'
+    - '&bopen this shop on click:'
+    - '&a- %npc-id% (%npc-name%&a)'
+    - '&7'
+    - '&4&lCitizens &cplugin is required!'
+    - '&7'
+    - '&6Left-Click: &eAdd NPC'
+    - '&6Right-Click: &eClear List'
+    type: CHANGE_CITIZENS_ID
+    slots: 8
+
+
+
+
+
+

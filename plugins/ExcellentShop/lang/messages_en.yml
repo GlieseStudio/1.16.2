@@ -1,0 +1,193 @@
+Module:
+  Cmd:
+    Reload: Module &a%module% &7reloaded!
+Editor:
+  Enter:
+    Command: '&7Enter new command...'
+    Price: '&7Enter new price...'
+    Currency: '&7Enter currency id...'
+Shop:
+  Product:
+    Error:
+      Unbuyable: '&cYou can not buy this item.'
+      Unsellable: '&cYou can not sell this item!'
+      OutOfStock: '&cThis product is out of stock!'
+      FullInventory: '&cYou can''t buy items while your inventory is full!'
+      TooExpensive:
+      - '{message: ~type: TITLES; ~fadeIn: 10; ~stay: 80; ~fadeOut: 10;}&c&lToo Expensive! '
+      - ' &7You need: &c%price%&7!'
+      NotEnoughItems:
+      - '{message: ~type: TITLES; ~fadeIn: 10; ~stay: 80; ~fadeOut: 10;}&c&lNot Enough
+        Items! '
+      - ' &7You need: &cx%amount% %item%&7!'
+Auction:
+  Command:
+    Open:
+      Desc: Open auction.
+    Sell:
+      Desc: Add item on auction.
+      Usage: <price>
+    Expired:
+      Desc: List of expired items.
+      Usage: '[player]'
+    History:
+      Desc: List of sold items.
+      Usage: '[player]'
+  Listing:
+    Add:
+      Success:
+        Info: '&7You added &ax%amount% %item%&7 on auction for &a$%price%&7.'
+        Tax: '&7You paid &c%tax-percent%% &7tax &4($%tax-amount%) &7to add item on
+          auction.'
+        Announce: '&a%player% &7just put &ax%amount% %item% &7on auction for &e$%price%&7!'
+      Error:
+        BadItem: '&e%item% &ccould not be added on auction!'
+        Limit: '&cYou can not add more than &e%amount% &cactive bids on auction!'
+        Price:
+          Tax: '&cYou''re unable to pay &e%tax-percent%% &cprice tax: &e$%tax-amount%&c!'
+          Min: '&cItem price can not be lower than &e$%min%&c!'
+          Max: '&cItem price can not be greater than &e$%max%&c!'
+          Negative: '&cItem price can not be negative!'
+          Material:
+            Min: '&e%material% &cprice (for 1 item) can not be lower than &e$%min%&c!'
+            Max: '&e%material% &cprice (for 1 item) can not be greater than &e$%max%&c!'
+        DisabledGamemode: '&cYou can''t add items in this game mode!'
+    Buy:
+      Success:
+        Info: '{message: ~prefix: false;}&eYou bought &6x%amount% %item% &efrom &6%seller%
+          &efor &6$%price%&e!'
+      Error:
+        NoMoney: '{message: ~prefix: false;}&cYou don''t have enough money! You have:
+          &e$%balance%&c, need: &e$%price%&c.'
+    Sell:
+      Success:
+        Info: '{message: ~prefix: false;}&eYou sold &6x%amount% %item% &eto &6%buyer%
+          &efor &6$%price%&e!'
+    Expired:
+      Notify: '{message: ~prefix: false;}&eYou have &6%amount% &eexpired auction listings!
+        Take them at &6/auc expired &ebefore they are deleted!'
+  Error:
+    DisabledWorld: '&cAuction is disabled in this world!'
+Virtual:
+  Shop:
+    Command:
+      Open:
+        Desc: Opens specified shop.
+        Usage: '[shop]'
+    MainMenu:
+      Error:
+        Disabled: '&cMain shop menu is disabled!'
+    Open:
+      Error:
+        BadWorld: '&cShop is disabled in this world!'
+        BadGamemode: '&cYou can''t use shop while in &e%mode% &cgamemode!'
+        InvalidShop: '&cNo such shop!'
+    Product:
+      Purchase:
+        Sell:
+        - '{message: ~type: TITLES; ~fadeIn: 10; ~stay: 80; ~fadeOut: 10;}&a&lSuccessful! '
+        - ' &7You sold &ax%amount% %item% &7for &a%price%&7!'
+        Buy:
+        - '{message: ~type: TITLES; ~fadeIn: 10; ~stay: 80; ~fadeOut: 10;}&a&lSuccessful
+          Purchase! '
+        - ' &7You bought &ax%amount% %item% &7for &a%price%&7!'
+    Editor:
+      Enter:
+        Id: '&7Enter shop id...'
+        NpcId: '&7Enter Citizens id...'
+        Title: '&7Enter shop title...'
+        Amount: '&7Enter new amount...'
+        Time:
+          Seconds: '&7Enter &cseconds&7 amount...'
+          Full: '&7Enter 2 times like &c18:00 19:00&7...'
+        Day: '&7Enter day name &cin English&7...'
+      Create:
+        Error:
+          BadId: '&cShop id can only contain &eA-Z &cand &e0-9!'
+          Exist: '&cShop with such ID already exist!'
+      Product:
+        Error:
+          Currency: '&cInvalid currency!'
+Chest:
+  Shop:
+    Command:
+      List:
+        Desc: List of your shops.
+      Create:
+        Desc: Creates shop of the chest that you're looking on.
+        Usage: '[admin(true/false)]'
+      Search:
+        Desc: Search for shops with specified item.
+        Usage: <material>
+      Remove:
+        Desc: Removes the shop from the chest that you're looking at.
+    Error:
+      NotOwner: You're not the owner of this shop!
+    Creation:
+      Info:
+        Done:
+        - '{message: ~type: TITLES; ~fadeIn: 10; ~stay: 80; ~fadeOut: 10;}&a&lShop
+          Created!'
+        - '&7Use &aShift-Click &7to enter in &aEdit Mode&7.'
+      Error:
+        AlreadyShop: This chest is already shop!
+        NotEmpty: Please remove all items from the chest first.
+        NotAChest: This block is not a chest!
+        BadLocation: You can't create shop here!
+        LimitReached: You have reached the limit of shops! You can't create more.
+        BadArea: You can create shops only inside your own claim!
+        NotEnoughFunds: You don't have enough funds!
+    Removal:
+      Info:
+        Done: '{message: ~type: TITLES; ~fadeIn: 10; ~stay: 80; ~fadeOut: 10;}&c&lShop
+          Removed.'
+      Error:
+        NotAShop: This block is not a shop!
+    Product:
+      Error:
+        OutOfFunds: This shop is out of money!
+        OutOfSpace: This shop is out of space!
+        BadItem: This item can not be traded!
+    ShopList:
+      Info:
+        Switch: 'Global shop list: %state%&7.'
+    Trade:
+      Buy:
+        Info:
+          User: '{message: ~prefix: false;}&eYou bought &6x%amount% %item% &efor &6%price%
+            &efrom &6%shop_name%&e shop owned by &6%shop_owner%&e.'
+          Owner: '{message: ~prefix: false;}&6%player% &ejust bought &6x%amount% %item%
+            &efor &6%price% &efrom your &6%shop_name%&e shop.'
+      Sell:
+        Info:
+          User: '{message: ~prefix: false;}&eYou sold &6x%amount% %item% &efor &6%price%
+            &eto &6%shop_name%&e shop owned by &6%shop_owner%&e.'
+          Owner: '{message: ~prefix: false;}&6%player% &ejust sold &6x%amount% %item%
+            &efor &6%price% &eto your &6%shop_name%&e shop.'
+    Editor:
+      Tip:
+        Name: '&7Enter new name...'
+      Error:
+        Currency:
+          NotAllowed: '&eThis currency can not be used!'
+        Negative: '&7Number must be positive!'
+        ProductLeft: '&cFirst you have to take all of this product from the chest!'
+Other:
+  Never: Never
+  Infinity: Infinity
+GameMode:
+  CREATIVE: Creative
+  SURVIVAL: Survival
+  ADVENTURE: Adventure
+  SPECTATOR: Spectator
+AuctionSortType:
+  NAME: Name
+  MATERIAL: Material
+  SELLER: Seller
+  NEWEST: Newest
+  OLDEST: Oldest
+  MOST_EXPENSIVE: Most Expensive
+  LEAST_EXPENSIVE: Least Expensive
+TradeType:
+  BUY: Buy
+  SELL: Sell

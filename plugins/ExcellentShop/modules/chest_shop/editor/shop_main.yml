@@ -1,0 +1,63 @@
+title: Shop Editor
+size: 9
+
+content: {}
+
+editor:
+  shop_name:
+    material: NAME_TAG
+    name: '&eShop Name'
+    lore:
+    - '&bCurrent: &a%name%'
+    - '&7'
+    - '&6Left-Click: &eChange'
+    type: CHANGE_NAME
+    slots: 0
+
+  product:
+    material: CHEST
+    name: '&eShop Products'
+    lore:
+    - '&7Add and remove products'
+    - '&7of your shop here.'
+    - '&7'
+    - '&6Left-Click: &eNavigate'
+    type: CHANGE_PRODUCTS
+    slots: 4
+
+  admin:
+    material: REDSTONE
+    name: '&eAdmin Shop'
+    lore:
+    - '&bAdmin Shop: &a%admin%'
+    - '&7'
+    - '&7Toggles admin state of this shop.'
+    - '&8&oAdmin Shops have unlimited items'
+    - '&8&oand money.'
+    - '&7'
+    - '&6Left-Click: &eToggle'
+    type: CHANGE_ADMIN
+    slots: 1
+
+  operations:
+    material: WRITABLE_BOOK
+    name: '&eTransaction Manager'
+    lore:
+    - '&bBuying: &a%buying%'
+    - '&bSelling: &a%selling%'
+    - '&7'
+    - '&7Currency settings.'
+    - '&7'
+    - '&6Left-Click: &eToggle Buying'
+    - '&6Right-Click: &eToggle Selling'
+    type: CHANGE_TRANSACTIONS
+    slots: 2
+
+  delete:
+    material: BARRIER
+    name: '&cDelete Shop'
+    lore:
+    - '&7This shop will be deleted.'
+    - '&c&lThis action can not be cancelled.'
+    type: DELETE
+    slots: 8

@@ -1,0 +1,38 @@
+command-aliases: auction,auc,ah
+
+Settings:
+  Date_Format: MM/dd/yyyy HH:mm:ss
+  Disabled_Worlds:
+  - world1
+  - world_name
+  Disabled_Gamemodes:
+  - CREATIVE
+  - SPECTATOR
+  Listings:
+    Announce: false
+    Price:
+      Min: 1.0
+      Max: 1000000.0
+      Tax: 10.0
+      Per_Material:
+        DIAMOND:
+          Min: 250
+          Max: -1
+    Listings_Per_Rank:
+      default: 10
+      vip: 15
+      admins: -1
+    Disabled_Materials:
+    - BARRIER
+    - BEDROCK
+    Disabled_Names:
+    - item name
+    - some word
+    Disabled_Lores:
+    - lore text
+    - some word
+  Storage:
+    Expire_In: 604800
+    Delete_Expired: 604800
+    Sales_History: 604800
+    Import_From: none

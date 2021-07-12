@@ -1,0 +1,44 @@
+title: Shop Discount Editor
+size: 54
+objects:
+  name: '&eDiscount #%num%'
+  lore:
+  - '&bDiscount: &a%discount%%'
+  - '&bDays:'
+  - '&a- %days%'
+  - '&bTimes:'
+  - '&a- %times%'
+  - '&7'
+  - '&6Left-Click: &eChange Discount'
+  - '&6Shift-Left: &eAdd Day'
+  - '&6Shift-Right: &eAdd Time'
+  - '&6Middle-Click: &eDelete'
+  slots: 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26
+content:
+  next:
+    material: LIME_STAINED_GLASS
+    name: '&aNext Page'
+    lore: []
+    type: NEXT
+    slots: 43
+
+  prev:
+    material: RED_STAINED_GLASS
+    name: '&cPrevious Page'
+    lore: []
+    type: BACK
+    slots: 37
+  aback:
+    material: BARRIER
+    name: '&c&lReturn'
+    lore: []
+    type: RETURN
+    slots: 39
+
+editor:
+  add:
+    material: ANVIL
+    name: '&b&lNew Discount'
+    lore: []
+    type: CREATE_DISCOUNT
+    slots: 41

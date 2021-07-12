@@ -1,9 +1,9 @@
 # These first 6 aren't configurable
 issues: "https://github.com/IntellectualSites/FastAsyncWorldEdit/issues"
 wiki: "https://github.com/IntellectualSites/FastAsyncWorldEdit-Documentation/wiki"
-date: "Sun Aug 01 00:00:00 CST 2021"
-build: "https://ci.athion.net/job/FastAsyncWorldEdit-1.17/38"
-commit: "https://github.com/IntellectualSites/FastAsyncWorldEdit/commit/f50e5c3d"
+date: "Tue Aug 10 00:00:00 CST 2021"
+build: "https://ci.athion.net/job/FastAsyncWorldEdit-1.17/49"
+commit: "https://github.com/IntellectualSites/FastAsyncWorldEdit/commit/fbef8c45"
 platform: "Bukkit"
 # Set true to enable WorldEdit restrictions per region (e.g. PlotSquared or WorldGuard).
 # To be allowed to WorldEdit in a region, users need the appropriate
@@ -21,6 +21,9 @@ enabled-components:
   # Specific aspects can be turned on and off further below
   # Only disables/enables the hook with v4. For v6, see PlotSquared settings.yml
   plotsquared-v4-hook: true
+  # Show additional information in console. It helps us at IntellectualSites to find out more about an issue.
+  # Leave it off if you don't need it, it can spam your console.
+  debug: false
 
 clipboard:
   # Store the clipboard on disk instead of memory
@@ -292,5 +295,8 @@ limits:
     inventory-mode: 0
     # Should large edits require confirmation (>16384 chunks)
     confirm-large: true
+    # If undo and redo commands should be restricted to allowed regions
+    #  - Prevents scenarios where players can delete/reset a region, and then continue to undo/redo on it
+    restrict-history-to-regions: true
     # List of blocks to strip nbt from
     strip-nbt: []

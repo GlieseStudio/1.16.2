@@ -1,0 +1,58 @@
+command-aliases: chestshop,cshop,cs
+
+Shops:
+  Allowed_Currencies:
+  - vault
+  Creation:
+    Cost:
+      Create: 0
+      Remove: 0
+    Max_Shops_Per_Rank:
+      default: 10
+      vip: 20
+      gold: 30
+      admin: -1
+    In_Player_Claims_Only:
+      Enabled: false
+      Plugins:
+      - 'Lands'
+      - 'PlotSquared'
+      - 'WorldGuard'
+      - 'GriefPrevention'
+    World_Blacklist:
+    - someworld
+    - anotherworld
+  Products:
+    Material_Blacklist:
+    - BEDROCK
+    - BARRIER
+    Lore_Blacklist:
+    - sample lore
+    Name_Blacklist:
+    - sample item name
+    Max_Products_Per_Shop:
+      default: 5
+      vip: 7
+      admin: -1
+
+Display:
+  Showcase:
+    material: GLASS
+    enchanted: false
+  Title:
+    Slide_Interval: 3
+    Values:
+    - '&a%shop_name%'
+    - '&7Owner: &6%shop_owner%'
+
+Sounds:
+  Create: BLOCK_NOTE_BLOCK_BELL
+  Remove: ENTITY_GENERIC_EXPLODE
+
+Transaction_Logs:
+  Output:
+    File: true
+    Console: true
+  Format:
+    Date: dd/MM/yyyy HH:mm:ss
+    Purchase: '(%type%) %player% - x%amount% of %item% for %price%&7 in %shop_name%&r shop owned by %shop_owner%.'

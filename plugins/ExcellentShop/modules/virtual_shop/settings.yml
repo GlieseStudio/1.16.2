@@ -1,0 +1,33 @@
+command-aliases: shop,vshop
+
+General:
+  Disabled_In_Gamemodes:
+  - CREATIVE
+  - SPECTATOR
+  Disabled_In_Worlds:
+  - world2
+  - some_world
+
+GUI:
+  Product_Format:
+    Lore:
+      Text:
+      - '%lore%'
+      - '&7'
+      - '             &eBuy: &6%product_price_buy_formatted% &8| &eSell: &6%product_price_sell_formatted%'
+      - '%limit%'
+      - '&7'
+      - '&cLeft-Click &8→ &fSelect Quantity &8← &cRight-Click'
+      - '&cShift-Left &8→ &fBuy &7(Quick) &fSell &8← &cShift-Right'
+      - '&cMiddle-Click &8→ &fSell All &7(%product_price_sell_all_formatted%)'
+      Limit:
+      - '   &bBuy Left &8→ &3%product_limit_buy_available% &7| &3%product_limit_sell_available% &8← &bSell Left'
+      - '   &bBuy Restock &8→ &3%product_limit_buy_reset% &7| &3%product_limit_sell_reset% &8← &bSell Restock'
+
+Transaction_Logs:
+  Output:
+    File: true
+    Console: true
+  Format:
+    Date: dd/MM/yyyy HH:mm:ss
+    Purchase: '(%type%) %player% - x%amount% of %item% for %price%&7 in %shop_name% shop.'

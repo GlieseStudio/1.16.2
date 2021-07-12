@@ -1,0 +1,71 @@
+core:
+  command-aliases: exshop
+  lang: en
+  prefix: ExcellentShop
+
+data:
+  auto-save: 15
+  storage:
+    type: sqlite
+    username: none
+    password: none
+    host: none
+    database: none
+  purge:
+    enabled: false
+    days: 60
+  instant-save: false
+
+General:
+  Buy_With_Full_Inventory: false
+
+GUI:
+  Click_Actions:
+    BUY_SELECTION: LEFT
+    SELL_SELECTION: RIGHT
+    SELL_ALL: MIDDLE
+    BUY_SINGLE: SHIFT_LEFT
+    SELL_SINGLE: SHIFT_RIGHT
+
+Sounds:
+  Purchase:
+    Success: ENTITY_EXPERIENCE_ORB_PICKUP
+    Failure: BLOCK_ANVIL_PLACE
+  Cart:
+    Item_Add: ENTITY_ITEM_PICKUP
+
+Currency:
+  Default:
+    exp:
+      Enabled: false
+      Name: Exp
+      Format: '%price% %currency_name%'
+    vault:
+      Enabled: true
+      Name: $
+      Format: '%currency_name%%price%'
+  Custom_Item:
+    emeralds:
+      Enabled: false
+      Name: 'Emerald(s)'
+      Format: '%price% %currency_name%'
+      Item:
+        material: EMERALD
+    custom-gold:
+      Enabled: false
+      Name: 'Gold'
+      Format: '%price% %currency_name%'
+      Item:
+        material: GOLD_INGOT
+        name: '&e&lGOLD INGOT'
+        enchanted: true
+modules:
+  virtual_shop:
+    enabled: true
+    name: Virtual Shop
+  chest_shop:
+    enabled: true
+    name: Chest Shop
+  auction:
+    enabled: true
+    name: Auction
