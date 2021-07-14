@@ -1,0 +1,96 @@
+PvP bot requires working version of Citizens. The bot doesn't yet support combo mode, drinkable potions (splash potions of healing work) or edible things (golden apples for example). You can easily disable PvP Bot with permissions and config.yml or by removing Citizens plugin. With paperspigots, you might need to check the bot knockback in the config.yml before reporting any issues with PvP Bot's knockback.
+
+Replays require a working version of Citizens. The system saves the important actions (swinning, damage, movements etc. The playback mode will replay them) either during ranked or unranked and ranked fights.
+You can easily disable replays by editing the config, removing the permissions or removing the Citizens plugin.
+
+FFA setup
+1. Create a normal arena (follow the arena creation tutorial)
+2. Use /arena kits to specify the kit.
+3. Use /arena ffa. The arena will no longer be used for other fights.
+4. Restart the server and use /<arena name> to join the arena. If the command doesn't work be sure it's not being blocked by other plugins and check console.
+
+You can give yourself golden heads with /sprac goldenhead.
+You can also create golden heads, just rename a golden apple to "golden head" or "goldenhead". The color doesn't matter.
+
+PvP Bot can splash health potions and soup but it can not eat golden heads, gapples (golden apples) or anything else or drink any potions (spleed pots for example).
+
+PvP Bot doesn't die from void. The bot is not meant for sumo, spleef or similar gamemodes.
+
+Use strikepractice.* to give all StrikePractice permissions.
+By default players should have permission to all commands they need. If you want to remove their access to something simply give them a negative permission. Permissions can be found here: https://goo.gl/C9LLKV
+
+Placeholders and help for PlaceholderAPI can be found here: https://goo.gl/C9LLKV
+
+All commands can be found here: https://goo.gl/C9LLKV
+
+Type "/arena" to see all arena commands.
+Use all commands without "{" and "}"
+Type "/arena create {arena name}" to create a new arena.
+You must set the pos1, pos2 and center.
+Use "/arena pos1 {arena name}" to set the first spawn position at your current position.
+Use "/arena pos2 {arena name}" to set the second spawn position at your current position.
+Use "/arena center {arena name}" to set the center position at your current position. The center is used in Party FFA, spectating and to make the arena system perfect ;)
+Build arena creation: Use "/arena build {arena name}" to toggle the build mode. Build kits will only go to build arenas and non build kits will only go to non build arenas by default
+
+Use  "/arena kits {arena name} {kit name}" to specify a kit. After doing this only specified kits will go to this arena and no other kit will lead there and the specified kits will only go to arenas that have the kit specified. To make a spleef arena type  "/arena kits {arena name} {sleef kit name}".
+
+Type "/battlekit" to see all kit commands.
+Use all commands without ", "{" and "}"
+Use "/battlekit create {kit name}" to create a new kit. If enabled in the config, you can add "uhc" in the name to disable health regeneration.
+Use "/battlekit setinv {kit name}" to set the inventory, armor and potion effects.
+Use "/battlekit seticon {kit name}" to set the kit's icon. Hold the item in your hand. You can rename the item in your hand with "/sprac rename &cSome_name". "_" will be replaced with a whitespace.
+If you want to create a ranked kit use "/battlekit elo {kit name}. You can easily create a ranked kit from unranked kit with "/battlekit rankedcopy {kit to copy} 1v1". So you don't have merge kit editors manually.
+
+If you want you can use "/battlekit build {kit name}" to toggle whether the kit is a build kit. Build kits will always and only go to build arenas and non build kits will always and only go to non build arenas.
+
+Use "/battlekit stickspawn {kit name}" if you don't want players to leave spawn before countdown has ended. Good for sumo etc.
+
+Use "/battlekit chestaccess {kit name}" to toggle whether people can add new items when editing the kit.
+
+To allow breaking more blocks (spleef for example) type "/battlekit extramaterial {kit name}" and hold the item in your hand. For example "/battlekit extramaterial spleef" and hold a snowblock.
+
+How to setup sign stats?
+Use "/sprac setediting" to set the kit editing place.
+Place a sign and type "[Save Kit]" in the first line. Players can click this sign to save their kit. You can change the line in the config.
+Place a sign and type "[Reset Kit]" in the first line. Players can click this sign to reset their kit. You can change the line in the config.
+Place a sign and type "[Leave Editor]" in the first line. Players can click this sign to teleport to the spawn. You can change the line in the config.
+You can place a chest at the editing place to give players access to take more items. This requires that the kit has "chestaccess" ("/battlekit chestaccess {kit name}").
+
+"kills" for kills
+"deaths' for deaths
+"lms' for last man standing event wins
+"party" for party vs party wins
+"brackets" for brackets event wins
+"elo" and third line: the name of the kit
+1. Place a sign.
+2. The first line must always be '[stats]'.
+3. Choose other line:
+
+Use "/{event} open" to open the event. This allows players to join the event. After there are enough players do "/{event} start" to start the event. You can manually force the event to stop with "/{event} stop".
+Players can join an open event with "/{event} join" and leave it with "/{event} leave"
+
+How to setup/create Sumo Event?
+Main command to manage sumo is "/sumo". Before you can start a sumo event you should create a new arena named "sumoevent".
+After that you must set the sumo lobby with "/sumo setlobby".
+
+How to setup/create Brackets (1v1 tournament) Event?
+Main command to manage brackets is "/brackets". Before you can start a brackets event you should create a new arena named "brackets".
+After that you must set the brackets lobby with "/brackets setlobby".
+
+How to setup/create LMS (Last Man Standing Event?
+Before you can start an LMS (last man standing, ffa event) you must set the spawn position where players will be teleported. You can set the position with "/lms setspawn".
+
+1. Use "/koth spawn1" to set the team1"s spawn.
+2. Use "/koth spawn2" to set the team2"s spawn.
+3. Use "/koth corner1" to set the capping area.
+4. Use "/koth corner1" to set the capping area. These two corner positions should be in different corners and the other under the area area and the other above the area.
+
+How to setup/create Juggernaut Event?
+Before you can a start juggernaut event you must set the spawn point with "/juggernaut setspawn". Juggernaut can be started with "/juggernaut start {player name} {juggernaut"s kit} {other players" kit}" or  "/juggernaut start -random {juggernaut"s kit} {other players" kit}" which will select the juggernaut randomly from players who have done "/juggernaut join".
+
+My contact information, help/support:
+Discord Support & Community Channel: https://discord.gg/SkFbkgg
+Skype: thetoppe
+Telegram: https://t.me/Toppe ([USER=64396]@Toppe[/USER])
+Discord: Toppe#4670
+Or message me on spigotmc.
