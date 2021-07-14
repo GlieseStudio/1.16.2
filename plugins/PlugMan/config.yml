@@ -4,3 +4,12 @@
 # This takes the form of a comma separated list enclosed within the brackets.
 ###
 ignored-plugins: [PlugMan]
+auto-load:
+  enabled: false
+  check-every-seconds: 10
+auto-unload:
+  enabled: false
+  check-every-seconds: 10
+auto-reload:
+  enabled: false
+  check-every-seconds: 10

@@ -1,0 +1,26 @@
+14.07.2021 - 16:29:54 - [TAB v2.9.1 Premium] Failed to download PlaceholderAPI expansions. PlaceholderAPI version: 2.10.10
+14.07.2021 - 16:29:54 - java.lang.IllegalStateException: zip file closed
+14.07.2021 - 16:29:54 -        at java.base/java.util.zip.ZipFile.ensureOpen(ZipFile.java:828)
+14.07.2021 - 16:29:54 -        at java.base/java.util.zip.ZipFile.getEntry(ZipFile.java:327)
+14.07.2021 - 16:29:54 -        at java.base/java.util.jar.JarFile.getEntry(JarFile.java:513)
+14.07.2021 - 16:29:54 -        at java.base/java.util.jar.JarFile.getJarEntry(JarFile.java:468)
+14.07.2021 - 16:29:54 -        at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:167)
+14.07.2021 - 16:29:54 -        at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:586)
+14.07.2021 - 16:29:54 -        at org.bukkit.plugin.java.PluginClassLoader.loadClass0(PluginClassLoader.java:119)
+14.07.2021 - 16:29:54 -        at org.bukkit.plugin.java.PluginClassLoader.loadClass(PluginClassLoader.java:114)
+14.07.2021 - 16:29:54 -        at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:519)
+14.07.2021 - 16:29:54 -        at me.neznamy.tab.platforms.bukkit.features.ExpansionDownloader$1$1.run(ExpansionDownloader.java:52)
+14.07.2021 - 16:29:54 -        at java.base/java.lang.Thread.run(Thread.java:831)
+14.07.2021 - 17:01:18 - [TAB v2.9.1 Premium] Failed to download PlaceholderAPI expansions. PlaceholderAPI version: 2.10.10
+14.07.2021 - 17:01:18 - java.lang.IllegalStateException: zip file closed
+14.07.2021 - 17:01:18 -        at java.base/java.util.zip.ZipFile.ensureOpen(ZipFile.java:828)
+14.07.2021 - 17:01:18 -        at java.base/java.util.zip.ZipFile.getEntry(ZipFile.java:327)
+14.07.2021 - 17:01:18 -        at java.base/java.util.jar.JarFile.getEntry(JarFile.java:513)
+14.07.2021 - 17:01:18 -        at java.base/java.util.jar.JarFile.getJarEntry(JarFile.java:468)
+14.07.2021 - 17:01:18 -        at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:167)
+14.07.2021 - 17:01:18 -        at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:586)
+14.07.2021 - 17:01:18 -        at org.bukkit.plugin.java.PluginClassLoader.loadClass0(PluginClassLoader.java:119)
+14.07.2021 - 17:01:18 -        at org.bukkit.plugin.java.PluginClassLoader.loadClass(PluginClassLoader.java:114)
+14.07.2021 - 17:01:18 -        at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:519)
+14.07.2021 - 17:01:18 -        at me.neznamy.tab.platforms.bukkit.features.ExpansionDownloader$1$1.run(ExpansionDownloader.java:52)
+14.07.2021 - 17:01:18 -        at java.base/java.lang.Thread.run(Thread.java:831)

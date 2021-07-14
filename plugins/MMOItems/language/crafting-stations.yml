@@ -17,6 +17,9 @@ condition:
   money:
     positive: '&a✔ Requires $#money#'
     negative: '&c✖ Requires $#money#'
+  profession:
+    positive: '&a✔ Requires #level# in #profession#'
+    negative: '&c✖ Requires #level# in #profession#'
 ingredient:
   mmoitem:
     positive: '&8✔ &7#amount# #level##item#'

@@ -34,3 +34,7 @@ DESCRIPTION_OF_ENABLE_COMMAND: 启用双重身份验证（2FA）
 DESCRIPTION_OF_HELP_COMMAND: 显示双重身份验证（2FA）插件的帮助
 DESCRIPTION_OF_RELOAD_COMMAND: 重新载入配置
 DESCRIPTION_OF_PRINT_INFO_COMMAND: Prints useful info about the plugin
+GENERATING_KEY: '&aGenerating your 2FA key...'
+ALREADY_IN_SETUP_MODE: '&cYou are already in the setup mode for 2FA!'
+INVENTORY_FULL_USE_CLICKABLE_MESSAGE: '&cYour inventory is full! Please use the clickable
+  message above to get your QR code!'

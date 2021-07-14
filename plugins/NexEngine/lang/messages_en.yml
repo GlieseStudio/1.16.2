@@ -1960,6 +1960,7 @@ Material:
   LEGACY_RECORD_10: Legacy Record 10
   LEGACY_RECORD_11: Legacy Record 11
   LEGACY_RECORD_12: Legacy Record 12
+  GRASS_PATH: Grass Path
 PotionEffectType:
   SPEED: Speed
   SLOW: Slow

@@ -437,18 +437,3 @@ EntityHeads:
     LowerWithEachDrop: 50.0
     Heads:
     - 100:Default:M2UzMDBlOTAyNzM0OWM0OTA3NDk3NDM4YmFjMjllM2E0Yzg3YTg0OGM1MGIzNGMyMTI0MjcyN2I1N2Y0ZTFjZiJ9fX0=
-  axolotl:
-    DropChance: 1.0
-    LowerWithEachDrop: 50.0
-    Heads:
-    - 100:Default:ZThhOGEyZDdjY2YwYzM3NDZlMjNhYjU0OTEwNzBlMDkyM2YwNWIyMzVmOWEyZjVkNTNkMzg0MzUzODUzYmRkYyJ9fX0=
-  glow_squid:
-    DropChance: 1.0
-    LowerWithEachDrop: 50.0
-    Heads:
-    - 100:Default:MmVjZDBiNWViNmIzODRkYjA3NmQ4NDQ2MDY1MjAyOTU5ZGRkZmYwMTYxZTBkNzIzYjNkZjBjYzU4NmQxNmJiZCJ9fX0=
-  goat:
-    DropChance: 1.0
-    LowerWithEachDrop: 50.0
-    Heads:
-    - 100:Default:M2E0OTg2ZmRmMDRjYzg2ZDhhZmYyMDM3YTZiNGRmNTczY2RjMWU3MDhkMDU3OTBjNzY3MjhmYWVmNzk2ZjMzYSJ9fX0=

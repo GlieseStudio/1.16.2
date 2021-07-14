@@ -325,7 +325,6 @@ info:
     fire: Fire
     fire_tick: Fire
     fly_into_wall: Fly into wall
-    freeze: freeze
     hot_floor: Magma block
     lava: Lava
     lightning: Lightning
@@ -361,7 +360,6 @@ info:
     DESERT: Desert
     DESERT_HILLS: Desert hills
     DESERT_LAKES: Desert lakes
-    DRIPSTONE_CAVES: Dripstone caves
     END_BARRENS: End barrens
     END_HIGHLANDS: End highlands
     END_MIDLANDS: End midlands
@@ -380,7 +378,6 @@ info:
     JUNGLE_EDGE: Jungle edge
     JUNGLE_HILLS: Jungle hills
     LUKEWARM_OCEAN: Lukewarm ocean
-    LUSH_CAVES: Lush caves
     MODIFIED_BADLANDS_PLATEAU: Modified badlands plateau
     MODIFIED_GRAVELLY_MOUNTAINS: Modified gravelly mountains
     MODIFIED_JUNGLE: Modified jungle
@@ -426,7 +423,6 @@ info:
     area_effect_cloud: Area effect cloud
     armor_stand: Armor stand
     arrow: Arrow
-    axolotl: Axolotl
     bat: Bat
     bee: Bee
     blaze: Blaze
@@ -460,9 +456,6 @@ info:
     fox: Fox
     ghast: Ghast
     giant: Giant
-    glow_item_frame: Glow item frame
-    glow_squid: Glow squid
-    goat: Goat
     guardian: Guardian
     hoglin: Hoglin
     horse: Horse
@@ -475,7 +468,6 @@ info:
     llama: Llama
     llama_spit: Llama spit
     magma_cube: Magma cube
-    marker: Marker
     minecart: Minecart
     minecart_chest: Minecart chest
     minecart_command: Minecart command
